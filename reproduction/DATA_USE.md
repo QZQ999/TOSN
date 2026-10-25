@@ -16,25 +16,48 @@ The observed history has 96 steps. The repeated R0 study uses prediction lengths
 
 The Boiler collection is published under a CC0 licence at [DOI 10.6084/m9.figshare.28868849](https://doi.org/10.6084/m9.figshare.28868849). The [source publication](https://www.nature.com/articles/s41597-025-05096-4) describes 86,400 observations of 30 variables, sampled every five seconds. The file `xinan_uncompleted_data.csv` retains missing observations. The file `xinan_completed_data.csv` supplies completed values, with the treatment implemented in `AutoReg.py`.
 
-These file versions represent different preprocessing choices. A new run should record the version selected and any further treatment. The manuscript specifies chronological 70%/10%/20% partitions and training-set standardization. The retained original experiment materials leave the selected Boiler version and subsequent treatment unconfirmed.
+The released reconstruction selects `xinan_completed_data.csv`, using the complete 86,400-row sequence and all 30 measurement columns in their supplied order. This choice adopts the provider's documented completion procedure. The preparation preserves those completed values. It checks that all measurements are finite and stops for inspection if that check fails. It preserves the stored row order and sampling interval.
 
-The DOI and the public release metadata were accessible during the source investigation on 25 October 2026. File requests from the current environment returned HTTP 403. The source publication describes public distribution. Its corresponding-author contact can be used to ask the provider about persistent download problems.
+After downloading the completed CSV, prepare it with the following command:
 
-## IoT source and an executable input example
+```text
+python reproduction/prepare_boiler_input.py --file xinan_completed_data.csv
+```
+
+The helper expects all 30 measurement columns. If the supplied CSV also includes a separate timestamp or exported row identifier, pass its exact heading through `--metadata-column`. That option excludes only the named metadata field; the helper still requires 30 measured variables and 86,400 rows. The input record saves the actual source headings and the excluded metadata headings. This makes the treatment of CSV metadata visible without silently dropping a measured variable.
+
+The output is `external/boiler_reconstruction/boiler_completed.csv`, accompanied by its input record and a runnable configuration. The CSV adds `row_index` as an ordering identifier, which the forecasting loader removes before forming model inputs. Under the released code's Python calculation, the training interval is `[0,60479)`, the validation interval is `[60479,69119)`, and the test interval is `[69119,86400)`. The upper endpoint is excluded. The file checksum is recorded from the actual downloaded CSV when preparation runs. The helper leaves the provider's values unchanged; normalization is fitted by the training runner.
+
+The DOI and public release metadata were accessible during the source investigation on 25 October 2026. File requests from this environment returned HTTP 403, so the actual Boiler CSV has yet to pass the supplied loader check here. The source publication describes public distribution. Its corresponding author, Zhong Cao (`zhongc@gzhu.edu.cn`), is the provider contact for assistance with a persistent download problem.
+
+## IoT source and the specified input
 
 The IoT observations come from the SensorData collection described in [UTSD](https://huggingface.co/datasets/thuml/UTSD). The authors also provide a [NumPy release on Tsinghua Cloud](https://cloud.tsinghua.edu.cn/f/93868e3a9fb144fe9719/). Both routes are listed by the [official project](https://github.com/thuml/Large-Time-Series-Model).
 
 The cloud archive is `UTSD-full-npy.zip`. Its `UTSD-full-npy/IoT/baian/` directory contains 51 data files. We verified the actual contents of `0.npy`: 180,140 rows and 18 columns, stored as `float64`, with finite values throughout. Its SHA-256 checksum is `8af624b260fa4f4b6044ea08073b1023458e33127ed04591c3d8ad6cb8e73ee6`.
 
-The supplied input example uses all rows and all 18 columns of this verified file. Column order is preserved. The CSV headings `v01` through `v18` identify column positions. The conversion keeps the supplied values and row order. Run the following command from the repository root after downloading and extracting the source file:
+The released reconstruction selects this whole file, using all rows and all 18 measurement columns in their stored order. This defines the interval directly and avoids an additional selection of sensors or time periods. The CSV headings `v01` through `v18` identify the supplied column positions. An additional `row_index` column records the original row number, beginning at zero. The forecasting loader removes that column before using the measured variables. Run the following command from the repository root after downloading and extracting the source file:
 
 ```text
 python reproduction/prepare_iot_example.py --file UTSD-full-npy/IoT/baian/0.npy
 ```
 
-The command produces `external/industrial_examples/iot_0.csv` and an adjacent `input_record.json`. The record includes the source checksum and the CSV checksum. Row intervals use a zero-based index with an exclusive upper boundary. Training uses `[0,126097)`, validation uses `[126097,144111)`, and testing uses `[144111,180140)`. These boundaries follow the recorded Python implementation, including its floating-point calculation before conversion to an integer. Standardization is performed by the training runner using the training rows. The conversion itself leaves the measurement values intact.
+The command produces `external/industrial_examples/iot_0.csv` and an adjacent `input_record.json`. It also creates `iot_relu_iTransformer_h96_s2026.json`. The record includes the source checksum and the CSV checksum. Row intervals use a zero-based index with an exclusive upper boundary. Training uses `[0,126097)`, validation uses `[126097,144111)`, and testing uses `[144111,180140)`. These boundaries follow the recorded Python implementation, including its floating-point calculation before conversion to an integer. Standardization is performed by the training runner using the training rows. The conversion itself leaves the measurement values intact.
 
-This is a documented source example for a new run. The specific source file or files selected for the original IoT result table remain unconfirmed in the retained records. The example establishes an accessible 18-variable input and an exact preparation procedure. Its source selection is stated separately from the original table.
+The actual downloaded IoT input was checked through the forecasting data loader. All 18 measurement columns agree with the source after conversion to the `float32` precision used in training. At prediction length 96, this input produces 125,906 training windows and 17,919 validation windows, followed by 35,934 test windows. The first and last target windows were also checked at prediction lengths 192, 336 and 720. These checks concern input preparation and partitioning.
+
+## Running the specified industrial inputs
+
+After installing the project and the pinned forecasting-model dependency as described in the README, run the generated configuration from the repository root:
+
+```text
+python -m ugma.cli run --config external/industrial_examples/iot_relu_iTransformer_h96_s2026.json
+python -m ugma.cli run --config external/boiler_reconstruction/boiler_relu_iTransformer_h96_s2026.json
+```
+
+Run each command after preparing its corresponding data. Each configuration uses a 96-step history and a 96-step prediction length, with seed 2026. The forecasting model is iTransformer, and the estimated-error module uses the recorded ReLU configuration. Training settings are copied from `relu_ETTh1_iTransformer_h96_s2026` in the run catalogue. The preparation changes the input path and row-identifier setting, then records the actual series length and number of variables. It also gives the fresh run its own output directory. All other model and training settings match that identified template. The generated paths refer to the machine used for preparation, so regenerate them after moving the release.
+
+The original industrial tables retain their reported single-run results. The file choices above specify fresh runs of the released reconstruction. Their preparation records document those choices. The original records identifying the selected files and rows, together with the saved industrial models, are absent from the retained material. Input preparation supplies a training configuration, while prediction accuracy is obtained by running the experiment.
 
 ## Observed measurements and controlled changes
 

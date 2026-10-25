@@ -1,5 +1,6 @@
 {
-  "purpose": "Public source example for new runs; original industrial-table file selection remains unconfirmed.",
+  "purpose": "Specified input protocol for a fresh industrial run of the released reconstruction.",
+  "relation_to_original_results": "This source selection is specified for the released reconstruction; it is not a recovered original input manifest or a rerun of the original table.",
   "source_archive": "UTSD-full-npy.zip",
   "source_member": "UTSD-full-npy/IoT/baian/0.npy",
   "source_sha256": "8af624b260fa4f4b6044ea08073b1023458e33127ed04591c3d8ad6cb8e73ee6",
@@ -9,8 +10,8 @@
   ],
   "source_dtype": "float64",
   "output_file": "iot_0.csv",
-  "output_sha256": "d3b6d24c4436940752107ba705c0c3dd486493c7b81ba650af985c240dd92eaa",
-  "columns": [
+  "output_sha256": "7d16b180dee4be67771ce24223602bc48b4dcc5881cecc89f7a945dfac3e8d50",
+  "measurement_columns": [
     "v01",
     "v02",
     "v03",
@@ -31,6 +32,8 @@
     "v18"
   ],
   "column_meaning": "Ordinal identifiers preserving the supplied column order.",
+  "ordering_column": "row_index",
+  "ordering_column_meaning": "Zero-based source row ID, excluded from model inputs and targets.",
   "source_rows_zero_based_half_open": [
     0,
     180140
@@ -62,6 +65,22 @@
       720
     ],
     "assignment": "Each target lies wholly within its partition; preceding history may cross the boundary."
+  },
+  "runnable_example": {
+    "config_file": "iot_relu_iTransformer_h96_s2026.json",
+    "template_id": "relu_ETTh1_iTransformer_h96_s2026",
+    "template_record": "results/runs/public_ablation_strict/ETTh1/iTransformer/h96/submitted_relu_head/s2026/run.json",
+    "template_record_sha256": "be6271d2b9b88b720bad5e5f0de465694dc275c33773d1d3092d937368f5aa43",
+    "prediction_length": 96,
+    "seed": 2026,
+    "modified_fields": [
+      "data.path",
+      "data.timestamp_column",
+      "data.length",
+      "data.channels",
+      "output_dir"
+    ],
+    "other_settings": "Copied exactly from the recorded ReLU/iTransformer configuration."
   },
   "training_started": false
 }

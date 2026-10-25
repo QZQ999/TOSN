@@ -1,0 +1,49 @@
+{
+  "actual_source_shape": [
+    180140,
+    18
+  ],
+  "native_loader_measurements_equal_source_float32": true,
+  "ordering_column_excluded_from_features": true,
+  "chronological_partition_boundaries": [
+    126097,
+    144111,
+    180140
+  ],
+  "standardization_fitted_to_training_only": true,
+  "first_and_last_target_windows_inside_partitions": true,
+  "window_counts_by_prediction_length": {
+    "96": {
+      "train": 125906,
+      "val": 17919,
+      "test": 35934
+    },
+    "192": {
+      "train": 125810,
+      "val": 17823,
+      "test": 35838
+    },
+    "336": {
+      "train": 125666,
+      "val": 17679,
+      "test": 35694
+    },
+    "720": {
+      "train": 125282,
+      "val": 17295,
+      "test": 35310
+    }
+  },
+  "training_started": false,
+  "boiler_file_loaded": false,
+  "check_type": "Input pipeline verification using actual downloaded IoT data; no new forecasting result.",
+  "boiler_helper_fixture_checks": {
+    "artificial_parser_fixture_only": true,
+    "actual_boiler_file_validated": false,
+    "30_measurements_preserved": true,
+    "metadata_excluded": true,
+    "nonfinite_fixture_rejected": true,
+    "split_boundaries_match_protocol": true
+  },
+  "industrial_configurations_preserve_declared_template_settings": true
+}

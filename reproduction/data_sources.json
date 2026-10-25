@@ -43,8 +43,35 @@
       "xinan_uncompleted_data.csv",
       "AutoReg.py"
     ],
-    "current_access": "Public release; this environment received HTTP 403. An application requirement has not been established.",
-    "original_experiment_file": "unrecovered"
+    "current_access": "Public release; this environment received HTTP 403 when requesting the files.",
+    "released_reconstruction_protocol": {
+      "file": "xinan_completed_data.csv",
+      "rows_zero_based_half_open": [
+        0,
+        86400
+      ],
+      "measurement_columns": 30,
+      "column_selection": "All measurement columns in supplied order; separate metadata explicitly identified.",
+      "additional_imputation": "None; retain provider-completed values and require finite measurements.",
+      "resampling": "None",
+      "split_rows_zero_based_half_open": {
+        "train": [
+          0,
+          60479
+        ],
+        "validation": [
+          60479,
+          69119
+        ],
+        "test": [
+          69119,
+          86400
+        ]
+      },
+      "helper": "reproduction/prepare_boiler_input.py",
+      "actual_source_file_validated": false
+    },
+    "original_experiment_file_manifest": "Absent from retained material; the released reconstruction selection is specified separately."
   },
   "iot": {
     "huggingface": "https://huggingface.co/datasets/thuml/UTSD",
@@ -64,6 +91,35 @@
       "zip_crc_verified": true,
       "all_values_finite": true
     },
-    "original_experiment_selection": "The selected file or files and time interval remain unrecorded in the retained materials."
+    "released_reconstruction_protocol": {
+      "file": "UTSD-full-npy/IoT/baian/0.npy",
+      "rows_zero_based_half_open": [
+        0,
+        180140
+      ],
+      "measurement_columns": 18,
+      "column_selection": "All measurement columns in supplied order.",
+      "additional_imputation": "None; verified source measurements are finite.",
+      "resampling": "None",
+      "ordering_column": "row_index",
+      "ordering_column_excluded_from_features": true,
+      "split_rows_zero_based_half_open": {
+        "train": [
+          0,
+          126097
+        ],
+        "validation": [
+          126097,
+          144111
+        ],
+        "test": [
+          144111,
+          180140
+        ]
+      },
+      "helper": "reproduction/prepare_iot_example.py",
+      "actual_source_file_validated": true
+    },
+    "original_experiment_file_manifest": "Absent from retained material; the released reconstruction selection is specified separately."
   }
 }

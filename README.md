@@ -6,7 +6,7 @@ The indexed comparisons contain 80 R0 runs, where the estimated-error input is d
 
 ## Start with the data
 
-Read [Data sources and processing](reproduction/DATA_USE.md) for the official download locations and the exact ETT processing rules. It also documents a verified 18-variable IoT file and an executable input-preparation example.
+Read [Data sources and processing](reproduction/DATA_USE.md) for the official download locations and the exact processing rules. The industrial protocol selects the provider-completed Boiler CSV and the complete 18-variable IoT file `IoT/baian/0.npy`. Preparation helpers record source checksums and generate runnable configurations.
 
 From the repository root, download the pinned ETT inputs and check the release:
 
@@ -47,7 +47,7 @@ The package description is shortened for anonymous review. All executable source
 
 ## Scope of the industrial instructions
 
-The data-use document identifies the public Boiler and IoT sources. It explains the manuscript's chronological split and training-set standardization. The verified IoT input example has a recorded file checksum and exact row boundaries. The original industrial file selections and the original industrial model files remain absent from the retained material; the new source example is labelled accordingly.
+The specified industrial inputs preserve every measurement column and the stored row order. Preparation records the exact chronological split and supplies a 96-step iTransformer configuration copied from the recorded ReLU configuration. The actual downloaded IoT file has passed the forecasting data-loader check, with all 18 measured variables preserved. Its input record is in `reproduction/iot_example_record.json`. The Boiler protocol uses all 86,400 rows and 30 variables from `xinan_completed_data.csv`; the actual CSV remains to be validated after download, as the access check encountered HTTP 403. These file choices specify fresh reconstruction runs. The original industrial tables retain their reported results, with their original input manifests and model files absent from the retained material.
 
 ## External software
 
