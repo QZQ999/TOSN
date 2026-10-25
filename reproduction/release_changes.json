@@ -1,0 +1,8 @@
+{
+  "description_only_changes": [
+    "src/ugma/__init__.py"
+  ],
+  "executable_source_statements_unchanged": true,
+  "original_run_records_unchanged": 471,
+  "historical_source_checksums": "Retained in the original run records. The anonymous release shortens the package description, which changes the complete source checksum; fresh training records its own source checksum."
+}
