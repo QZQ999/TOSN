@@ -1,0 +1,22 @@
+{
+  "attempts": {
+    "fixed_batch_stable_ETTm1_iTransformer_h96_s2026": 1,
+    "fixed_batch_stable_ETTm1_iTransformer_h96_s2027": 1,
+    "fixed_batch_stable_ETTm1_iTransformer_h96_s2028": 1,
+    "fixed_batch_stable_ETTm1_iTransformer_h96_s2029": 1,
+    "fixed_batch_stable_ETTm1_iTransformer_h96_s2030": 1,
+    "fixed_batch_stable_ETTm1_FEDformer_h96_s2026": 1,
+    "fixed_batch_stable_ETTm1_FEDformer_h96_s2027": 1,
+    "fixed_batch_stable_ETTm1_FEDformer_h96_s2028": 1,
+    "fixed_batch_stable_ETTm1_FEDformer_h96_s2029": 1,
+    "fixed_batch_stable_ETTm1_FEDformer_h96_s2030": 1
+  },
+  "failures": {},
+  "phase": "complete",
+  "current": null,
+  "child_pid": null,
+  "controller_pid": 13588,
+  "total": 10,
+  "completed": 10,
+  "updated": 1792925141.9781878
+}

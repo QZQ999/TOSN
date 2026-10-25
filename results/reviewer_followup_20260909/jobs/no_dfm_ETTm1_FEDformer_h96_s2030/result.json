@@ -1,0 +1,45 @@
+{
+  "identity": {
+    "dataset": "ETTm1",
+    "backbone": "FEDformer",
+    "horizon": 96,
+    "seed": 2030
+  },
+  "variant": "no_dfm",
+  "source_run": "results\\runs\\public_strict\\ETTm1\\FEDformer\\h96\\s2030\\run.json",
+  "run_path": "C:\\codex-runs\\UGMA_R1\\results\\reviewer_followup_20260909\\jobs\\no_dfm_ETTm1_FEDformer_h96_s2030\\training\\run.json",
+  "base_source_sha256": "636807134ff574f308266a22cef002d41d90a1960a4522075ffbd941d8d96a45",
+  "diagnostic_script_sha256": "8a840adfca15448814ec14c7a9bc300a31c4b155d40abaef14e670fb54ca51d0",
+  "metrics": {
+    "backbone": {
+      "mae": 0.47879350185394287,
+      "rmse": 0.6795019507408142,
+      "count": 9301152
+    },
+    "enhanced": {
+      "mae": 0.4497787356376648,
+      "rmse": 0.647365927696228,
+      "count": 9301152
+    },
+    "improvement_percent": {
+      "mae": 6.059974937823843,
+      "rmse": 4.7293496375618185
+    },
+    "risk_validation": {
+      "applicable": false,
+      "reason": "The retained method contains no risk monitor; risk metrics are reported only for reviewer-diagnostic controls.",
+      "pearson_r": null,
+      "pearson_p": null,
+      "spearman_rho": null,
+      "spearman_p": null,
+      "calibration": {
+        "predicted": [],
+        "observed": [],
+        "counts": [],
+        "ece": null
+      },
+      "risk_coverage": null
+    }
+  },
+  "job_id": "no_dfm_ETTm1_FEDformer_h96_s2030"
+}

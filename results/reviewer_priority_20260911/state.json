@@ -1,0 +1,87 @@
+{
+  "attempts": {
+    "stable_ETTm1_iTransformer_h96_s2026": 2,
+    "risk_shift_ETTh1_iTransformer_h96_s2026": 1,
+    "tafas_delayed_ETTh1_iTransformer_h96_s2026": 1,
+    "stable_ETTm1_iTransformer_h96_s2027": 2,
+    "stable_ETTm1_iTransformer_h96_s2028": 2,
+    "stable_ETTm1_iTransformer_h96_s2029": 2,
+    "stable_ETTm1_iTransformer_h96_s2030": 2,
+    "stable_ETTm1_FEDformer_h96_s2026": 1,
+    "stable_ETTm1_FEDformer_h96_s2027": 1,
+    "stable_ETTm1_FEDformer_h96_s2028": 1,
+    "stable_ETTm1_FEDformer_h96_s2029": 1,
+    "stable_ETTm1_FEDformer_h96_s2030": 2,
+    "risk_shift_ETTh1_iTransformer_h96_s2027": 1,
+    "risk_shift_ETTh1_iTransformer_h96_s2028": 1,
+    "risk_shift_ETTh1_iTransformer_h96_s2029": 1,
+    "risk_shift_ETTh1_iTransformer_h96_s2030": 1,
+    "risk_shift_ETTh1_FEDformer_h96_s2026": 1,
+    "risk_shift_ETTh1_FEDformer_h96_s2027": 1,
+    "risk_shift_ETTh1_FEDformer_h96_s2028": 1,
+    "risk_shift_ETTh1_FEDformer_h96_s2029": 1,
+    "risk_shift_ETTh1_FEDformer_h96_s2030": 1,
+    "risk_shift_ETTm1_iTransformer_h96_s2026": 1,
+    "risk_shift_ETTm1_iTransformer_h96_s2027": 1,
+    "risk_shift_ETTm1_iTransformer_h96_s2028": 1,
+    "risk_shift_ETTm1_iTransformer_h96_s2029": 1,
+    "risk_shift_ETTm1_iTransformer_h96_s2030": 1,
+    "risk_shift_ETTm1_FEDformer_h96_s2026": 1,
+    "risk_shift_ETTm1_FEDformer_h96_s2027": 1,
+    "risk_shift_ETTm1_FEDformer_h96_s2028": 1,
+    "risk_shift_ETTm1_FEDformer_h96_s2029": 1,
+    "risk_shift_ETTm1_FEDformer_h96_s2030": 1,
+    "tafas_delayed_ETTh1_iTransformer_h96_s2027": 1,
+    "tafas_delayed_ETTh1_iTransformer_h96_s2028": 1,
+    "tafas_delayed_ETTh1_iTransformer_h96_s2029": 1,
+    "tafas_delayed_ETTh1_iTransformer_h96_s2030": 1,
+    "tafas_delayed_ETTm1_iTransformer_h96_s2026": 1,
+    "tafas_delayed_ETTm1_iTransformer_h96_s2027": 1,
+    "tafas_delayed_ETTm1_iTransformer_h96_s2028": 1,
+    "tafas_delayed_ETTm1_iTransformer_h96_s2029": 1,
+    "tafas_delayed_ETTm1_iTransformer_h96_s2030": 1,
+    "weight_0.1_ETTh1_iTransformer_h96_s2026": 1,
+    "weight_10.0_ETTh1_iTransformer_h96_s2026": 1,
+    "weight_0.1_ETTh1_iTransformer_h96_s2027": 1,
+    "weight_10.0_ETTh1_iTransformer_h96_s2027": 1,
+    "weight_0.1_ETTh1_iTransformer_h96_s2028": 1,
+    "weight_10.0_ETTh1_iTransformer_h96_s2028": 1,
+    "weight_0.1_ETTh1_iTransformer_h96_s2029": 1,
+    "weight_10.0_ETTh1_iTransformer_h96_s2029": 1,
+    "weight_0.1_ETTh1_iTransformer_h96_s2030": 1,
+    "weight_10.0_ETTh1_iTransformer_h96_s2030": 1
+  },
+  "failures": {
+    "stable_ETTm1_iTransformer_h96_s2026": {
+      "returncode": 1,
+      "log": "C:\\codex-runs\\UGMA_R1\\results\\reviewer_priority_20260911\\jobs\\stable_ETTm1_iTransformer_h96_s2026\\attempt2.log"
+    },
+    "stable_ETTm1_iTransformer_h96_s2027": {
+      "returncode": 1,
+      "log": "C:\\codex-runs\\UGMA_R1\\results\\reviewer_priority_20260911\\jobs\\stable_ETTm1_iTransformer_h96_s2027\\attempt2.log"
+    },
+    "stable_ETTm1_iTransformer_h96_s2028": {
+      "returncode": 1,
+      "log": "C:\\codex-runs\\UGMA_R1\\results\\reviewer_priority_20260911\\jobs\\stable_ETTm1_iTransformer_h96_s2028\\attempt2.log"
+    },
+    "stable_ETTm1_iTransformer_h96_s2029": {
+      "returncode": 1,
+      "log": "C:\\codex-runs\\UGMA_R1\\results\\reviewer_priority_20260911\\jobs\\stable_ETTm1_iTransformer_h96_s2029\\attempt2.log"
+    },
+    "stable_ETTm1_iTransformer_h96_s2030": {
+      "returncode": 1,
+      "log": "C:\\codex-runs\\UGMA_R1\\results\\reviewer_priority_20260911\\jobs\\stable_ETTm1_iTransformer_h96_s2030\\attempt2.log"
+    },
+    "stable_ETTm1_FEDformer_h96_s2030": {
+      "returncode": 1,
+      "log": "C:\\codex-runs\\UGMA_R1\\results\\reviewer_priority_20260911\\jobs\\stable_ETTm1_FEDformer_h96_s2030\\attempt2.log"
+    }
+  },
+  "phase": "finished_with_failures",
+  "current": null,
+  "child_pid": null,
+  "controller_pid": 19752,
+  "total": 50,
+  "completed": 44,
+  "updated": 1792925048.9509437
+}

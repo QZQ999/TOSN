@@ -1,0 +1,219 @@
+{
+  "cases": [
+    {
+      "kind": "clean",
+      "severity": 0.0,
+      "windows": 13841,
+      "metrics": {
+        "backbone": {
+          "mae": 0.4728310227397482,
+          "rmse": 0.6766457285459664
+        },
+        "full": {
+          "mae": 0.43118660439228135,
+          "rmse": 0.6315620485004897
+        },
+        "local_only": {
+          "mae": 0.46793185505318374,
+          "rmse": 0.6730138643224256
+        },
+        "retrieval_only": {
+          "mae": 0.4374754033157311,
+          "rmse": 0.6356273411077519
+        }
+      }
+    },
+    {
+      "kind": "mean",
+      "severity": 0.5,
+      "windows": 13841,
+      "metrics": {
+        "backbone": {
+          "mae": 0.4734920525748133,
+          "rmse": 0.6772043287425683
+        },
+        "full": {
+          "mae": 0.43166822098313457,
+          "rmse": 0.6319606315346781
+        },
+        "local_only": {
+          "mae": 0.4685952232757942,
+          "rmse": 0.6736200012131977
+        },
+        "retrieval_only": {
+          "mae": 0.43796572372418574,
+          "rmse": 0.6359856585188606
+        }
+      }
+    },
+    {
+      "kind": "mean",
+      "severity": 1.0,
+      "windows": 13841,
+      "metrics": {
+        "backbone": {
+          "mae": 0.4746992148504002,
+          "rmse": 0.6785988296759708
+        },
+        "full": {
+          "mae": 0.43264767804083515,
+          "rmse": 0.6330433932963686
+        },
+        "local_only": {
+          "mae": 0.469810855949359,
+          "rmse": 0.6750767458695239
+        },
+        "retrieval_only": {
+          "mae": 0.43893836605097114,
+          "rmse": 0.6370152590302758
+        }
+      }
+    },
+    {
+      "kind": "scale",
+      "severity": 0.5,
+      "windows": 13841,
+      "metrics": {
+        "backbone": {
+          "mae": 0.7151192511401457,
+          "rmse": 1.0324329539636348
+        },
+        "full": {
+          "mae": 0.6507913340680276,
+          "rmse": 0.959639208633009
+        },
+        "local_only": {
+          "mae": 0.7091499421211727,
+          "rmse": 1.0292464770718375
+        },
+        "retrieval_only": {
+          "mae": 0.6593365222222684,
+          "rmse": 0.9634938470845239
+        }
+      }
+    },
+    {
+      "kind": "scale",
+      "severity": 1.0,
+      "windows": 13841,
+      "metrics": {
+        "backbone": {
+          "mae": 0.9626605524580764,
+          "rmse": 1.3938344940222016
+        },
+        "full": {
+          "mae": 0.874190219960137,
+          "rmse": 1.2914315016712243
+        },
+        "local_only": {
+          "mae": 0.9568378536462914,
+          "rmse": 1.39221427172836
+        },
+        "retrieval_only": {
+          "mae": 0.8839773727698156,
+          "rmse": 1.2941702897167198
+        }
+      }
+    },
+    {
+      "kind": "ramp",
+      "severity": 0.5,
+      "windows": 13841,
+      "metrics": {
+        "backbone": {
+          "mae": 0.47307871650056343,
+          "rmse": 0.6767352640282511
+        },
+        "full": {
+          "mae": 0.4313870723832178,
+          "rmse": 0.6316717977911407
+        },
+        "local_only": {
+          "mae": 0.4681387642676423,
+          "rmse": 0.6731318908660947
+        },
+        "retrieval_only": {
+          "mae": 0.4377196059489183,
+          "rmse": 0.635711421275497
+        }
+      }
+    },
+    {
+      "kind": "ramp",
+      "severity": 1.0,
+      "windows": 13841,
+      "metrics": {
+        "backbone": {
+          "mae": 0.4733476217069071,
+          "rmse": 0.6768435538607025
+        },
+        "full": {
+          "mae": 0.43161713796040985,
+          "rmse": 0.6318089111731284
+        },
+        "local_only": {
+          "mae": 0.4683671393555394,
+          "rmse": 0.6732687248131618
+        },
+        "retrieval_only": {
+          "mae": 0.4379938313232118,
+          "rmse": 0.6358233684470834
+        }
+      }
+    }
+  ],
+  "replay_checks": {
+    "batch16_vs_32": {
+      "allclose": true,
+      "max_abs": 0.0001437067985534668,
+      "bad_elements": 0
+    },
+    "new_vs_archive": {
+      "allclose": false,
+      "max_abs": 0.010508537292480469,
+      "bad_elements": 89
+    },
+    "retrospective_error_groups": {
+      "good": {
+        "backbone": 0.2961551568429238,
+        "full": 0.27827456556115954,
+        "local_only": 0.29373551345280946,
+        "retrieval_only": 0.28308325898765313
+      },
+      "middle": {
+        "backbone": 0.45520351272793413,
+        "full": 0.4098577128045432,
+        "local_only": 0.4460315666114824,
+        "retrieval_only": 0.420247246078333
+      },
+      "poor": {
+        "backbone": 0.667176519475594,
+        "full": 0.6054653065281193,
+        "local_only": 0.6640709946617115,
+        "retrieval_only": 0.6091329085017503
+      }
+    }
+  },
+  "precision_policy": "float64 query encoder and cosine dot products; stable bank-index tie order; original stored FP32 keys/futures; no retraining",
+  "model_variant": "monitor-disabled R0",
+  "smoke_only": false,
+  "job_id": "stable_ETTm1_FEDformer_h96_s2026",
+  "identity": {
+    "dataset": "ETTm1",
+    "backbone": "FEDformer",
+    "horizon": 96,
+    "seed": 2026
+  },
+  "reviewers": [
+    "R2.6",
+    "R2.8"
+  ],
+  "inputs": {
+    "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_strict\\ETTm1\\FEDformer\\h96\\s2026\\run.json": "601b12fe72bf594ba2e972c3c178aadc1ed8a88aecb29789591319143ac0c46e",
+    "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_strict\\ETTm1\\FEDformer\\h96\\s2026\\checkpoint.pt": "7e974bf4b077d6fc9e2f5d571e36bdc42486d15d1c59e360cf2d1626b44eb46d",
+    "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_strict\\ETTm1\\FEDformer\\h96\\s2026\\predictions.npz": "7dcdfd9adbadbf088aca621b390d56dd3bc6334ec3b0b870f00009dbde9a828f"
+  },
+  "diagnostic_script_sha256": "61e27046dab1343f33f9613698214b59f2fab4d1709dd6e840e32947151274ed",
+  "source_sha256": "636807134ff574f308266a22cef002d41d90a1960a4522075ffbd941d8d96a45",
+  "elapsed_seconds": 162.30026483535767
+}

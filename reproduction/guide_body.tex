@@ -1,0 +1,80 @@
+\subsection*{Purpose and scope}
+This guide connects the revised manuscript to its data sources and recorded experiments. The accompanying archive contains the reconstructed implementation used for the public-data studies. Its run catalogue identifies 80 R0 configurations and 40 configurations with an estimated-error input. Each entry points to the saved configuration and its numerical results. The commands below obtain the ETT inputs and prepare a fresh run while preserving the recorded scientific settings. A separate command rebuilds the main repeated-run summaries from the supplied records.
+
+R0 disables the estimated-error input. The ReLU and Softplus configurations enable it, with the historical reference transformation fixed at the identity setting. These configurations are identified separately from the original four-dataset results. The scope of each comparison follows the Experimental Setup in the manuscript.
+
+\subsection*{Obtaining the ETT data}
+ETTh1 and ETTm1 are published in the official ETTDataset repository at \url{https://github.com/zhouhaoyi/ETDataset}. The helper downloads the revision recorded in \path{external_versions.json}. Run the following commands from the extracted supporting archive:
+\begin{lstlisting}
+python reproduction/reproduce.py fetch-data
+python reproduction/reproduce.py verify
+\end{lstlisting}
+The files are placed in \path{external/ett/ETT-small/}. ETTh1 has 17,420 rows and ETTm1 has 69,680 rows. Each contains a date column and seven measured variables. The verifier checks their column order and row count against \path{reproduction/data_sources.json}. It also checks the file contents. Windows and Unix line endings are normalized for that comparison, because a change in line endings leaves the measurements unchanged. The historical byte checksums remain available alongside the normalized checksums.
+
+\subsection*{Obtaining the industrial observations}
+The Boiler collection is published at \url{https://doi.org/10.6084/m9.figshare.28868849} under a CC0 licence. The source paper is available at \url{https://www.nature.com/articles/s41597-025-05096-4}. The file \path{xinan_uncompleted_data.csv} retains missing observations. The file \path{xinan_completed_data.csv} contains the provider's completed values, with the treatment implemented in \path{AutoReg.py}. Record the chosen version before applying any further processing. The publication describes 86,400 observations with 30 variables, sampled every five seconds.
+
+The Figshare release is public. During the access check on 25 October 2026, this environment received HTTP 403. The release information provides the public download location; an application requirement has yet to be established. For a persistent access problem, the data paper lists the corresponding author Zhong Cao at \texttt{zhongc@gzhu.edu.cn}. This is a contact for asking about access, with any alternative distribution arrangements subject to the data provider's reply.
+
+UTSD is available at \url{https://huggingface.co/datasets/thuml/UTSD}. Its authors also provide a NumPy release through \url{https://cloud.tsinghua.edu.cn/f/93868e3a9fb144fe9719/}. Both links appear in the official project at \url{https://github.com/thuml/Large-Time-Series-Model}. The cloud file is named \path{UTSD-full-npy.zip} and has a size of 7,238,333,919 bytes. The archive contains 51 IoT files in \path{UTSD-full-npy/IoT/baian/}. These observations originate from the machine-log collection described by UTSD.
+
+An anonymous download of \path{IoT/baian/0.npy} was verified on 25 October 2026. This file contains 180,140 rows and 18 columns, stored as floating-point values. All its values are finite. Its checksum and the archive location are recorded in \path{reproduction/data_sources.json}. After extracting the cloud archive, the following command checks a downloaded file:
+\begin{lstlisting}
+python reproduction/reproduce.py inspect-iot --file UTSD-full-npy/IoT/baian/0.npy
+\end{lstlisting}
+Keep the stored column order and record the selected file and row interval. The verified example establishes access to an 18-variable IoT array. Identification of the particular file or files used in the original industrial table remains a separate requirement. The selected Boiler version and any further treatment also remain missing from the retained industrial records. These details are needed to reconstruct the exact original inputs; the published source descriptions and the newly verified example are documented explicitly.
+
+\subsection*{Chronological processing and forecast windows}
+For a series of length $N$, the recorded public-data code uses $n_{\rm train}=\lfloor0.7N\rfloor$ and $n_{\rm val}=\lfloor0.1N\rfloor$. The remaining rows form the test partition. Rows retain chronological order. For each measured variable, the mean and population standard deviation are fitted to training rows and then applied to every partition. A standard deviation below $10^{-6}$ is replaced by one. The date column identifies time and is excluded from the prediction variables.
+
+The observed history has length $P=96$. The R0 comparison evaluates prediction lengths $Q\in\{96,192,336,720\}$. Every target window lies entirely inside its assigned partition. A validation or test history may contain preceding observations. There are $n_{\rm train}-P-Q+1$ training windows and $n_{\rm partition}-Q+1$ validation or test windows. At $Q=96$, ETTh1 has 12,003 training windows and 1,647 validation windows, followed by 3,389 test windows. ETTm1 has 48,585 training windows and 6,873 validation windows, followed by 13,841 test windows. The full counts appear in \path{artifacts/public_dataset_manifest.json}.
+
+The industrial protocol in the manuscript states the same chronological proportions and training-set standardization. Applying that protocol to a newly chosen industrial file defines a new run. Linking it to a reported industrial table additionally requires the original file selection and preprocessing record described above.
+
+\subsection*{Environment and forecasting models}
+Use Python 3.11 or later with a suitable PyTorch installation. The recorded public-data runs used Python 3.14.2 and PyTorch 2.11.0 with CUDA 12.8. Their exact package versions are stored in the environment field of each \path{run.json}. PyTorch installation instructions for the selected operating system and GPU are provided at \url{https://pytorch.org/get-started/locally/}. Once PyTorch is available, install the remaining project dependencies:
+\begin{lstlisting}
+python -m pip install -e ".[test]"
+\end{lstlisting}
+The initial forecasting models are loaded from the official Time-Series-Library revision recorded in \path{external_versions.json}. Place that repository at the location expected by the adapter:
+\begin{lstlisting}
+git clone https://github.com/thuml/Time-Series-Library.git external/tslib
+git -C external/tslib checkout 4e938a1767106324dd753b2a44832bf870a0252e
+\end{lstlisting}
+The public comparisons use iTransformer and FEDformer. Their saved configurations specify the model settings and training schedule. The reconstructed correction uses measured sequences and historical matches. Its configuration sets \texttt{topology\_mode} to \texttt{none}. The data loader can calculate statistical relationships, while this setting excludes those relationships from the evaluated correction. The original four-dataset hardware description remains the one reported in the manuscript; individual run records preserve the environment of each additional study.
+
+\subsection*{Preparing and running the recorded configurations}
+The catalogue in \path{reproduction/run_catalog.json} identifies 80 R0 runs. They cover both ETT datasets and both forecasting models at four prediction lengths, with five random initializations per setting. The seeds run from 2026 through 2030. A further 20 ReLU configurations and 20 Softplus configurations evaluate the estimated-error input at $Q=96$. The index contains one entry for each reported run. Earlier duplicate records remain under \path{results/} with their original filenames.
+
+Generate the configurations with the following commands:
+\begin{lstlisting}
+python reproduction/reproduce.py configs --group r0
+python reproduction/reproduce.py configs --group relu
+python reproduction/reproduce.py configs --group softplus
+\end{lstlisting}
+The exporter copies each configuration from its saved run record. It changes the input-file location and the output directory to match the current machine. The training settings remain identical. Configurations are written under \path{reproduction_outputs/configs/}, and new results are directed to \path{reproduction_outputs/runs/}. For example, the following command reruns one R0 configuration:
+\begin{lstlisting}
+cd reproduction_outputs/configs/r0
+python -m ugma.cli run --config r0_ETTh1_iTransformer_h96_s2026.json
+cd ../../..
+\end{lstlisting}
+The runner trains the initial forecasting model using the training partition and selects its parameters using validation error. It then trains the historical encoder and constructs a reference collection from training windows. The final training stage fits the correction while keeping the initial forecasting model fixed. ReLU and Softplus runs also train the estimated-error module in that final stage. The saved configuration supplies the stopping rule and every loss weight.
+
+The output includes \path{run.json} with configuration details and numerical results. The file \path{checkpoint.pt} stores model parameters, while \path{predictions.npz} stores the evaluated targets and predictions. Retain these files together with \path{data_manifest.json}. The runner can reuse a cached initial model for a matching configuration. Cache keys include the training and validation input values, which keeps paired correction comparisons tied to the same initial forecast. A fresh training run may differ numerically across hardware or library versions; record its environment alongside the new result.
+
+\subsection*{Rebuilding the reported summaries}
+The numerical summaries used in the replies can be checked directly from the supplied records:
+\begin{lstlisting}
+python reproduction/reproduce.py summary
+\end{lstlisting}
+This command writes \path{reproduction_outputs/summary.json}. For each run, the MAE reduction is $100(E_{\rm initial}-E_{\rm corrected})/E_{\rm initial}$. The script averages these per-run percentages and calculates the sample standard deviation across the five initializations within each setting. From the 80 R0 records, it recovers 49 improvements and a mean MAE reduction of 2.096074\%. It also recovers the reported ReLU SMM rank correlations from \path{paper_evidence/risk_scores_per_seed.csv}. On unchanged ETTh1, the means are 0.0800 for iTransformer and 0.5520 for FEDformer.
+
+The same command checks the delayed-complete-target TAFAS comparison from \path{paper_evidence/tta_per_seed.csv}. Mean MAE is 0.4470 on ETTh1 and 0.3958 on ETTm1 across five runs per dataset. These are the evaluated calibration modules under the manuscript's delayed-target update rule. The comparison's protocol differs from other uses of TAFAS, so the archive retains that specific experiment label. Summary reconstruction uses saved numerical evidence; a fresh prediction-level analysis uses the regenerated model and prediction files.
+
+\subsection*{Additional analyses and controlled changes}
+The dated analysis scripts under \path{scripts/} retain the procedures for the additional comparisons. The script \path{reviewer_followup.py} contains the component comparisons and the score-enabled training variants. The script \path{reviewer_priority_20260911.py} contains the direct score tests and the delayed-target adaptation comparison. The script \path{reviewer_shift_fixed_batch_20260911.py} records the final fixed-batch evaluation used for the completed ETTm1 shift comparisons. Their accompanying manifests identify the source run of each analysis. These scripts preserve the original machine locations and input checksums. A fresh replay requires the corresponding regenerated checkpoints and an explicit mapping to their new locations; the portable commands above cover training and the retained-summary checks.
+
+For the controlled-shift study, the training and validation values stay unchanged. Transformations start at the test boundary. Let $\mu_j$ and $\sigma_j$ denote training statistics for variable $j$, and let $d_j$ alternate between $+1$ and $-1$ across variables. A level change adds $a\sigma_jd_j$ to the test values. An amplitude change uses $\mu_j+(1+a)(x_j-\mu_j)$. A ramp gradually increases the additive change from zero to $a\sigma_jd_j$ over the test interval. The evaluated values of $a$ are 0.5 and 1.0. The transformed test series supplies both prediction histories and targets according to their time indices. These are specified artificial changes applied to observed ETT data. The industrial tables evaluate chronological prediction on recorded equipment observations.
+
+\subsection*{Availability of the supporting material}
+The accompanying supporting archive supplies the reconstructed code and retained numerical evidence. It also includes this guide and the portable helper. The original industrial implementation and its saved models are absent from this archive. A permanent public repository for the supporting code has yet to be established. The data providers' public links remain the download locations for the source collections. This statement separates the material supplied with the response from the experimental records still needed for an exact reproduction of the original industrial tables.

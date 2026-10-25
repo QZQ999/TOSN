@@ -1,0 +1,45 @@
+{
+  "identity": {
+    "dataset": "ETTm1",
+    "backbone": "iTransformer",
+    "horizon": 96,
+    "seed": 2029
+  },
+  "variant": "cross_sensor",
+  "source_run": "results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2029\\run.json",
+  "run_path": "C:\\codex-runs\\UGMA_R1\\results\\reviewer_followup_20260909\\jobs\\cross_sensor_ETTm1_iTransformer_h96_s2029\\training\\run.json",
+  "base_source_sha256": "636807134ff574f308266a22cef002d41d90a1960a4522075ffbd941d8d96a45",
+  "diagnostic_script_sha256": "8a840adfca15448814ec14c7a9bc300a31c4b155d40abaef14e670fb54ca51d0",
+  "metrics": {
+    "backbone": {
+      "mae": 0.4130392074584961,
+      "rmse": 0.6226075291633606,
+      "count": 9301152
+    },
+    "enhanced": {
+      "mae": 0.41271743178367615,
+      "rmse": 0.6221373677253723,
+      "count": 9301152
+    },
+    "improvement_percent": {
+      "mae": 0.07790438994881126,
+      "rmse": 0.07551489758244148
+    },
+    "risk_validation": {
+      "applicable": false,
+      "reason": "The retained method contains no risk monitor; risk metrics are reported only for reviewer-diagnostic controls.",
+      "pearson_r": null,
+      "pearson_p": null,
+      "spearman_rho": null,
+      "spearman_p": null,
+      "calibration": {
+        "predicted": [],
+        "observed": [],
+        "counts": [],
+        "ece": null
+      },
+      "risk_coverage": null
+    }
+  },
+  "job_id": "cross_sensor_ETTm1_iTransformer_h96_s2029"
+}

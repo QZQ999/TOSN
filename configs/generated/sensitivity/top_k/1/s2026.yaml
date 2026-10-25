@@ -1,0 +1,49 @@
+seed: 2026
+device: cuda
+output_dir: results/runs/sensitivity/top_k/1/s2026
+data:
+  kind: csv
+  path: external/ett/ETT-small/ETTh1.csv
+  timestamp_column: date
+  seq_len: 96
+  pred_len: 96
+  train_ratio: 0.7
+  val_ratio: 0.1
+  batch_size: 32
+  num_workers: 0
+backbone:
+  name: iTransformer
+  hidden_dim: 128
+  epochs: 30
+  learning_rate: 0.001
+  weight_decay: 0.0001
+  early_stopping_patience: 10
+ugma:
+  d_model: 128
+  encoder_epochs: 10
+  risk_pretrain_epochs: 0
+  enhancement_epochs: 30
+  learning_rate: 0.0005
+  weight_decay: 0.0001
+  bank_size: 512
+  top_k: 1
+  temporal_gap: 192
+  contrastive_temperature: 0.1
+  retrieval_temperature: 0.1
+  risk_loss_weight: 0.0
+  risk_rank_weight: 0.0
+  shift_augmentation_probability: 0.0
+  shift_augmentation_severity: 0.0
+  fallback_similarity_threshold: 0.0
+  topology_strength: 0.0
+  topology_mode: none
+  dfm_mode: channel_independent
+  use_hcb: true
+  use_dfm: true
+  use_risk_gate: false
+  training_protocol: manuscript_joint
+  risk_monitor_mode: disabled
+  normalization_mode: revin
+  gate_mode: manuscript_topk
+  positive_metric: euclidean
+  early_stopping_patience: 10

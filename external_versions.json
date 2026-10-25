@@ -1,0 +1,23 @@
+{
+  "time_series_library": {
+    "url": "https://github.com/thuml/Time-Series-Library.git",
+    "commit": "4e938a1767106324dd753b2a44832bf870a0252e"
+  },
+  "raft": {
+    "url": "https://github.com/archon159/RAFT.git",
+    "commit": "bfe2320f5d719d1e2a024330de3410b370bbb2a9"
+  },
+  "petsa": {
+    "url": "https://github.com/BorealisAI/PETSA.git",
+    "commit": "87853d888e98311ac94e64be920d17b57143b20c"
+  },
+  "dynatta": {
+    "url": "https://github.com/shivam-grover/DynaTTA.git",
+    "commit": "03c3cd9568ee9affa5617efa3c8dbc0224bf9a06"
+  },
+  "ett_dataset": {
+    "url": "https://github.com/zhouhaoyi/ETDataset.git",
+    "commit": "1d16c8f4f943005d613b5bc962e9eeb06058cf07"
+  }
+}
+

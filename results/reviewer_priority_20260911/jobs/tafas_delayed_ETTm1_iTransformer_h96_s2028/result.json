@@ -1,0 +1,50 @@
+{
+  "method": "TAFAS GCM, delayed-full-label matched harness",
+  "metrics": {
+    "tafas_delayed_full_labels": {
+      "mae": 0.39638487728669175,
+      "rmse": 0.5972486544305179
+    },
+    "frozen_backbone": {
+      "mae": 0.40433921245566634,
+      "rmse": 0.6196667775876181
+    },
+    "R0_offline": {
+      "mae": 0.4045496034707885,
+      "rmse": 0.6210463457219331
+    },
+    "SMM_ReLU_offline": {
+      "mae": 0.40534455445804335,
+      "rmse": 0.6220290120070713
+    }
+  },
+  "windows": 13841,
+  "updates": 430,
+  "official_file_sha256": "a7428df1d0efdf3800c58b4816673e84da11b22af4a4af7a0615def6dc76cc6f",
+  "source_repository": "BorealisAI/PETSA",
+  "source_commit": "87853d888e98311ac94e64be920d17b57143b20c",
+  "protocol_difference": "fixed batches32, only fully matured labels, no partial-label adaptation, no PAAS, no revision of already issued forecasts; shared original split/scaler/checkpoint; upstream GCM and MSE retained; torch clone-on-mutation autograd context for original in-place backbone normalization",
+  "information_difference": "TAFAS receives delayed deployment labels; R0 does not update at deployment. This difference must be reported with comparison.",
+  "smoke_only": false,
+  "job_id": "tafas_delayed_ETTm1_iTransformer_h96_s2028",
+  "identity": {
+    "dataset": "ETTm1",
+    "backbone": "iTransformer",
+    "horizon": 96,
+    "seed": 2028
+  },
+  "reviewers": [
+    "R1.8",
+    "R2.2"
+  ],
+  "inputs": {
+    "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2028\\run.json": "bd148ff40d0d9db087d05bc36d9d24a90c058220af1c55ef5d180fbaff9b092d",
+    "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2028\\checkpoint.pt": "cd8a8ff7924183c30fae2b46ca21be26babb6545f8264b4954387731b73a25d5",
+    "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2028\\predictions.npz": "baf4688ecdd1fc6089af2b7818e37174c045367acd0607e8483f61e02f27e939",
+    "C:\\codex-runs\\UGMA_R1\\results\\reviewer_followup_20260909\\jobs\\submitted_relu_ETTm1_iTransformer_h96_s2028\\training\\run.json": "adcb66731d7cf9b09ce1389a4c6b48a20149742437bf2dc341d647728a14ad95",
+    "C:\\codex-runs\\UGMA_R1\\results\\reviewer_followup_20260909\\jobs\\submitted_relu_ETTm1_iTransformer_h96_s2028\\training\\predictions.npz": "c69410bada9fac05559873b3523e7004f578dc2fddc0555507ec6b018e000fb2"
+  },
+  "diagnostic_script_sha256": "61e27046dab1343f33f9613698214b59f2fab4d1709dd6e840e32947151274ed",
+  "source_sha256": "636807134ff574f308266a22cef002d41d90a1960a4522075ffbd941d8d96a45",
+  "elapsed_seconds": 9.771766901016235
+}

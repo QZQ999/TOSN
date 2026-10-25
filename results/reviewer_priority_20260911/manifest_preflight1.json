@@ -1,0 +1,1085 @@
+{
+  "created_unix": 1789105145.9348795,
+  "script_sha256": "8ccc3aaf38e8e502fb7c9ad74e1b2c892400db624c22e3bf8c0f4cfbd7e331e2",
+  "source_sha256": "636807134ff574f308266a22cef002d41d90a1960a4522075ffbd941d8d96a45",
+  "dependency_hashes": {
+    "C:\\codex-runs\\UGMA_R1\\scripts\\reviewer_followup.py": "8a840adfca15448814ec14c7a9bc300a31c4b155d40abaef14e670fb54ca51d0",
+    "C:\\codex-runs\\UGMA_R1\\scripts\\run_remote_unattended.py": "661a64eaeff96966faccf435e0197ef8aeb893789fa98c095db9dc120dcf2caa",
+    "C:\\codex-runs\\UGMA_R1\\external\\reviewer_priority\\tafas.py": "a7428df1d0efdf3800c58b4816673e84da11b22af4a4af7a0615def6dc76cc6f"
+  },
+  "old_manifest_sha256": "2d4599532f3730b8cc67434466a0c20effd45e1ae96d835e9f9d6e85d1413350",
+  "jobs": [
+    {
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2026
+      },
+      "source_run": "results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2026\\run.json",
+      "id": "stable_ETTm1_iTransformer_h96_s2026",
+      "kind": "shift",
+      "reviewers": [
+        "R2.6",
+        "R2.8"
+      ],
+      "inputs": {
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2026\\run.json": "8606bd47240afe9bd7e25164077127c29a510325680e2e237526c05abd7c9304",
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2026\\checkpoint.pt": "141063427ab5ac324e3b75325356344bfb75901602d0bd32cf86ab683a80d1fe",
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2026\\predictions.npz": "c56a06a38d0f99f809b2d370eb8984c580e6ee2d798068f54a4503bfdb0f3d6b"
+      }
+    },
+    {
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2026
+      },
+      "source_run": "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_ablation_strict\\ETTh1\\iTransformer\\h96\\submitted_relu_head\\s2026\\run.json",
+      "id": "risk_shift_ETTh1_iTransformer_h96_s2026",
+      "kind": "risk",
+      "reviewers": [
+        "R2.3"
+      ],
+      "inputs": {
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_ablation_strict\\ETTh1\\iTransformer\\h96\\submitted_relu_head\\s2026\\run.json": "be6271d2b9b88b720bad5e5f0de465694dc275c33773d1d3092d937368f5aa43",
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_ablation_strict\\ETTh1\\iTransformer\\h96\\submitted_relu_head\\s2026\\checkpoint.pt": "bf82efdc5ce5e28d9ad4426a700f5642cf9ca049a2cbc1b99bc06a57b0e4fa66",
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_ablation_strict\\ETTh1\\iTransformer\\h96\\submitted_relu_head\\s2026\\predictions.npz": "71d0c134280f34646167e05b7fa48a74eec1484ca6080cf60b14a742fffa435e"
+      }
+    },
+    {
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2026
+      },
+      "source_run": "results\\runs\\public_strict\\ETTh1\\iTransformer\\h96\\s2026\\run.json",
+      "id": "tafas_delayed_ETTh1_iTransformer_h96_s2026",
+      "kind": "tta",
+      "reviewers": [
+        "R1.8",
+        "R2.2"
+      ],
+      "risk_run": "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_ablation_strict\\ETTh1\\iTransformer\\h96\\submitted_relu_head\\s2026\\run.json",
+      "inputs": {
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_strict\\ETTh1\\iTransformer\\h96\\s2026\\run.json": "e130ed55219b39d6898a72ff32a87a43330bf714503b2b29a02fb2095ffe9f72",
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_strict\\ETTh1\\iTransformer\\h96\\s2026\\checkpoint.pt": "97bd9f049256e48df0792d22984911ce36a187218c0401715417e9f0268f4991",
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_strict\\ETTh1\\iTransformer\\h96\\s2026\\predictions.npz": "6220829d5fce6ef56a7131a7151b68b82b98af59d2aa1e492520d6559673b775",
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_ablation_strict\\ETTh1\\iTransformer\\h96\\submitted_relu_head\\s2026\\run.json": "be6271d2b9b88b720bad5e5f0de465694dc275c33773d1d3092d937368f5aa43",
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_ablation_strict\\ETTh1\\iTransformer\\h96\\submitted_relu_head\\s2026\\predictions.npz": "71d0c134280f34646167e05b7fa48a74eec1484ca6080cf60b14a742fffa435e"
+      }
+    },
+    {
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2027
+      },
+      "source_run": "results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2027\\run.json",
+      "id": "stable_ETTm1_iTransformer_h96_s2027",
+      "kind": "shift",
+      "reviewers": [
+        "R2.6",
+        "R2.8"
+      ],
+      "inputs": {
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2027\\run.json": "dda93b16cd35e688f1bc7835ec42749413071a9a3b1b185356d65067d9cbd19f",
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2027\\checkpoint.pt": "aac525fb122c48699dff59cda506714a1dec676af9f266dec92850d93ab7dec6",
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2027\\predictions.npz": "e8515ff1335c4efeddc6a3fec3e22c444a4f5036fc3085ba0f2337143fd8faf9"
+      }
+    },
+    {
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2028
+      },
+      "source_run": "results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2028\\run.json",
+      "id": "stable_ETTm1_iTransformer_h96_s2028",
+      "kind": "shift",
+      "reviewers": [
+        "R2.6",
+        "R2.8"
+      ],
+      "inputs": {
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2028\\run.json": "bd148ff40d0d9db087d05bc36d9d24a90c058220af1c55ef5d180fbaff9b092d",
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2028\\checkpoint.pt": "cd8a8ff7924183c30fae2b46ca21be26babb6545f8264b4954387731b73a25d5",
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2028\\predictions.npz": "baf4688ecdd1fc6089af2b7818e37174c045367acd0607e8483f61e02f27e939"
+      }
+    },
+    {
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2029
+      },
+      "source_run": "results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2029\\run.json",
+      "id": "stable_ETTm1_iTransformer_h96_s2029",
+      "kind": "shift",
+      "reviewers": [
+        "R2.6",
+        "R2.8"
+      ],
+      "inputs": {
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2029\\run.json": "0f23fe1bd09878f8011cdc3ea4fff54f22b4bdda2be2ce145ca0a6ed21e91f04",
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2029\\checkpoint.pt": "4cd0784f5b21c5bc97542b307ba1cc590aea66dd23cfda5075032031caab55c2",
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2029\\predictions.npz": "c8b563effb98c5e298ff01cf6a0c438cd8496c74edeb5a17cebb20cd1f6d9de8"
+      }
+    },
+    {
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2030
+      },
+      "source_run": "results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2030\\run.json",
+      "id": "stable_ETTm1_iTransformer_h96_s2030",
+      "kind": "shift",
+      "reviewers": [
+        "R2.6",
+        "R2.8"
+      ],
+      "inputs": {
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2030\\run.json": "eea97c51d3390b2bc47cd782df799cf6f66fb5fbbab2695253c69b5d07369d4b",
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2030\\checkpoint.pt": "85fff272f2bfc573621b083e195960633609a01f02c57587600cb649de667ced",
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2030\\predictions.npz": "261798f660a7bdd2387e244a101f7900688f9a962f6417de56b0f26bb55a73c0"
+      }
+    },
+    {
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2026
+      },
+      "source_run": "results\\runs\\public_strict\\ETTm1\\FEDformer\\h96\\s2026\\run.json",
+      "id": "stable_ETTm1_FEDformer_h96_s2026",
+      "kind": "shift",
+      "reviewers": [
+        "R2.6",
+        "R2.8"
+      ],
+      "inputs": {
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_strict\\ETTm1\\FEDformer\\h96\\s2026\\run.json": "601b12fe72bf594ba2e972c3c178aadc1ed8a88aecb29789591319143ac0c46e",
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_strict\\ETTm1\\FEDformer\\h96\\s2026\\checkpoint.pt": "7e974bf4b077d6fc9e2f5d571e36bdc42486d15d1c59e360cf2d1626b44eb46d",
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_strict\\ETTm1\\FEDformer\\h96\\s2026\\predictions.npz": "7dcdfd9adbadbf088aca621b390d56dd3bc6334ec3b0b870f00009dbde9a828f"
+      }
+    },
+    {
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2027
+      },
+      "source_run": "results\\runs\\public_strict\\ETTm1\\FEDformer\\h96\\s2027\\run.json",
+      "id": "stable_ETTm1_FEDformer_h96_s2027",
+      "kind": "shift",
+      "reviewers": [
+        "R2.6",
+        "R2.8"
+      ],
+      "inputs": {
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_strict\\ETTm1\\FEDformer\\h96\\s2027\\run.json": "c808b41dd9000b1476c50e6771a15dc0237aede7f15fcdee97fc5dbc5f3559f2",
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_strict\\ETTm1\\FEDformer\\h96\\s2027\\checkpoint.pt": "4815b830eef469b6cd2f135efdcfb7267208d7c61d474151e66025463378833d",
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_strict\\ETTm1\\FEDformer\\h96\\s2027\\predictions.npz": "0db5e1ac97ee645ebf83257435b141b54e01fb1f862456f43217e93855f9785f"
+      }
+    },
+    {
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2028
+      },
+      "source_run": "results\\runs\\public_strict\\ETTm1\\FEDformer\\h96\\s2028\\run.json",
+      "id": "stable_ETTm1_FEDformer_h96_s2028",
+      "kind": "shift",
+      "reviewers": [
+        "R2.6",
+        "R2.8"
+      ],
+      "inputs": {
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_strict\\ETTm1\\FEDformer\\h96\\s2028\\run.json": "728f5011fee9ff4b94e54fc0d17d05618d0e529f1d30cc22877d245d9f3e0b97",
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_strict\\ETTm1\\FEDformer\\h96\\s2028\\checkpoint.pt": "b6b4f9d4fd83adf0ae2a44d138f6ce4b0aa34b53384e5d8f6f208b082612c2ee",
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_strict\\ETTm1\\FEDformer\\h96\\s2028\\predictions.npz": "e208fb75f8f192ea2d55243cdd2ab106910480f075db8757d86ae6cd92bdf13e"
+      }
+    },
+    {
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2029
+      },
+      "source_run": "results\\runs\\public_strict\\ETTm1\\FEDformer\\h96\\s2029\\run.json",
+      "id": "stable_ETTm1_FEDformer_h96_s2029",
+      "kind": "shift",
+      "reviewers": [
+        "R2.6",
+        "R2.8"
+      ],
+      "inputs": {
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_strict\\ETTm1\\FEDformer\\h96\\s2029\\run.json": "2064033c8908e7f08b6386ca4db88e88b2f22b493a6f244d39d721e3cb4694fb",
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_strict\\ETTm1\\FEDformer\\h96\\s2029\\checkpoint.pt": "652e268b2c464dd22fdbf8eddf6075e0829a20534e3159fcfdb4f37473633adc",
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_strict\\ETTm1\\FEDformer\\h96\\s2029\\predictions.npz": "1e0b2a5df30e2c69c5cc7b3ed58540fe2fc6ddde77190b47ad8831751de19da9"
+      }
+    },
+    {
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2030
+      },
+      "source_run": "results\\runs\\public_strict\\ETTm1\\FEDformer\\h96\\s2030\\run.json",
+      "id": "stable_ETTm1_FEDformer_h96_s2030",
+      "kind": "shift",
+      "reviewers": [
+        "R2.6",
+        "R2.8"
+      ],
+      "inputs": {
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_strict\\ETTm1\\FEDformer\\h96\\s2030\\run.json": "d4eeb3deed787c427428ce1d090b2b98e96b5fb3a7f8c61e16a6b089bcc1c0cf",
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_strict\\ETTm1\\FEDformer\\h96\\s2030\\checkpoint.pt": "56af622364df5ad78292ea3cea56dbf7c45196a2360682e60693ade3d697f4c6",
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_strict\\ETTm1\\FEDformer\\h96\\s2030\\predictions.npz": "8387516eb4b1f167a9391a204e608a2e7e546bb837704e1e3c6edbe9ed9651c3"
+      }
+    },
+    {
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2027
+      },
+      "source_run": "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_ablation_strict\\ETTh1\\iTransformer\\h96\\submitted_relu_head\\s2027\\run.json",
+      "id": "risk_shift_ETTh1_iTransformer_h96_s2027",
+      "kind": "risk",
+      "reviewers": [
+        "R2.3"
+      ],
+      "inputs": {
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_ablation_strict\\ETTh1\\iTransformer\\h96\\submitted_relu_head\\s2027\\run.json": "2dbd6241b233537f76797b4a14c6a97cdc6e652253fc75124d4c90e9c7d00387",
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_ablation_strict\\ETTh1\\iTransformer\\h96\\submitted_relu_head\\s2027\\checkpoint.pt": "543cd8ee09c5cf640335f669caa45e89b8a86cf443c17f5ff2770f63f0eff1a7",
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_ablation_strict\\ETTh1\\iTransformer\\h96\\submitted_relu_head\\s2027\\predictions.npz": "cb729c1ce2d8739a092a2560d2b468b13e804e0e0ae6d67817f92e6ca027c5fb"
+      }
+    },
+    {
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2028
+      },
+      "source_run": "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_ablation_strict\\ETTh1\\iTransformer\\h96\\submitted_relu_head\\s2028\\run.json",
+      "id": "risk_shift_ETTh1_iTransformer_h96_s2028",
+      "kind": "risk",
+      "reviewers": [
+        "R2.3"
+      ],
+      "inputs": {
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_ablation_strict\\ETTh1\\iTransformer\\h96\\submitted_relu_head\\s2028\\run.json": "27a5ceaa87bb07f227c26588adcd26cce5194be0b61884c4743d3fb3150994f6",
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_ablation_strict\\ETTh1\\iTransformer\\h96\\submitted_relu_head\\s2028\\checkpoint.pt": "eb99b572bb9a07edd3c1ccff34a675d412ae4ccb3ea77998dcdf3e6b4673e7e3",
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_ablation_strict\\ETTh1\\iTransformer\\h96\\submitted_relu_head\\s2028\\predictions.npz": "e6af5b96314e3747789e4330a5087474c7940c7ebcf8723d8f7e3d6d15ded382"
+      }
+    },
+    {
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2029
+      },
+      "source_run": "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_ablation_strict\\ETTh1\\iTransformer\\h96\\submitted_relu_head\\s2029\\run.json",
+      "id": "risk_shift_ETTh1_iTransformer_h96_s2029",
+      "kind": "risk",
+      "reviewers": [
+        "R2.3"
+      ],
+      "inputs": {
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_ablation_strict\\ETTh1\\iTransformer\\h96\\submitted_relu_head\\s2029\\run.json": "2e752b5c552a6b19d3d4b28590a44666bfa76bb9e98f52a645de5574e41e6947",
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_ablation_strict\\ETTh1\\iTransformer\\h96\\submitted_relu_head\\s2029\\checkpoint.pt": "b3cd5c84f7febc275a4aff86dd24efe9b386b9b8909c9205ec1d6bda52230bd9",
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_ablation_strict\\ETTh1\\iTransformer\\h96\\submitted_relu_head\\s2029\\predictions.npz": "a97e2a8852f655a4d6b1055c55698a3802b2ace34ad0fb117ddc57894b2fd697"
+      }
+    },
+    {
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2030
+      },
+      "source_run": "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_ablation_strict\\ETTh1\\iTransformer\\h96\\submitted_relu_head\\s2030\\run.json",
+      "id": "risk_shift_ETTh1_iTransformer_h96_s2030",
+      "kind": "risk",
+      "reviewers": [
+        "R2.3"
+      ],
+      "inputs": {
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_ablation_strict\\ETTh1\\iTransformer\\h96\\submitted_relu_head\\s2030\\run.json": "daf78bb7a8ec05531a997da8750336e5e97c1b7a617941c9164683859b3e3f8d",
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_ablation_strict\\ETTh1\\iTransformer\\h96\\submitted_relu_head\\s2030\\checkpoint.pt": "ac1455ebfa1572c6772099a0c911151471c361bf0ff9fdf48fabf34c0c61f5eb",
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_ablation_strict\\ETTh1\\iTransformer\\h96\\submitted_relu_head\\s2030\\predictions.npz": "7c86ecb089a4ac6b3e4eeadc644c721e80a3c643fbd509681568c61b3d1b3513"
+      }
+    },
+    {
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2026
+      },
+      "source_run": "C:\\codex-runs\\UGMA_R1\\results\\reviewer_followup_20260909\\jobs\\submitted_relu_ETTh1_FEDformer_h96_s2026\\training\\run.json",
+      "id": "risk_shift_ETTh1_FEDformer_h96_s2026",
+      "kind": "risk",
+      "reviewers": [
+        "R2.3"
+      ],
+      "inputs": {
+        "C:\\codex-runs\\UGMA_R1\\results\\reviewer_followup_20260909\\jobs\\submitted_relu_ETTh1_FEDformer_h96_s2026\\training\\run.json": "f5d9b35f0ca3a33ec58fc2c1e61a7915c180af52a34b894cb9a903011a8a5f7a",
+        "C:\\codex-runs\\UGMA_R1\\results\\reviewer_followup_20260909\\jobs\\submitted_relu_ETTh1_FEDformer_h96_s2026\\training\\checkpoint.pt": "472cef3c0dd8f1ffcde2c95fc8cc20d9f65ae49448b1b950a006783cb50ebc9d",
+        "C:\\codex-runs\\UGMA_R1\\results\\reviewer_followup_20260909\\jobs\\submitted_relu_ETTh1_FEDformer_h96_s2026\\training\\predictions.npz": "fd7d69e6180d93355d8a9a39d6f4be451d71ae746d77b7f3e782bb39025197e3"
+      }
+    },
+    {
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2027
+      },
+      "source_run": "C:\\codex-runs\\UGMA_R1\\results\\reviewer_followup_20260909\\jobs\\submitted_relu_ETTh1_FEDformer_h96_s2027\\training\\run.json",
+      "id": "risk_shift_ETTh1_FEDformer_h96_s2027",
+      "kind": "risk",
+      "reviewers": [
+        "R2.3"
+      ],
+      "inputs": {
+        "C:\\codex-runs\\UGMA_R1\\results\\reviewer_followup_20260909\\jobs\\submitted_relu_ETTh1_FEDformer_h96_s2027\\training\\run.json": "52540a033653edfdb5470c3fd23153814d96d81e058d7e84e3dd7f9bac8496a2",
+        "C:\\codex-runs\\UGMA_R1\\results\\reviewer_followup_20260909\\jobs\\submitted_relu_ETTh1_FEDformer_h96_s2027\\training\\checkpoint.pt": "03144ffac9f96bf6a43c7530b70d2f5bdc9eee515053c0580c68e23e0749f306",
+        "C:\\codex-runs\\UGMA_R1\\results\\reviewer_followup_20260909\\jobs\\submitted_relu_ETTh1_FEDformer_h96_s2027\\training\\predictions.npz": "2cd9581af12601931d4184110ebbc7831aa0136966b258bf15aaafc36b0ac285"
+      }
+    },
+    {
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2028
+      },
+      "source_run": "C:\\codex-runs\\UGMA_R1\\results\\reviewer_followup_20260909\\jobs\\submitted_relu_ETTh1_FEDformer_h96_s2028\\training\\run.json",
+      "id": "risk_shift_ETTh1_FEDformer_h96_s2028",
+      "kind": "risk",
+      "reviewers": [
+        "R2.3"
+      ],
+      "inputs": {
+        "C:\\codex-runs\\UGMA_R1\\results\\reviewer_followup_20260909\\jobs\\submitted_relu_ETTh1_FEDformer_h96_s2028\\training\\run.json": "43e52e8e0078db9356818a3894a8259eb0b5d7618ec4025f013261c118c5a915",
+        "C:\\codex-runs\\UGMA_R1\\results\\reviewer_followup_20260909\\jobs\\submitted_relu_ETTh1_FEDformer_h96_s2028\\training\\checkpoint.pt": "c585ab4439f9f6c3ff6341c0e4aca5223d475435f378a84328bb745ff11f3314",
+        "C:\\codex-runs\\UGMA_R1\\results\\reviewer_followup_20260909\\jobs\\submitted_relu_ETTh1_FEDformer_h96_s2028\\training\\predictions.npz": "dbbc8c367a9a000bcc050338f9f22c8fc68a5e7dfb59cb8f6895d1025e0a96d7"
+      }
+    },
+    {
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2029
+      },
+      "source_run": "C:\\codex-runs\\UGMA_R1\\results\\reviewer_followup_20260909\\jobs\\submitted_relu_ETTh1_FEDformer_h96_s2029\\training\\run.json",
+      "id": "risk_shift_ETTh1_FEDformer_h96_s2029",
+      "kind": "risk",
+      "reviewers": [
+        "R2.3"
+      ],
+      "inputs": {
+        "C:\\codex-runs\\UGMA_R1\\results\\reviewer_followup_20260909\\jobs\\submitted_relu_ETTh1_FEDformer_h96_s2029\\training\\run.json": "b4a00724a0efbc85a2c127460932d61c7e7b7b542832a1edbfe4f7666dcd5fac",
+        "C:\\codex-runs\\UGMA_R1\\results\\reviewer_followup_20260909\\jobs\\submitted_relu_ETTh1_FEDformer_h96_s2029\\training\\checkpoint.pt": "a01b30b07cf86d2555cf3f2e7fadfd69578017ad7209511ae509bccadf1c3f7a",
+        "C:\\codex-runs\\UGMA_R1\\results\\reviewer_followup_20260909\\jobs\\submitted_relu_ETTh1_FEDformer_h96_s2029\\training\\predictions.npz": "e324f8c62bb85ac7bd1663a1d36a8ddc5ec9a14063eee5ebdff5634eaa82e8ed"
+      }
+    },
+    {
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2030
+      },
+      "source_run": "C:\\codex-runs\\UGMA_R1\\results\\reviewer_followup_20260909\\jobs\\submitted_relu_ETTh1_FEDformer_h96_s2030\\training\\run.json",
+      "id": "risk_shift_ETTh1_FEDformer_h96_s2030",
+      "kind": "risk",
+      "reviewers": [
+        "R2.3"
+      ],
+      "inputs": {
+        "C:\\codex-runs\\UGMA_R1\\results\\reviewer_followup_20260909\\jobs\\submitted_relu_ETTh1_FEDformer_h96_s2030\\training\\run.json": "ea4d18f7a424c9a22989ea74f96075a264741d65c36a628fc7538e0bdd0e1246",
+        "C:\\codex-runs\\UGMA_R1\\results\\reviewer_followup_20260909\\jobs\\submitted_relu_ETTh1_FEDformer_h96_s2030\\training\\checkpoint.pt": "661b719420a779bc813e94e3858ce1f81ea83e4f3bfe4f37aeaf81ada299f8f9",
+        "C:\\codex-runs\\UGMA_R1\\results\\reviewer_followup_20260909\\jobs\\submitted_relu_ETTh1_FEDformer_h96_s2030\\training\\predictions.npz": "878553f77309b42f00347aa5ed3ff038f39523912a0cf331614f78af1a4b8849"
+      }
+    },
+    {
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2026
+      },
+      "source_run": "C:\\codex-runs\\UGMA_R1\\results\\reviewer_followup_20260909\\jobs\\submitted_relu_ETTm1_iTransformer_h96_s2026\\training\\run.json",
+      "id": "risk_shift_ETTm1_iTransformer_h96_s2026",
+      "kind": "risk",
+      "reviewers": [
+        "R2.3"
+      ],
+      "inputs": {
+        "C:\\codex-runs\\UGMA_R1\\results\\reviewer_followup_20260909\\jobs\\submitted_relu_ETTm1_iTransformer_h96_s2026\\training\\run.json": "1f5d3cc8f3a328fa9d282e99f446f625b9ab8cf1383199f8b3929728b80f2723",
+        "C:\\codex-runs\\UGMA_R1\\results\\reviewer_followup_20260909\\jobs\\submitted_relu_ETTm1_iTransformer_h96_s2026\\training\\checkpoint.pt": "2d7ac688ef8b631bae124c9cef9d9dcd6358ba1439786b63a114e32467a8e8d7",
+        "C:\\codex-runs\\UGMA_R1\\results\\reviewer_followup_20260909\\jobs\\submitted_relu_ETTm1_iTransformer_h96_s2026\\training\\predictions.npz": "9204ab98f2fefc4d14b6e9ac994c6b31dfbc560557ebc43476360dc3856944cb"
+      }
+    },
+    {
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2027
+      },
+      "source_run": "C:\\codex-runs\\UGMA_R1\\results\\reviewer_followup_20260909\\jobs\\submitted_relu_ETTm1_iTransformer_h96_s2027\\training\\run.json",
+      "id": "risk_shift_ETTm1_iTransformer_h96_s2027",
+      "kind": "risk",
+      "reviewers": [
+        "R2.3"
+      ],
+      "inputs": {
+        "C:\\codex-runs\\UGMA_R1\\results\\reviewer_followup_20260909\\jobs\\submitted_relu_ETTm1_iTransformer_h96_s2027\\training\\run.json": "af7351c940f18aa8af743acbb76c7d813e783974709f43f809d526398626da6e",
+        "C:\\codex-runs\\UGMA_R1\\results\\reviewer_followup_20260909\\jobs\\submitted_relu_ETTm1_iTransformer_h96_s2027\\training\\checkpoint.pt": "185b756bd14c464197b87518cbc69a8761d82223a23d952da78570a483c2fd69",
+        "C:\\codex-runs\\UGMA_R1\\results\\reviewer_followup_20260909\\jobs\\submitted_relu_ETTm1_iTransformer_h96_s2027\\training\\predictions.npz": "42df01b001cf0f9f22c2c253c2097fe57f97911c06e1f593585c0d3021523306"
+      }
+    },
+    {
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2028
+      },
+      "source_run": "C:\\codex-runs\\UGMA_R1\\results\\reviewer_followup_20260909\\jobs\\submitted_relu_ETTm1_iTransformer_h96_s2028\\training\\run.json",
+      "id": "risk_shift_ETTm1_iTransformer_h96_s2028",
+      "kind": "risk",
+      "reviewers": [
+        "R2.3"
+      ],
+      "inputs": {
+        "C:\\codex-runs\\UGMA_R1\\results\\reviewer_followup_20260909\\jobs\\submitted_relu_ETTm1_iTransformer_h96_s2028\\training\\run.json": "adcb66731d7cf9b09ce1389a4c6b48a20149742437bf2dc341d647728a14ad95",
+        "C:\\codex-runs\\UGMA_R1\\results\\reviewer_followup_20260909\\jobs\\submitted_relu_ETTm1_iTransformer_h96_s2028\\training\\checkpoint.pt": "196b0a710c2b7d1d7148fad3b89ee398e941a0c9d0941fdf73e89d3bafcb9b9e",
+        "C:\\codex-runs\\UGMA_R1\\results\\reviewer_followup_20260909\\jobs\\submitted_relu_ETTm1_iTransformer_h96_s2028\\training\\predictions.npz": "c69410bada9fac05559873b3523e7004f578dc2fddc0555507ec6b018e000fb2"
+      }
+    },
+    {
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2029
+      },
+      "source_run": "C:\\codex-runs\\UGMA_R1\\results\\reviewer_followup_20260909\\jobs\\submitted_relu_ETTm1_iTransformer_h96_s2029\\training\\run.json",
+      "id": "risk_shift_ETTm1_iTransformer_h96_s2029",
+      "kind": "risk",
+      "reviewers": [
+        "R2.3"
+      ],
+      "inputs": {
+        "C:\\codex-runs\\UGMA_R1\\results\\reviewer_followup_20260909\\jobs\\submitted_relu_ETTm1_iTransformer_h96_s2029\\training\\run.json": "89437245e4725b2d3d62a40624eac532fe558928bd37707179fc7ad5212eab07",
+        "C:\\codex-runs\\UGMA_R1\\results\\reviewer_followup_20260909\\jobs\\submitted_relu_ETTm1_iTransformer_h96_s2029\\training\\checkpoint.pt": "9411402532325e0ebe0cc0e8cc3a3335848abe9545cafcbefb08b9747f28dc18",
+        "C:\\codex-runs\\UGMA_R1\\results\\reviewer_followup_20260909\\jobs\\submitted_relu_ETTm1_iTransformer_h96_s2029\\training\\predictions.npz": "e6f399d6c90227809de593ae177467e2ce2e10d9a6f67ee774035935c1c1bd04"
+      }
+    },
+    {
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2030
+      },
+      "source_run": "C:\\codex-runs\\UGMA_R1\\results\\reviewer_followup_20260909\\jobs\\submitted_relu_ETTm1_iTransformer_h96_s2030\\training\\run.json",
+      "id": "risk_shift_ETTm1_iTransformer_h96_s2030",
+      "kind": "risk",
+      "reviewers": [
+        "R2.3"
+      ],
+      "inputs": {
+        "C:\\codex-runs\\UGMA_R1\\results\\reviewer_followup_20260909\\jobs\\submitted_relu_ETTm1_iTransformer_h96_s2030\\training\\run.json": "93a098539910241a504a4b10e0d221ae2d71c480d36051c4f7ad12317cc72d15",
+        "C:\\codex-runs\\UGMA_R1\\results\\reviewer_followup_20260909\\jobs\\submitted_relu_ETTm1_iTransformer_h96_s2030\\training\\checkpoint.pt": "b190d572066b03c49d0ba537a8a234b3a13a7d1347faeab0b8adbfe05df0f4bf",
+        "C:\\codex-runs\\UGMA_R1\\results\\reviewer_followup_20260909\\jobs\\submitted_relu_ETTm1_iTransformer_h96_s2030\\training\\predictions.npz": "8ac3579af4637e3c553315af41f308800a2759cbd73930c82f4aa0346e5316f4"
+      }
+    },
+    {
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2026
+      },
+      "source_run": "C:\\codex-runs\\UGMA_R1\\results\\reviewer_followup_20260909\\jobs\\submitted_relu_ETTm1_FEDformer_h96_s2026\\training\\run.json",
+      "id": "risk_shift_ETTm1_FEDformer_h96_s2026",
+      "kind": "risk",
+      "reviewers": [
+        "R2.3"
+      ],
+      "inputs": {
+        "C:\\codex-runs\\UGMA_R1\\results\\reviewer_followup_20260909\\jobs\\submitted_relu_ETTm1_FEDformer_h96_s2026\\training\\run.json": "bf7b991120a39b0ed4109072f51cb21c4f20cf52706cf8cc5f9e20949ad29cae",
+        "C:\\codex-runs\\UGMA_R1\\results\\reviewer_followup_20260909\\jobs\\submitted_relu_ETTm1_FEDformer_h96_s2026\\training\\checkpoint.pt": "dd062f1e6723d05bca6e425701ac1469dc51149644ff4f85ba0b2422bdc8bc1f",
+        "C:\\codex-runs\\UGMA_R1\\results\\reviewer_followup_20260909\\jobs\\submitted_relu_ETTm1_FEDformer_h96_s2026\\training\\predictions.npz": "014a034cb32335226e217b65b45320cb61ecbfdf4313962aed906fb744f089fd"
+      }
+    },
+    {
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2027
+      },
+      "source_run": "C:\\codex-runs\\UGMA_R1\\results\\reviewer_followup_20260909\\jobs\\submitted_relu_ETTm1_FEDformer_h96_s2027\\training\\run.json",
+      "id": "risk_shift_ETTm1_FEDformer_h96_s2027",
+      "kind": "risk",
+      "reviewers": [
+        "R2.3"
+      ],
+      "inputs": {
+        "C:\\codex-runs\\UGMA_R1\\results\\reviewer_followup_20260909\\jobs\\submitted_relu_ETTm1_FEDformer_h96_s2027\\training\\run.json": "c52dfc927ce54f2dc51bbda0152f3b5d285a30b08e1d7f0e396062de0b4327f9",
+        "C:\\codex-runs\\UGMA_R1\\results\\reviewer_followup_20260909\\jobs\\submitted_relu_ETTm1_FEDformer_h96_s2027\\training\\checkpoint.pt": "c4c7244bb6cc940e47e28ce7f1551994fdca0c9d9345ba1e8f3f7c7a5404ec7f",
+        "C:\\codex-runs\\UGMA_R1\\results\\reviewer_followup_20260909\\jobs\\submitted_relu_ETTm1_FEDformer_h96_s2027\\training\\predictions.npz": "699c9044fd08fc00d72e4d7bb10401e6ca558e751a8d8cc563c4b3933e44c1cc"
+      }
+    },
+    {
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2028
+      },
+      "source_run": "C:\\codex-runs\\UGMA_R1\\results\\reviewer_followup_20260909\\jobs\\submitted_relu_ETTm1_FEDformer_h96_s2028\\training\\run.json",
+      "id": "risk_shift_ETTm1_FEDformer_h96_s2028",
+      "kind": "risk",
+      "reviewers": [
+        "R2.3"
+      ],
+      "inputs": {
+        "C:\\codex-runs\\UGMA_R1\\results\\reviewer_followup_20260909\\jobs\\submitted_relu_ETTm1_FEDformer_h96_s2028\\training\\run.json": "7cd689e6064004c4a23bf2930c52141e8f629eac02852725b28d2c59a25573fb",
+        "C:\\codex-runs\\UGMA_R1\\results\\reviewer_followup_20260909\\jobs\\submitted_relu_ETTm1_FEDformer_h96_s2028\\training\\checkpoint.pt": "5668194b68e5048aae60145a9b8ee1c918a4cfa4bbea9625819661cf34a8709f",
+        "C:\\codex-runs\\UGMA_R1\\results\\reviewer_followup_20260909\\jobs\\submitted_relu_ETTm1_FEDformer_h96_s2028\\training\\predictions.npz": "6eb98d2f94ce3e34f5045412259ede2bb4277311858cd06d0ca047fb6879143f"
+      }
+    },
+    {
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2029
+      },
+      "source_run": "C:\\codex-runs\\UGMA_R1\\results\\reviewer_followup_20260909\\jobs\\submitted_relu_ETTm1_FEDformer_h96_s2029\\training\\run.json",
+      "id": "risk_shift_ETTm1_FEDformer_h96_s2029",
+      "kind": "risk",
+      "reviewers": [
+        "R2.3"
+      ],
+      "inputs": {
+        "C:\\codex-runs\\UGMA_R1\\results\\reviewer_followup_20260909\\jobs\\submitted_relu_ETTm1_FEDformer_h96_s2029\\training\\run.json": "f76f6737d88d7f051ed39da6722d22ed838fd070e787797ab0d638b7178d03c0",
+        "C:\\codex-runs\\UGMA_R1\\results\\reviewer_followup_20260909\\jobs\\submitted_relu_ETTm1_FEDformer_h96_s2029\\training\\checkpoint.pt": "c41afa581401db6d78df6084fa1a048418c55eaf40d43e8ac3d104feb8955c6b",
+        "C:\\codex-runs\\UGMA_R1\\results\\reviewer_followup_20260909\\jobs\\submitted_relu_ETTm1_FEDformer_h96_s2029\\training\\predictions.npz": "03cf5f94a5dacb8fbb37a39153230b3edf1da38b336dfdce75a41fc30bad33e7"
+      }
+    },
+    {
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2030
+      },
+      "source_run": "C:\\codex-runs\\UGMA_R1\\results\\reviewer_followup_20260909\\jobs\\submitted_relu_ETTm1_FEDformer_h96_s2030\\training\\run.json",
+      "id": "risk_shift_ETTm1_FEDformer_h96_s2030",
+      "kind": "risk",
+      "reviewers": [
+        "R2.3"
+      ],
+      "inputs": {
+        "C:\\codex-runs\\UGMA_R1\\results\\reviewer_followup_20260909\\jobs\\submitted_relu_ETTm1_FEDformer_h96_s2030\\training\\run.json": "698dbdb03d7cedf8b85c884dec8a608262e7205465efb75178a1175eacff3ab4",
+        "C:\\codex-runs\\UGMA_R1\\results\\reviewer_followup_20260909\\jobs\\submitted_relu_ETTm1_FEDformer_h96_s2030\\training\\checkpoint.pt": "cd0ffb91bdd5197d775777a8d1c693a3ee976ab1518e3c1565d3725c632725ee",
+        "C:\\codex-runs\\UGMA_R1\\results\\reviewer_followup_20260909\\jobs\\submitted_relu_ETTm1_FEDformer_h96_s2030\\training\\predictions.npz": "373f4b47a0e69772555d6d9a03b95301f12106bd46c0142817f35411f67ae87b"
+      }
+    },
+    {
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2027
+      },
+      "source_run": "results\\runs\\public_strict\\ETTh1\\iTransformer\\h96\\s2027\\run.json",
+      "id": "tafas_delayed_ETTh1_iTransformer_h96_s2027",
+      "kind": "tta",
+      "reviewers": [
+        "R1.8",
+        "R2.2"
+      ],
+      "risk_run": "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_ablation_strict\\ETTh1\\iTransformer\\h96\\submitted_relu_head\\s2027\\run.json",
+      "inputs": {
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_strict\\ETTh1\\iTransformer\\h96\\s2027\\run.json": "3ab2bc72d5afd078f5fd99100f391248d4e2c39ee61ad5732b069aba05d57f84",
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_strict\\ETTh1\\iTransformer\\h96\\s2027\\checkpoint.pt": "c5af29f3d761fee2838326a467c4165a909c26b5da8916cc8ff1a95d6ee4d8f4",
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_strict\\ETTh1\\iTransformer\\h96\\s2027\\predictions.npz": "cfd865c7efef827a46241fdb5589dd26cdbd29c776f4a366e5987c1237a93119",
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_ablation_strict\\ETTh1\\iTransformer\\h96\\submitted_relu_head\\s2027\\run.json": "2dbd6241b233537f76797b4a14c6a97cdc6e652253fc75124d4c90e9c7d00387",
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_ablation_strict\\ETTh1\\iTransformer\\h96\\submitted_relu_head\\s2027\\predictions.npz": "cb729c1ce2d8739a092a2560d2b468b13e804e0e0ae6d67817f92e6ca027c5fb"
+      }
+    },
+    {
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2028
+      },
+      "source_run": "results\\runs\\public_strict\\ETTh1\\iTransformer\\h96\\s2028\\run.json",
+      "id": "tafas_delayed_ETTh1_iTransformer_h96_s2028",
+      "kind": "tta",
+      "reviewers": [
+        "R1.8",
+        "R2.2"
+      ],
+      "risk_run": "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_ablation_strict\\ETTh1\\iTransformer\\h96\\submitted_relu_head\\s2028\\run.json",
+      "inputs": {
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_strict\\ETTh1\\iTransformer\\h96\\s2028\\run.json": "a356c8487447f2482f44fb8f8b11dca6f848ff33a0906f557faa985d0773daaf",
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_strict\\ETTh1\\iTransformer\\h96\\s2028\\checkpoint.pt": "f9fc0d8b155e36474f1a206228e4e3d09dff7f2e7bfcfdeac8c7ff6007371697",
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_strict\\ETTh1\\iTransformer\\h96\\s2028\\predictions.npz": "9be4ba3a21653c6c148ba27589d210f0c571a5449a68d0c4991c838a8798111f",
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_ablation_strict\\ETTh1\\iTransformer\\h96\\submitted_relu_head\\s2028\\run.json": "27a5ceaa87bb07f227c26588adcd26cce5194be0b61884c4743d3fb3150994f6",
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_ablation_strict\\ETTh1\\iTransformer\\h96\\submitted_relu_head\\s2028\\predictions.npz": "e6af5b96314e3747789e4330a5087474c7940c7ebcf8723d8f7e3d6d15ded382"
+      }
+    },
+    {
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2029
+      },
+      "source_run": "results\\runs\\public_strict\\ETTh1\\iTransformer\\h96\\s2029\\run.json",
+      "id": "tafas_delayed_ETTh1_iTransformer_h96_s2029",
+      "kind": "tta",
+      "reviewers": [
+        "R1.8",
+        "R2.2"
+      ],
+      "risk_run": "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_ablation_strict\\ETTh1\\iTransformer\\h96\\submitted_relu_head\\s2029\\run.json",
+      "inputs": {
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_strict\\ETTh1\\iTransformer\\h96\\s2029\\run.json": "c2b53bf069b84c7f60dc0c132186c0f4e359f28ca8246ceaaadbd689f29bf7a8",
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_strict\\ETTh1\\iTransformer\\h96\\s2029\\checkpoint.pt": "9cfb11720cde07adde8e57f652b462dcbf799be8d6498c4cbce7d7a77daaf94b",
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_strict\\ETTh1\\iTransformer\\h96\\s2029\\predictions.npz": "531614dde2879d9684b9a0ab0dcc566e0233092a2e11e01cbf441df10810badb",
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_ablation_strict\\ETTh1\\iTransformer\\h96\\submitted_relu_head\\s2029\\run.json": "2e752b5c552a6b19d3d4b28590a44666bfa76bb9e98f52a645de5574e41e6947",
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_ablation_strict\\ETTh1\\iTransformer\\h96\\submitted_relu_head\\s2029\\predictions.npz": "a97e2a8852f655a4d6b1055c55698a3802b2ace34ad0fb117ddc57894b2fd697"
+      }
+    },
+    {
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2030
+      },
+      "source_run": "results\\runs\\public_strict\\ETTh1\\iTransformer\\h96\\s2030\\run.json",
+      "id": "tafas_delayed_ETTh1_iTransformer_h96_s2030",
+      "kind": "tta",
+      "reviewers": [
+        "R1.8",
+        "R2.2"
+      ],
+      "risk_run": "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_ablation_strict\\ETTh1\\iTransformer\\h96\\submitted_relu_head\\s2030\\run.json",
+      "inputs": {
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_strict\\ETTh1\\iTransformer\\h96\\s2030\\run.json": "133a5e0fa51315ac4ad0b1ecab1c02beb78e274be4a2e200778ea075095f5962",
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_strict\\ETTh1\\iTransformer\\h96\\s2030\\checkpoint.pt": "b3cdeaa2063d80f135934e00fce017d19adb93d9c2eff27ac638168cc5e09a06",
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_strict\\ETTh1\\iTransformer\\h96\\s2030\\predictions.npz": "81c1c8bef2766dd7c317e4b0785afb3ce3cbf7fdbf624b36a1baa91c271da2d9",
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_ablation_strict\\ETTh1\\iTransformer\\h96\\submitted_relu_head\\s2030\\run.json": "daf78bb7a8ec05531a997da8750336e5e97c1b7a617941c9164683859b3e3f8d",
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_ablation_strict\\ETTh1\\iTransformer\\h96\\submitted_relu_head\\s2030\\predictions.npz": "7c86ecb089a4ac6b3e4eeadc644c721e80a3c643fbd509681568c61b3d1b3513"
+      }
+    },
+    {
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2026
+      },
+      "source_run": "results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2026\\run.json",
+      "id": "tafas_delayed_ETTm1_iTransformer_h96_s2026",
+      "kind": "tta",
+      "reviewers": [
+        "R1.8",
+        "R2.2"
+      ],
+      "risk_run": "C:\\codex-runs\\UGMA_R1\\results\\reviewer_followup_20260909\\jobs\\submitted_relu_ETTm1_iTransformer_h96_s2026\\training\\run.json",
+      "inputs": {
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2026\\run.json": "8606bd47240afe9bd7e25164077127c29a510325680e2e237526c05abd7c9304",
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2026\\checkpoint.pt": "141063427ab5ac324e3b75325356344bfb75901602d0bd32cf86ab683a80d1fe",
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2026\\predictions.npz": "c56a06a38d0f99f809b2d370eb8984c580e6ee2d798068f54a4503bfdb0f3d6b",
+        "C:\\codex-runs\\UGMA_R1\\results\\reviewer_followup_20260909\\jobs\\submitted_relu_ETTm1_iTransformer_h96_s2026\\training\\run.json": "1f5d3cc8f3a328fa9d282e99f446f625b9ab8cf1383199f8b3929728b80f2723",
+        "C:\\codex-runs\\UGMA_R1\\results\\reviewer_followup_20260909\\jobs\\submitted_relu_ETTm1_iTransformer_h96_s2026\\training\\predictions.npz": "9204ab98f2fefc4d14b6e9ac994c6b31dfbc560557ebc43476360dc3856944cb"
+      }
+    },
+    {
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2027
+      },
+      "source_run": "results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2027\\run.json",
+      "id": "tafas_delayed_ETTm1_iTransformer_h96_s2027",
+      "kind": "tta",
+      "reviewers": [
+        "R1.8",
+        "R2.2"
+      ],
+      "risk_run": "C:\\codex-runs\\UGMA_R1\\results\\reviewer_followup_20260909\\jobs\\submitted_relu_ETTm1_iTransformer_h96_s2027\\training\\run.json",
+      "inputs": {
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2027\\run.json": "dda93b16cd35e688f1bc7835ec42749413071a9a3b1b185356d65067d9cbd19f",
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2027\\checkpoint.pt": "aac525fb122c48699dff59cda506714a1dec676af9f266dec92850d93ab7dec6",
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2027\\predictions.npz": "e8515ff1335c4efeddc6a3fec3e22c444a4f5036fc3085ba0f2337143fd8faf9",
+        "C:\\codex-runs\\UGMA_R1\\results\\reviewer_followup_20260909\\jobs\\submitted_relu_ETTm1_iTransformer_h96_s2027\\training\\run.json": "af7351c940f18aa8af743acbb76c7d813e783974709f43f809d526398626da6e",
+        "C:\\codex-runs\\UGMA_R1\\results\\reviewer_followup_20260909\\jobs\\submitted_relu_ETTm1_iTransformer_h96_s2027\\training\\predictions.npz": "42df01b001cf0f9f22c2c253c2097fe57f97911c06e1f593585c0d3021523306"
+      }
+    },
+    {
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2028
+      },
+      "source_run": "results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2028\\run.json",
+      "id": "tafas_delayed_ETTm1_iTransformer_h96_s2028",
+      "kind": "tta",
+      "reviewers": [
+        "R1.8",
+        "R2.2"
+      ],
+      "risk_run": "C:\\codex-runs\\UGMA_R1\\results\\reviewer_followup_20260909\\jobs\\submitted_relu_ETTm1_iTransformer_h96_s2028\\training\\run.json",
+      "inputs": {
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2028\\run.json": "bd148ff40d0d9db087d05bc36d9d24a90c058220af1c55ef5d180fbaff9b092d",
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2028\\checkpoint.pt": "cd8a8ff7924183c30fae2b46ca21be26babb6545f8264b4954387731b73a25d5",
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2028\\predictions.npz": "baf4688ecdd1fc6089af2b7818e37174c045367acd0607e8483f61e02f27e939",
+        "C:\\codex-runs\\UGMA_R1\\results\\reviewer_followup_20260909\\jobs\\submitted_relu_ETTm1_iTransformer_h96_s2028\\training\\run.json": "adcb66731d7cf9b09ce1389a4c6b48a20149742437bf2dc341d647728a14ad95",
+        "C:\\codex-runs\\UGMA_R1\\results\\reviewer_followup_20260909\\jobs\\submitted_relu_ETTm1_iTransformer_h96_s2028\\training\\predictions.npz": "c69410bada9fac05559873b3523e7004f578dc2fddc0555507ec6b018e000fb2"
+      }
+    },
+    {
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2029
+      },
+      "source_run": "results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2029\\run.json",
+      "id": "tafas_delayed_ETTm1_iTransformer_h96_s2029",
+      "kind": "tta",
+      "reviewers": [
+        "R1.8",
+        "R2.2"
+      ],
+      "risk_run": "C:\\codex-runs\\UGMA_R1\\results\\reviewer_followup_20260909\\jobs\\submitted_relu_ETTm1_iTransformer_h96_s2029\\training\\run.json",
+      "inputs": {
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2029\\run.json": "0f23fe1bd09878f8011cdc3ea4fff54f22b4bdda2be2ce145ca0a6ed21e91f04",
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2029\\checkpoint.pt": "4cd0784f5b21c5bc97542b307ba1cc590aea66dd23cfda5075032031caab55c2",
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2029\\predictions.npz": "c8b563effb98c5e298ff01cf6a0c438cd8496c74edeb5a17cebb20cd1f6d9de8",
+        "C:\\codex-runs\\UGMA_R1\\results\\reviewer_followup_20260909\\jobs\\submitted_relu_ETTm1_iTransformer_h96_s2029\\training\\run.json": "89437245e4725b2d3d62a40624eac532fe558928bd37707179fc7ad5212eab07",
+        "C:\\codex-runs\\UGMA_R1\\results\\reviewer_followup_20260909\\jobs\\submitted_relu_ETTm1_iTransformer_h96_s2029\\training\\predictions.npz": "e6f399d6c90227809de593ae177467e2ce2e10d9a6f67ee774035935c1c1bd04"
+      }
+    },
+    {
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2030
+      },
+      "source_run": "results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2030\\run.json",
+      "id": "tafas_delayed_ETTm1_iTransformer_h96_s2030",
+      "kind": "tta",
+      "reviewers": [
+        "R1.8",
+        "R2.2"
+      ],
+      "risk_run": "C:\\codex-runs\\UGMA_R1\\results\\reviewer_followup_20260909\\jobs\\submitted_relu_ETTm1_iTransformer_h96_s2030\\training\\run.json",
+      "inputs": {
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2030\\run.json": "eea97c51d3390b2bc47cd782df799cf6f66fb5fbbab2695253c69b5d07369d4b",
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2030\\checkpoint.pt": "85fff272f2bfc573621b083e195960633609a01f02c57587600cb649de667ced",
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2030\\predictions.npz": "261798f660a7bdd2387e244a101f7900688f9a962f6417de56b0f26bb55a73c0",
+        "C:\\codex-runs\\UGMA_R1\\results\\reviewer_followup_20260909\\jobs\\submitted_relu_ETTm1_iTransformer_h96_s2030\\training\\run.json": "93a098539910241a504a4b10e0d221ae2d71c480d36051c4f7ad12317cc72d15",
+        "C:\\codex-runs\\UGMA_R1\\results\\reviewer_followup_20260909\\jobs\\submitted_relu_ETTm1_iTransformer_h96_s2030\\training\\predictions.npz": "8ac3579af4637e3c553315af41f308800a2759cbd73930c82f4aa0346e5316f4"
+      }
+    },
+    {
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2026
+      },
+      "source_run": "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_ablation_strict\\ETTh1\\iTransformer\\h96\\submitted_relu_head\\s2026\\run.json",
+      "id": "weight_0.1_ETTh1_iTransformer_h96_s2026",
+      "kind": "weight",
+      "variant": "submitted_relu_weight",
+      "overrides": {
+        "risk_loss_weight": 0.1
+      },
+      "reviewers": [
+        "R2.9"
+      ],
+      "inputs": {
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_ablation_strict\\ETTh1\\iTransformer\\h96\\submitted_relu_head\\s2026\\run.json": "be6271d2b9b88b720bad5e5f0de465694dc275c33773d1d3092d937368f5aa43",
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_ablation_strict\\ETTh1\\iTransformer\\h96\\submitted_relu_head\\s2026\\checkpoint.pt": "bf82efdc5ce5e28d9ad4426a700f5642cf9ca049a2cbc1b99bc06a57b0e4fa66",
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_ablation_strict\\ETTh1\\iTransformer\\h96\\submitted_relu_head\\s2026\\predictions.npz": "71d0c134280f34646167e05b7fa48a74eec1484ca6080cf60b14a742fffa435e"
+      },
+      "cache_path": "C:\\codex-runs\\UGMA_R1\\artifacts\\cache\\backbones\\ae56ae17a280a626910aaf289abbb224317d04b9eb90434a1b0a098ad4109b65.pt",
+      "cache_sha256": "438cd8c9f3b4e90240d9b10732e40acff4115975c603c20ea627a6734ac58794"
+    },
+    {
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2026
+      },
+      "source_run": "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_ablation_strict\\ETTh1\\iTransformer\\h96\\submitted_relu_head\\s2026\\run.json",
+      "id": "weight_10.0_ETTh1_iTransformer_h96_s2026",
+      "kind": "weight",
+      "variant": "submitted_relu_weight",
+      "overrides": {
+        "risk_loss_weight": 10.0
+      },
+      "reviewers": [
+        "R2.9"
+      ],
+      "inputs": {
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_ablation_strict\\ETTh1\\iTransformer\\h96\\submitted_relu_head\\s2026\\run.json": "be6271d2b9b88b720bad5e5f0de465694dc275c33773d1d3092d937368f5aa43",
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_ablation_strict\\ETTh1\\iTransformer\\h96\\submitted_relu_head\\s2026\\checkpoint.pt": "bf82efdc5ce5e28d9ad4426a700f5642cf9ca049a2cbc1b99bc06a57b0e4fa66",
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_ablation_strict\\ETTh1\\iTransformer\\h96\\submitted_relu_head\\s2026\\predictions.npz": "71d0c134280f34646167e05b7fa48a74eec1484ca6080cf60b14a742fffa435e"
+      },
+      "cache_path": "C:\\codex-runs\\UGMA_R1\\artifacts\\cache\\backbones\\ae56ae17a280a626910aaf289abbb224317d04b9eb90434a1b0a098ad4109b65.pt",
+      "cache_sha256": "438cd8c9f3b4e90240d9b10732e40acff4115975c603c20ea627a6734ac58794"
+    },
+    {
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2027
+      },
+      "source_run": "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_ablation_strict\\ETTh1\\iTransformer\\h96\\submitted_relu_head\\s2027\\run.json",
+      "id": "weight_0.1_ETTh1_iTransformer_h96_s2027",
+      "kind": "weight",
+      "variant": "submitted_relu_weight",
+      "overrides": {
+        "risk_loss_weight": 0.1
+      },
+      "reviewers": [
+        "R2.9"
+      ],
+      "inputs": {
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_ablation_strict\\ETTh1\\iTransformer\\h96\\submitted_relu_head\\s2027\\run.json": "2dbd6241b233537f76797b4a14c6a97cdc6e652253fc75124d4c90e9c7d00387",
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_ablation_strict\\ETTh1\\iTransformer\\h96\\submitted_relu_head\\s2027\\checkpoint.pt": "543cd8ee09c5cf640335f669caa45e89b8a86cf443c17f5ff2770f63f0eff1a7",
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_ablation_strict\\ETTh1\\iTransformer\\h96\\submitted_relu_head\\s2027\\predictions.npz": "cb729c1ce2d8739a092a2560d2b468b13e804e0e0ae6d67817f92e6ca027c5fb"
+      },
+      "cache_path": "C:\\codex-runs\\UGMA_R1\\artifacts\\cache\\backbones\\7f72dd821984803981c8bc6a5f9d91f7cdd5b9168b64a1caaf816ff9380bc333.pt",
+      "cache_sha256": "ade8abdbabf222d330de87fef35d23a6ac4ea39f8e89dfd60899ccc0f6ffb701"
+    },
+    {
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2027
+      },
+      "source_run": "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_ablation_strict\\ETTh1\\iTransformer\\h96\\submitted_relu_head\\s2027\\run.json",
+      "id": "weight_10.0_ETTh1_iTransformer_h96_s2027",
+      "kind": "weight",
+      "variant": "submitted_relu_weight",
+      "overrides": {
+        "risk_loss_weight": 10.0
+      },
+      "reviewers": [
+        "R2.9"
+      ],
+      "inputs": {
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_ablation_strict\\ETTh1\\iTransformer\\h96\\submitted_relu_head\\s2027\\run.json": "2dbd6241b233537f76797b4a14c6a97cdc6e652253fc75124d4c90e9c7d00387",
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_ablation_strict\\ETTh1\\iTransformer\\h96\\submitted_relu_head\\s2027\\checkpoint.pt": "543cd8ee09c5cf640335f669caa45e89b8a86cf443c17f5ff2770f63f0eff1a7",
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_ablation_strict\\ETTh1\\iTransformer\\h96\\submitted_relu_head\\s2027\\predictions.npz": "cb729c1ce2d8739a092a2560d2b468b13e804e0e0ae6d67817f92e6ca027c5fb"
+      },
+      "cache_path": "C:\\codex-runs\\UGMA_R1\\artifacts\\cache\\backbones\\7f72dd821984803981c8bc6a5f9d91f7cdd5b9168b64a1caaf816ff9380bc333.pt",
+      "cache_sha256": "ade8abdbabf222d330de87fef35d23a6ac4ea39f8e89dfd60899ccc0f6ffb701"
+    },
+    {
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2028
+      },
+      "source_run": "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_ablation_strict\\ETTh1\\iTransformer\\h96\\submitted_relu_head\\s2028\\run.json",
+      "id": "weight_0.1_ETTh1_iTransformer_h96_s2028",
+      "kind": "weight",
+      "variant": "submitted_relu_weight",
+      "overrides": {
+        "risk_loss_weight": 0.1
+      },
+      "reviewers": [
+        "R2.9"
+      ],
+      "inputs": {
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_ablation_strict\\ETTh1\\iTransformer\\h96\\submitted_relu_head\\s2028\\run.json": "27a5ceaa87bb07f227c26588adcd26cce5194be0b61884c4743d3fb3150994f6",
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_ablation_strict\\ETTh1\\iTransformer\\h96\\submitted_relu_head\\s2028\\checkpoint.pt": "eb99b572bb9a07edd3c1ccff34a675d412ae4ccb3ea77998dcdf3e6b4673e7e3",
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_ablation_strict\\ETTh1\\iTransformer\\h96\\submitted_relu_head\\s2028\\predictions.npz": "e6af5b96314e3747789e4330a5087474c7940c7ebcf8723d8f7e3d6d15ded382"
+      },
+      "cache_path": "C:\\codex-runs\\UGMA_R1\\artifacts\\cache\\backbones\\a630e57078378de5862bc4ac54c8dec83c6893a8344146c6a13600632d67cf72.pt",
+      "cache_sha256": "bf5121affaab920d1db09dd120dc6429b4cae6fa374ae4720bed880d4cbd169c"
+    },
+    {
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2028
+      },
+      "source_run": "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_ablation_strict\\ETTh1\\iTransformer\\h96\\submitted_relu_head\\s2028\\run.json",
+      "id": "weight_10.0_ETTh1_iTransformer_h96_s2028",
+      "kind": "weight",
+      "variant": "submitted_relu_weight",
+      "overrides": {
+        "risk_loss_weight": 10.0
+      },
+      "reviewers": [
+        "R2.9"
+      ],
+      "inputs": {
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_ablation_strict\\ETTh1\\iTransformer\\h96\\submitted_relu_head\\s2028\\run.json": "27a5ceaa87bb07f227c26588adcd26cce5194be0b61884c4743d3fb3150994f6",
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_ablation_strict\\ETTh1\\iTransformer\\h96\\submitted_relu_head\\s2028\\checkpoint.pt": "eb99b572bb9a07edd3c1ccff34a675d412ae4ccb3ea77998dcdf3e6b4673e7e3",
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_ablation_strict\\ETTh1\\iTransformer\\h96\\submitted_relu_head\\s2028\\predictions.npz": "e6af5b96314e3747789e4330a5087474c7940c7ebcf8723d8f7e3d6d15ded382"
+      },
+      "cache_path": "C:\\codex-runs\\UGMA_R1\\artifacts\\cache\\backbones\\a630e57078378de5862bc4ac54c8dec83c6893a8344146c6a13600632d67cf72.pt",
+      "cache_sha256": "bf5121affaab920d1db09dd120dc6429b4cae6fa374ae4720bed880d4cbd169c"
+    },
+    {
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2029
+      },
+      "source_run": "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_ablation_strict\\ETTh1\\iTransformer\\h96\\submitted_relu_head\\s2029\\run.json",
+      "id": "weight_0.1_ETTh1_iTransformer_h96_s2029",
+      "kind": "weight",
+      "variant": "submitted_relu_weight",
+      "overrides": {
+        "risk_loss_weight": 0.1
+      },
+      "reviewers": [
+        "R2.9"
+      ],
+      "inputs": {
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_ablation_strict\\ETTh1\\iTransformer\\h96\\submitted_relu_head\\s2029\\run.json": "2e752b5c552a6b19d3d4b28590a44666bfa76bb9e98f52a645de5574e41e6947",
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_ablation_strict\\ETTh1\\iTransformer\\h96\\submitted_relu_head\\s2029\\checkpoint.pt": "b3cd5c84f7febc275a4aff86dd24efe9b386b9b8909c9205ec1d6bda52230bd9",
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_ablation_strict\\ETTh1\\iTransformer\\h96\\submitted_relu_head\\s2029\\predictions.npz": "a97e2a8852f655a4d6b1055c55698a3802b2ace34ad0fb117ddc57894b2fd697"
+      },
+      "cache_path": "C:\\codex-runs\\UGMA_R1\\artifacts\\cache\\backbones\\56a1783ad64bff6a803d3e2cb6e884f7cd030ea7d5b18935d0628f4e5363453d.pt",
+      "cache_sha256": "32ea7917f72c6cf5bf3ec2f7e58b2be399c3ef6b0354d605e9aa239579ceb38f"
+    },
+    {
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2029
+      },
+      "source_run": "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_ablation_strict\\ETTh1\\iTransformer\\h96\\submitted_relu_head\\s2029\\run.json",
+      "id": "weight_10.0_ETTh1_iTransformer_h96_s2029",
+      "kind": "weight",
+      "variant": "submitted_relu_weight",
+      "overrides": {
+        "risk_loss_weight": 10.0
+      },
+      "reviewers": [
+        "R2.9"
+      ],
+      "inputs": {
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_ablation_strict\\ETTh1\\iTransformer\\h96\\submitted_relu_head\\s2029\\run.json": "2e752b5c552a6b19d3d4b28590a44666bfa76bb9e98f52a645de5574e41e6947",
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_ablation_strict\\ETTh1\\iTransformer\\h96\\submitted_relu_head\\s2029\\checkpoint.pt": "b3cd5c84f7febc275a4aff86dd24efe9b386b9b8909c9205ec1d6bda52230bd9",
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_ablation_strict\\ETTh1\\iTransformer\\h96\\submitted_relu_head\\s2029\\predictions.npz": "a97e2a8852f655a4d6b1055c55698a3802b2ace34ad0fb117ddc57894b2fd697"
+      },
+      "cache_path": "C:\\codex-runs\\UGMA_R1\\artifacts\\cache\\backbones\\56a1783ad64bff6a803d3e2cb6e884f7cd030ea7d5b18935d0628f4e5363453d.pt",
+      "cache_sha256": "32ea7917f72c6cf5bf3ec2f7e58b2be399c3ef6b0354d605e9aa239579ceb38f"
+    },
+    {
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2030
+      },
+      "source_run": "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_ablation_strict\\ETTh1\\iTransformer\\h96\\submitted_relu_head\\s2030\\run.json",
+      "id": "weight_0.1_ETTh1_iTransformer_h96_s2030",
+      "kind": "weight",
+      "variant": "submitted_relu_weight",
+      "overrides": {
+        "risk_loss_weight": 0.1
+      },
+      "reviewers": [
+        "R2.9"
+      ],
+      "inputs": {
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_ablation_strict\\ETTh1\\iTransformer\\h96\\submitted_relu_head\\s2030\\run.json": "daf78bb7a8ec05531a997da8750336e5e97c1b7a617941c9164683859b3e3f8d",
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_ablation_strict\\ETTh1\\iTransformer\\h96\\submitted_relu_head\\s2030\\checkpoint.pt": "ac1455ebfa1572c6772099a0c911151471c361bf0ff9fdf48fabf34c0c61f5eb",
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_ablation_strict\\ETTh1\\iTransformer\\h96\\submitted_relu_head\\s2030\\predictions.npz": "7c86ecb089a4ac6b3e4eeadc644c721e80a3c643fbd509681568c61b3d1b3513"
+      },
+      "cache_path": "C:\\codex-runs\\UGMA_R1\\artifacts\\cache\\backbones\\59c88700521b64c97fb2ab9db61ef6dfca08e49132b5d9fa3d2bdcbd83002761.pt",
+      "cache_sha256": "f2eb7bac03e41e1de73f26c68df096a6889f38d2624055559d3d093b7d5ac683"
+    },
+    {
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2030
+      },
+      "source_run": "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_ablation_strict\\ETTh1\\iTransformer\\h96\\submitted_relu_head\\s2030\\run.json",
+      "id": "weight_10.0_ETTh1_iTransformer_h96_s2030",
+      "kind": "weight",
+      "variant": "submitted_relu_weight",
+      "overrides": {
+        "risk_loss_weight": 10.0
+      },
+      "reviewers": [
+        "R2.9"
+      ],
+      "inputs": {
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_ablation_strict\\ETTh1\\iTransformer\\h96\\submitted_relu_head\\s2030\\run.json": "daf78bb7a8ec05531a997da8750336e5e97c1b7a617941c9164683859b3e3f8d",
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_ablation_strict\\ETTh1\\iTransformer\\h96\\submitted_relu_head\\s2030\\checkpoint.pt": "ac1455ebfa1572c6772099a0c911151471c361bf0ff9fdf48fabf34c0c61f5eb",
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_ablation_strict\\ETTh1\\iTransformer\\h96\\submitted_relu_head\\s2030\\predictions.npz": "7c86ecb089a4ac6b3e4eeadc644c721e80a3c643fbd509681568c61b3d1b3513"
+      },
+      "cache_path": "C:\\codex-runs\\UGMA_R1\\artifacts\\cache\\backbones\\59c88700521b64c97fb2ab9db61ef6dfca08e49132b5d9fa3d2bdcbd83002761.pt",
+      "cache_sha256": "f2eb7bac03e41e1de73f26c68df096a6889f38d2624055559d3d093b7d5ac683"
+    }
+  ],
+  "protocol": {
+    "shift": "float64 query encoder and cosine dot products; stable bank-index tie order; original stored FP32 keys/futures; no retraining",
+    "risk": "original ReLU SMM; validation-fixed calibration bins; no model updates; full test, seven cases and simple proxies",
+    "tta": "pinned TAFAS GCM; frozen paired backbone; Adam lr=0.005 wd=0.0001; batch32; one MSE update per matured batch; labels only after whole horizon; forecasts never revised; no partial-label PAAS; no test hyperparameter tuning",
+    "weight": "ETTh1/iTransformer/Q96, five original seeds; lambda 0.1 and 10; reuse existing lambda1 results and backbone cache; all other settings unchanged"
+  },
+  "not_claimed": [
+    "official unchanged TAFAS end-to-end reproduction",
+    "full method evidence from monitor-disabled R0",
+    "real industrial incident testing",
+    "all reviewer questions resolved"
+  ]
+}

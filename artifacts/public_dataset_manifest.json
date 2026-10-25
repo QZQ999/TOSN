@@ -1,0 +1,56 @@
+{
+  "audit_date": "2026-08-27",
+  "lookback": 96,
+  "split_policy": {
+    "type": "chronological",
+    "ratios": [0.7, 0.1, 0.2],
+    "scaler_fit_partition": "training rows only",
+    "timestamp_used_as_model_input": false,
+    "target_partition_rule": "every forecast target lies wholly inside its declared partition; validation and test histories may use preceding observations"
+  },
+  "channels": {
+    "HUFL": "high useful load",
+    "HULL": "high useless load",
+    "MUFL": "middle useful load",
+    "MULL": "middle useless load",
+    "LUFL": "low useful load",
+    "LULL": "low useless load",
+    "OT": "oil temperature"
+  },
+  "datasets": {
+    "ETTh1": {
+      "relative_path": "external/ett/ETT-small/ETTh1.csv",
+      "file_sha256": "aaf53becad03ad8a7e93cf96452244f423480df960d769e12d66d4a5c570ddb0",
+      "rows": 17420,
+      "numeric_channels": 7,
+      "sampling_interval": "1 hour",
+      "first_timestamp": "2016-07-01 00:00:00",
+      "last_timestamp": "2018-06-26 19:00:00",
+      "missing_cells": 0,
+      "split_rows": {"train": 12194, "validation": 1742, "test": 3484},
+      "window_counts": {
+        "96": {"train": 12003, "validation": 1647, "test": 3389},
+        "192": {"train": 11907, "validation": 1551, "test": 3293},
+        "336": {"train": 11763, "validation": 1407, "test": 3149},
+        "720": {"train": 11379, "validation": 1023, "test": 2765}
+      }
+    },
+    "ETTm1": {
+      "relative_path": "external/ett/ETT-small/ETTm1.csv",
+      "file_sha256": "f8a9f83e816439447a4b0c523039ac618bd9b97b9e97d48d0c3f71feb1899ddc",
+      "rows": 69680,
+      "numeric_channels": 7,
+      "sampling_interval": "15 minutes",
+      "first_timestamp": "2016-07-01 00:00:00",
+      "last_timestamp": "2018-06-26 19:45:00",
+      "missing_cells": 0,
+      "split_rows": {"train": 48776, "validation": 6968, "test": 13936},
+      "window_counts": {
+        "96": {"train": 48585, "validation": 6873, "test": 13841},
+        "192": {"train": 48489, "validation": 6777, "test": 13745},
+        "336": {"train": 48345, "validation": 6633, "test": 13601},
+        "720": {"train": 47961, "validation": 6249, "test": 13217}
+      }
+    }
+  }
+}

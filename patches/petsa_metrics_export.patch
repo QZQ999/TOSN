@@ -1,0 +1,27 @@
+Official PETSA commit: 87853d888e98311ac94e64be920d17b57143b20c
+
+The official adapters compute and print per-window adapted MSE/MAE arrays but do
+not save them. The main program subsequently runs Predictor on a mutated model
+without the adapter calibration path and labels those results "without TSF-TTA".
+This instrumentation-only patch saves the already computed adapter arrays. It
+does not change model inputs, predictions, losses, optimizer steps, or metrics.
+
+Files: tta/petsa.py and tta/tafas.py
+
+  import os
+  ...
+  os.makedirs(self.cfg.RESULT_DIR, exist_ok=True)
+  np.save(os.path.join(self.cfg.RESULT_DIR, "adapt_test_mse_all.npy"), self.mse_all)
+  np.save(os.path.join(self.cfg.RESULT_DIR, "adapt_test_mae_all.npy"), self.mae_all)
+
+File: predictor.py
+
+The predictor already retains both per-window arrays, but returned and saved
+only MSE.  Add `mae_all` to the return dictionary and save it as
+`test_mae_all.npy`.  This is likewise observation-only and is needed for paired
+MAE tests against the adapted arrays.
+
+Execution compatibility note (no source edit): TEST.BATCH_SIZE is set to 4096
+so the official cursor loop receives the full 3389-window ETTh1 test dataset in
+one outer DataLoader batch. With the default 256, batch_start is not reset across
+outer batches and the official assertion fails after processing only one batch.

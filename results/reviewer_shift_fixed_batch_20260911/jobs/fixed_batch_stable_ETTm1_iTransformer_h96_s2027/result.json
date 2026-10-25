@@ -1,0 +1,221 @@
+{
+  "cases": [
+    {
+      "kind": "clean",
+      "severity": 0.0,
+      "windows": 13841,
+      "metrics": {
+        "backbone": {
+          "mae": 0.4123982935116924,
+          "rmse": 0.6315384063452638
+        },
+        "full": {
+          "mae": 0.41273504535696603,
+          "rmse": 0.6300721151641621
+        },
+        "local_only": {
+          "mae": 0.4142791161573734,
+          "rmse": 0.6326559914485888
+        },
+        "retrieval_only": {
+          "mae": 0.4107674148866606,
+          "rmse": 0.6288528973545618
+        }
+      }
+    },
+    {
+      "kind": "mean",
+      "severity": 0.5,
+      "windows": 13841,
+      "metrics": {
+        "backbone": {
+          "mae": 0.41248642400231605,
+          "rmse": 0.6315299876450972
+        },
+        "full": {
+          "mae": 0.4128006811864769,
+          "rmse": 0.6300307390387769
+        },
+        "local_only": {
+          "mae": 0.414336578924592,
+          "rmse": 0.6326085614371485
+        },
+        "retrieval_only": {
+          "mae": 0.4108640512722634,
+          "rmse": 0.6288506412797891
+        }
+      }
+    },
+    {
+      "kind": "mean",
+      "severity": 1.0,
+      "windows": 13841,
+      "metrics": {
+        "backbone": {
+          "mae": 0.413163915485469,
+          "rmse": 0.6321770637319479
+        },
+        "full": {
+          "mae": 0.4134544416281374,
+          "rmse": 0.630638501371559
+        },
+        "local_only": {
+          "mae": 0.41497456078326217,
+          "rmse": 0.6332053427728718
+        },
+        "retrieval_only": {
+          "mae": 0.4115581293442021,
+          "rmse": 0.6295098912457352
+        }
+      }
+    },
+    {
+      "kind": "scale",
+      "severity": 0.5,
+      "windows": 13841,
+      "metrics": {
+        "backbone": {
+          "mae": 0.6185036029719695,
+          "rmse": 0.9473312419626091
+        },
+        "full": {
+          "mae": 0.6190239676029711,
+          "rmse": 0.9451548642585046
+        },
+        "local_only": {
+          "mae": 0.6213152121099134,
+          "rmse": 0.9490025390949942
+        },
+        "retrieval_only": {
+          "mae": 0.6160825385588434,
+          "rmse": 0.9433313873879299
+        }
+      }
+    },
+    {
+      "kind": "scale",
+      "severity": 1.0,
+      "windows": 13841,
+      "metrics": {
+        "backbone": {
+          "mae": 0.8250862260645084,
+          "rmse": 1.2635931743167481
+        },
+        "full": {
+          "mae": 0.8257763625752648,
+          "rmse": 1.260689472481478
+        },
+        "local_only": {
+          "mae": 0.8288277145983922,
+          "rmse": 1.2658166918535128
+        },
+        "retrieval_only": {
+          "mae": 0.8218623516166965,
+          "rmse": 1.2582635944912184
+        }
+      }
+    },
+    {
+      "kind": "ramp",
+      "severity": 0.5,
+      "windows": 13841,
+      "metrics": {
+        "backbone": {
+          "mae": 0.4124642259995983,
+          "rmse": 0.6315932404032659
+        },
+        "full": {
+          "mae": 0.4128113355257749,
+          "rmse": 0.6301150051160231
+        },
+        "local_only": {
+          "mae": 0.4143529389918191,
+          "rmse": 0.6327000155737552
+        },
+        "retrieval_only": {
+          "mae": 0.4108354615799708,
+          "rmse": 0.6289066086029815
+        }
+      }
+    },
+    {
+      "kind": "ramp",
+      "severity": 1.0,
+      "windows": 13841,
+      "metrics": {
+        "backbone": {
+          "mae": 0.41255170893201804,
+          "rmse": 0.6316641727356418
+        },
+        "full": {
+          "mae": 0.4129085640687751,
+          "rmse": 0.6301719601039325
+        },
+        "local_only": {
+          "mae": 0.4144479660151787,
+          "rmse": 0.6327599676057764
+        },
+        "retrieval_only": {
+          "mae": 0.4109248616693583,
+          "rmse": 0.6289745532455758
+        }
+      }
+    }
+  ],
+  "replay_checks": {
+    "new_vs_archive": {
+      "allclose": true,
+      "max_abs": 0.00021189451217651367,
+      "bad_elements": 0
+    },
+    "retrospective_error_groups": {
+      "good": {
+        "backbone": 0.23178760468020054,
+        "full": 0.23423751737427986,
+        "local_only": 0.23444407763304037,
+        "retrieval_only": 0.23141200536788023
+      },
+      "middle": {
+        "backbone": 0.3798740539032307,
+        "full": 0.38030386513509423,
+        "local_only": 0.3814750220978637,
+        "retrieval_only": 0.37861922493885336
+      },
+      "poor": {
+        "backbone": 0.6255794250577461,
+        "full": 0.6237094784061382,
+        "local_only": 0.6269643443693506,
+        "retrieval_only": 0.6223168638220246
+      }
+    },
+    "logical_partition16_vs_32_at_fixed_physical32": {
+      "allclose": true,
+      "max_abs": 0.0,
+      "bad_elements": 0
+    }
+  },
+  "precision_policy": "Fixed physical CUDA batch32, repeat-last padding discarded; logical partition16 versus32 checked; float64 query encoder/dot product and stable retrieval ties; original weights. Not arbitrary physical-batch invariance.",
+  "model_variant": "monitor-disabled R0",
+  "smoke_only": false,
+  "job_id": "fixed_batch_stable_ETTm1_iTransformer_h96_s2027",
+  "identity": {
+    "dataset": "ETTm1",
+    "backbone": "iTransformer",
+    "horizon": 96,
+    "seed": 2027
+  },
+  "inputs": {
+    "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2027\\run.json": "dda93b16cd35e688f1bc7835ec42749413071a9a3b1b185356d65067d9cbd19f",
+    "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2027\\checkpoint.pt": "aac525fb122c48699dff59cda506714a1dec676af9f266dec92850d93ab7dec6",
+    "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2027\\predictions.npz": "e8515ff1335c4efeddc6a3fec3e22c444a4f5036fc3085ba0f2337143fd8faf9"
+  },
+  "reviewers": [
+    "R2.6",
+    "R2.8"
+  ],
+  "parent_job_id": "stable_ETTm1_iTransformer_h96_s2027",
+  "diagnostic_script_sha256": "843fd366b64bcad9c511c7c2b0470424be31f4541abcbc87a83cf133ef32c371",
+  "source_sha256": "636807134ff574f308266a22cef002d41d90a1960a4522075ffbd941d8d96a45",
+  "full_preflight_only": false,
+  "elapsed_seconds": 25.678196668624878
+}

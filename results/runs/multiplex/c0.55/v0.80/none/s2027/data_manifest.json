@@ -1,0 +1,39 @@
+{
+  "sha256_values": "6f5cff4f20cf8e25144865fa09053f79019b16a88790ff533a81fe8e4af1278c",
+  "shape": [
+    1800,
+    8
+  ],
+  "channels": [
+    "sensor_00",
+    "sensor_01",
+    "sensor_02",
+    "sensor_03",
+    "sensor_04",
+    "sensor_05",
+    "sensor_06",
+    "sensor_07"
+  ],
+  "split_bounds": {
+    "train_end": 1080,
+    "val_end": 1440,
+    "total": 1800
+  },
+  "window": {
+    "seq_len": 48,
+    "pred_len": 24
+  },
+  "metadata": {
+    "kind": "synthetic_multiplex",
+    "layers": 3,
+    "network_complexity": 0.55,
+    "shift_index": 1440,
+    "shift_severity": 0.8
+  },
+  "shift_prevalence": {
+    "overall": 0.2,
+    "train": 0.0,
+    "validation": 0.0,
+    "test": 1.0
+  }
+}

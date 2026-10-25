@@ -1,0 +1,153 @@
+{
+  "identity": {
+    "dataset": "ETTh1",
+    "backbone": "FEDformer",
+    "horizon": 96,
+    "seed": 2028
+  },
+  "source_sha256": "636807134ff574f308266a22cef002d41d90a1960a4522075ffbd941d8d96a45",
+  "source_run": "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_strict\\ETTh1\\FEDformer\\h96\\s2028\\run.json",
+  "checkpoint_sha256": "ac64a6175700d9e5ad9cb79de39abec5c38a1f874c17acb160dde553a4f5cfa4",
+  "protocol": "predeclared test-only mean/scale/ramp stress; no retraining or test-based selection",
+  "limitations": "synthetic perturbations of public data, not TTFBench or real industrial incidents",
+  "onset_row": 13936,
+  "cases": [
+    {
+      "kind": "clean",
+      "severity": 0,
+      "metrics": {
+        "backbone": {
+          "mae": 0.5288378828760163,
+          "rmse": 0.7279027020801726
+        },
+        "full": {
+          "mae": 0.5078100207706384,
+          "rmse": 0.7081827808559528
+        }
+      },
+      "windows": 3389
+    },
+    {
+      "kind": "mean",
+      "severity": 0.5,
+      "metrics": {
+        "backbone": {
+          "mae": 0.5303310387784157,
+          "rmse": 0.7279882932030592
+        },
+        "full": {
+          "mae": 0.5091367064138123,
+          "rmse": 0.7080962052777916
+        }
+      },
+      "windows": 3389,
+      "shift_effect": {
+        "backbone_mae_increase": 0.0014931559023994012,
+        "full_mae_increase": 0.0013266856431738416,
+        "absolute_degradation_recovered": 0.00016647025922555958
+      }
+    },
+    {
+      "kind": "mean",
+      "severity": 1.0,
+      "metrics": {
+        "backbone": {
+          "mae": 0.5346059028413582,
+          "rmse": 0.7313678316140276
+        },
+        "full": {
+          "mae": 0.5127398389102893,
+          "rmse": 0.7106445473931717
+        }
+      },
+      "windows": 3389,
+      "shift_effect": {
+        "backbone_mae_increase": 0.005768019965341931,
+        "full_mae_increase": 0.004929818139650877,
+        "absolute_degradation_recovered": 0.000838201825691054
+      }
+    },
+    {
+      "kind": "scale",
+      "severity": 0.5,
+      "metrics": {
+        "backbone": {
+          "mae": 0.8302547469555398,
+          "rmse": 1.155859648111068
+        },
+        "full": {
+          "mae": 0.7846824732969966,
+          "rmse": 1.1000026711879594
+        }
+      },
+      "windows": 3389,
+      "shift_effect": {
+        "backbone_mae_increase": 0.3014168640795235,
+        "full_mae_increase": 0.27687245252635817,
+        "absolute_degradation_recovered": 0.024544411553165335
+      }
+    },
+    {
+      "kind": "scale",
+      "severity": 1.0,
+      "metrics": {
+        "backbone": {
+          "mae": 1.1482468668442294,
+          "rmse": 1.6120511840577256
+        },
+        "full": {
+          "mae": 1.0707577318355948,
+          "rmse": 1.5066498285482486
+        }
+      },
+      "windows": 3389,
+      "shift_effect": {
+        "backbone_mae_increase": 0.6194089839682131,
+        "full_mae_increase": 0.5629477110649563,
+        "absolute_degradation_recovered": 0.056461272903256754
+      }
+    },
+    {
+      "kind": "ramp",
+      "severity": 0.5,
+      "metrics": {
+        "backbone": {
+          "mae": 0.5288195676785437,
+          "rmse": 0.7271255578632696
+        },
+        "full": {
+          "mae": 0.5077240373705587,
+          "rmse": 0.707419797009474
+        }
+      },
+      "windows": 3389,
+      "shift_effect": {
+        "backbone_mae_increase": -1.831519747264032e-05,
+        "full_mae_increase": -8.598340007970329e-05,
+        "absolute_degradation_recovered": 6.766820260706297e-05
+      }
+    },
+    {
+      "kind": "ramp",
+      "severity": 1.0,
+      "metrics": {
+        "backbone": {
+          "mae": 0.5290802824668064,
+          "rmse": 0.7266284139598056
+        },
+        "full": {
+          "mae": 0.5078006854156228,
+          "rmse": 0.7067610109784223
+        }
+      },
+      "windows": 3389,
+      "shift_effect": {
+        "backbone_mae_increase": 0.00024239959079008777,
+        "full_mae_increase": -9.3353550155717e-06,
+        "absolute_degradation_recovered": 0.00025173494580565947
+      }
+    }
+  ],
+  "diagnostic_script_sha256": "8a840adfca15448814ec14c7a9bc300a31c4b155d40abaef14e670fb54ca51d0",
+  "job_id": "shift_ETTh1_FEDformer_h96_s2028"
+}

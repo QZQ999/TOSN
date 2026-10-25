@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.pyc
+*.egg-info/
+.env
+*.pt
+*.npz
+*.npy
+reproduction_outputs/
+external/ett/
+external/tslib/
+external/industrial_examples/
+artifacts/cache/

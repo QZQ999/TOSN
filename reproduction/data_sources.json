@@ -1,0 +1,69 @@
+{
+  "checked_date": "2026-10-25",
+  "ett": {
+    "ETTh1": {
+      "pinned_url": "https://raw.githubusercontent.com/zhouhaoyi/ETDataset/1d16c8f4f943005d613b5bc962e9eeb06058cf07/ETT-small/ETTh1.csv",
+      "lf_sha256": "f18de3ad269cef59bb07b5438d79bb3042d3be49bdeecf01c1cd6d29695ee066",
+      "historical_windows_sha256": "aaf53becad03ad8a7e93cf96452244f423480df960d769e12d66d4a5c570ddb0",
+      "rows": 17420,
+      "columns": [
+        "date",
+        "HUFL",
+        "HULL",
+        "MUFL",
+        "MULL",
+        "LUFL",
+        "LULL",
+        "OT"
+      ]
+    },
+    "ETTm1": {
+      "pinned_url": "https://raw.githubusercontent.com/zhouhaoyi/ETDataset/1d16c8f4f943005d613b5bc962e9eeb06058cf07/ETT-small/ETTm1.csv",
+      "lf_sha256": "6ce1759b1a18e3328421d5d75fadcb316c449fcd7cec32820c8dafda71986c9e",
+      "historical_windows_sha256": "f8a9f83e816439447a4b0c523039ac618bd9b97b9e97d48d0c3f71feb1899ddc",
+      "rows": 69680,
+      "columns": [
+        "date",
+        "HUFL",
+        "HULL",
+        "MUFL",
+        "MULL",
+        "LUFL",
+        "LULL",
+        "OT"
+      ]
+    }
+  },
+  "boiler": {
+    "doi": "https://doi.org/10.6084/m9.figshare.28868849",
+    "licence": "CC0-1.0",
+    "publication": "https://www.nature.com/articles/s41597-025-05096-4",
+    "release_files": [
+      "xinan_completed_data.csv",
+      "xinan_uncompleted_data.csv",
+      "AutoReg.py"
+    ],
+    "current_access": "Public release; this environment received HTTP 403. An application requirement has not been established.",
+    "original_experiment_file": "unrecovered"
+  },
+  "iot": {
+    "huggingface": "https://huggingface.co/datasets/thuml/UTSD",
+    "numpy_share": "https://cloud.tsinghua.edu.cn/f/93868e3a9fb144fe9719/",
+    "archive_filename": "UTSD-full-npy.zip",
+    "archive_bytes": 7238333919,
+    "directory": "UTSD-full-npy/IoT/baian/",
+    "available_npy_files": 51,
+    "verified_sample": {
+      "archive_path": "UTSD-full-npy/IoT/baian/0.npy",
+      "shape": [
+        180140,
+        18
+      ],
+      "dtype": "float64",
+      "sha256": "8af624b260fa4f4b6044ea08073b1023458e33127ed04591c3d8ad6cb8e73ee6",
+      "zip_crc_verified": true,
+      "all_values_finite": true
+    },
+    "original_experiment_selection": "The selected file or files and time interval remain unrecorded in the retained materials."
+  }
+}

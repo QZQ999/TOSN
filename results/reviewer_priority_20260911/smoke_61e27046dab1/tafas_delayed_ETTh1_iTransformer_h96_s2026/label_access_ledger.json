@@ -1,0 +1,37 @@
+[
+  {
+    "forecast_origin": 14032,
+    "train_first_index": 0,
+    "train_last_index": 0,
+    "last_label_exclusive": 14032,
+    "loss": 0.39631226658821106
+  },
+  {
+    "forecast_origin": 14064,
+    "train_first_index": 1,
+    "train_last_index": 32,
+    "last_label_exclusive": 14064,
+    "loss": 0.3820197880268097
+  },
+  {
+    "forecast_origin": 14096,
+    "train_first_index": 33,
+    "train_last_index": 64,
+    "last_label_exclusive": 14096,
+    "loss": 0.33203333616256714
+  },
+  {
+    "forecast_origin": 14128,
+    "train_first_index": 65,
+    "train_last_index": 96,
+    "last_label_exclusive": 14128,
+    "loss": 0.22358252108097076
+  },
+  {
+    "forecast_origin": 14160,
+    "train_first_index": 97,
+    "train_last_index": 128,
+    "last_label_exclusive": 14160,
+    "loss": 0.2445330172777176
+  }
+]

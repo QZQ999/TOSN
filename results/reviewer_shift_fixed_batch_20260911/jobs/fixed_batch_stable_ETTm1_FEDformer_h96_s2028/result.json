@@ -1,0 +1,221 @@
+{
+  "cases": [
+    {
+      "kind": "clean",
+      "severity": 0.0,
+      "windows": 13841,
+      "metrics": {
+        "backbone": {
+          "mae": 0.4891199347732588,
+          "rmse": 0.6953881574411561
+        },
+        "full": {
+          "mae": 0.44138547900480685,
+          "rmse": 0.6470350351164369
+        },
+        "local_only": {
+          "mae": 0.4849519760298562,
+          "rmse": 0.69467584312345
+        },
+        "retrieval_only": {
+          "mae": 0.4465851237832984,
+          "rmse": 0.6498643151642658
+        }
+      }
+    },
+    {
+      "kind": "mean",
+      "severity": 0.5,
+      "windows": 13841,
+      "metrics": {
+        "backbone": {
+          "mae": 0.48966326607888844,
+          "rmse": 0.6958606350273352
+        },
+        "full": {
+          "mae": 0.44170128613231024,
+          "rmse": 0.6472690225933418
+        },
+        "local_only": {
+          "mae": 0.4854509531942543,
+          "rmse": 0.6951451651965297
+        },
+        "retrieval_only": {
+          "mae": 0.44695201378549143,
+          "rmse": 0.650099887858172
+        }
+      }
+    },
+    {
+      "kind": "mean",
+      "severity": 1.0,
+      "windows": 13841,
+      "metrics": {
+        "backbone": {
+          "mae": 0.49075392877732893,
+          "rmse": 0.6971292651903872
+        },
+        "full": {
+          "mae": 0.4425226585316629,
+          "rmse": 0.6481492200375009
+        },
+        "local_only": {
+          "mae": 0.4865310691650663,
+          "rmse": 0.6964482866212971
+        },
+        "retrieval_only": {
+          "mae": 0.44779111729679466,
+          "rmse": 0.6509548086519397
+        }
+      }
+    },
+    {
+      "kind": "scale",
+      "severity": 0.5,
+      "windows": 13841,
+      "metrics": {
+        "backbone": {
+          "mae": 0.7533791622824074,
+          "rmse": 1.0786580272935986
+        },
+        "full": {
+          "mae": 0.6764241229186455,
+          "rmse": 0.9955160751037968
+        },
+        "local_only": {
+          "mae": 0.7519644125530996,
+          "rmse": 1.0849894052088496
+        },
+        "retrieval_only": {
+          "mae": 0.679995323829507,
+          "rmse": 0.9928282586802101
+        }
+      }
+    },
+    {
+      "kind": "scale",
+      "severity": 1.0,
+      "windows": 13841,
+      "metrics": {
+        "backbone": {
+          "mae": 1.024766125736562,
+          "rmse": 1.4691781097245324
+        },
+        "full": {
+          "mae": 0.9164494457383767,
+          "rmse": 1.3486318839419928
+        },
+        "local_only": {
+          "mae": 1.0280177394905097,
+          "rmse": 1.4844927573347295
+        },
+        "retrieval_only": {
+          "mae": 0.9167089982848549,
+          "rmse": 1.3388833635037916
+        }
+      }
+    },
+    {
+      "kind": "ramp",
+      "severity": 0.5,
+      "windows": 13841,
+      "metrics": {
+        "backbone": {
+          "mae": 0.4891267026237214,
+          "rmse": 0.6952392462733706
+        },
+        "full": {
+          "mae": 0.4413189646460515,
+          "rmse": 0.6468909915604165
+        },
+        "local_only": {
+          "mae": 0.48484289760117194,
+          "rmse": 0.6944827290945181
+        },
+        "retrieval_only": {
+          "mae": 0.4466471871892899,
+          "rmse": 0.6497656719123959
+        }
+      }
+    },
+    {
+      "kind": "ramp",
+      "severity": 1.0,
+      "windows": 13841,
+      "metrics": {
+        "backbone": {
+          "mae": 0.48915463136852266,
+          "rmse": 0.6951086554795427
+        },
+        "full": {
+          "mae": 0.44128078032200924,
+          "rmse": 0.6467674629999165
+        },
+        "local_only": {
+          "mae": 0.4847552351678012,
+          "rmse": 0.6943079796040115
+        },
+        "retrieval_only": {
+          "mae": 0.4467391995634213,
+          "rmse": 0.6496899027592276
+        }
+      }
+    }
+  ],
+  "replay_checks": {
+    "new_vs_archive": {
+      "allclose": false,
+      "max_abs": 0.01825261116027832,
+      "bad_elements": 96
+    },
+    "retrospective_error_groups": {
+      "good": {
+        "backbone": 0.3091571284286271,
+        "full": 0.2871725601846698,
+        "local_only": 0.30755494234435476,
+        "retrieval_only": 0.29066555078497164
+      },
+      "middle": {
+        "backbone": 0.4720139093190985,
+        "full": 0.42362996212490445,
+        "local_only": 0.46413724279122426,
+        "retrieval_only": 0.4318910775109797
+      },
+      "poor": {
+        "backbone": 0.6862314868911055,
+        "full": 0.6133911937934438,
+        "local_only": 0.6832067110369993,
+        "retrieval_only": 0.6172357284472391
+      }
+    },
+    "logical_partition16_vs_32_at_fixed_physical32": {
+      "allclose": true,
+      "max_abs": 0.0,
+      "bad_elements": 0
+    }
+  },
+  "precision_policy": "Fixed physical CUDA batch32, repeat-last padding discarded; logical partition16 versus32 checked; float64 query encoder/dot product and stable retrieval ties; original weights. Not arbitrary physical-batch invariance.",
+  "model_variant": "monitor-disabled R0",
+  "smoke_only": false,
+  "job_id": "fixed_batch_stable_ETTm1_FEDformer_h96_s2028",
+  "identity": {
+    "dataset": "ETTm1",
+    "backbone": "FEDformer",
+    "horizon": 96,
+    "seed": 2028
+  },
+  "inputs": {
+    "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_strict\\ETTm1\\FEDformer\\h96\\s2028\\run.json": "728f5011fee9ff4b94e54fc0d17d05618d0e529f1d30cc22877d245d9f3e0b97",
+    "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_strict\\ETTm1\\FEDformer\\h96\\s2028\\checkpoint.pt": "b6b4f9d4fd83adf0ae2a44d138f6ce4b0aa34b53384e5d8f6f208b082612c2ee",
+    "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_strict\\ETTm1\\FEDformer\\h96\\s2028\\predictions.npz": "e208fb75f8f192ea2d55243cdd2ab106910480f075db8757d86ae6cd92bdf13e"
+  },
+  "reviewers": [
+    "R2.6",
+    "R2.8"
+  ],
+  "parent_job_id": "stable_ETTm1_FEDformer_h96_s2028",
+  "diagnostic_script_sha256": "843fd366b64bcad9c511c7c2b0470424be31f4541abcbc87a83cf133ef32c371",
+  "source_sha256": "636807134ff574f308266a22cef002d41d90a1960a4522075ffbd941d8d96a45",
+  "full_preflight_only": false,
+  "elapsed_seconds": 156.12259435653687
+}

@@ -1,0 +1,135 @@
+{
+  "source_run": "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_strict\\ETTh1\\FEDformer\\h96\\s2026\\run.json",
+  "checkpoint_sha256": "67300f338188d9e9b61e9227832419717c1b32d0c85ed1f20a66b91de9170518",
+  "source_sha256": "636807134ff574f308266a22cef002d41d90a1960a4522075ffbd941d8d96a45",
+  "kind": "controls",
+  "identity": {
+    "dataset": "ETTh1",
+    "backbone": "FEDformer",
+    "horizon": 96,
+    "seed": 2026
+  },
+  "replay_max_absolute_error": 8.344650268554688e-06,
+  "windows": 3389,
+  "interpretation": "reconstructed implementation; inference removal is not retrained ablation",
+  "metrics": {
+    "backbone": {
+      "mae": 0.5149159375400305,
+      "rmse": 0.7148639922987033
+    },
+    "full": {
+      "mae": 0.49217654107606656,
+      "rmse": 0.694199952529828
+    },
+    "local_only_instant": {
+      "mae": 0.5161912411543003,
+      "rmse": 0.7144781524699562
+    },
+    "retrieval_only_instant": {
+      "mae": 0.49187368756054517,
+      "rmse": 0.695901675112732
+    },
+    "topk_reference_only": {
+      "mae": 0.49710199484139833,
+      "rmse": 0.7385331884186277
+    },
+    "nearest_neighbor_only": {
+      "mae": 0.6398011884196051,
+      "rmse": 1.6784931473096545
+    }
+  },
+  "quality_groups": [
+    {
+      "quality": "good",
+      "units": 7910,
+      "metrics": {
+        "backbone": {
+          "mae": 0.3566947621900968,
+          "rmse": 0.512493734657271
+        },
+        "full": {
+          "mae": 0.34480629960267656,
+          "rmse": 0.503317221233029
+        },
+        "local_only_instant": {
+          "mae": 0.355408793209546,
+          "rmse": 0.510786185080452
+        },
+        "retrieval_only_instant": {
+          "mae": 0.34752657823053956,
+          "rmse": 0.5063380130304986
+        },
+        "topk_reference_only": {
+          "mae": 0.38313206246484055,
+          "rmse": 0.570057787891734
+        },
+        "nearest_neighbor_only": {
+          "mae": 0.5131049758033395,
+          "rmse": 0.7760672376069473
+        }
+      }
+    },
+    {
+      "quality": "middle",
+      "units": 7910,
+      "metrics": {
+        "backbone": {
+          "mae": 0.48950337509723113,
+          "rmse": 0.6702096621114908
+        },
+        "full": {
+          "mae": 0.465867208177176,
+          "rmse": 0.6492582835604259
+        },
+        "local_only_instant": {
+          "mae": 0.48931751221425834,
+          "rmse": 0.6682534355687251
+        },
+        "retrieval_only_instant": {
+          "mae": 0.4668406858652669,
+          "rmse": 0.6524372435044138
+        },
+        "topk_reference_only": {
+          "mae": 0.47902281645320627,
+          "rmse": 0.7130707446499874
+        },
+        "nearest_neighbor_only": {
+          "mae": 0.6194463703231536,
+          "rmse": 0.9158389667167907
+        }
+      }
+    },
+    {
+      "quality": "poor",
+      "units": 7903,
+      "metrics": {
+        "backbone": {
+          "mae": 0.6987123270048566,
+          "rmse": 0.9063859809196918
+        },
+        "full": {
+          "mae": 0.6660099503237876,
+          "rmse": 0.8781412892781024
+        },
+        "local_only_instant": {
+          "mae": 0.7040136325447517,
+          "rmse": 0.9078819213464554
+        },
+        "retrieval_only_instant": {
+          "mae": 0.6614038252563564,
+          "rmse": 0.8780880671109315
+        },
+        "topk_reference_only": {
+          "mae": 0.6292680667317148,
+          "rmse": 0.8961506881435339
+        },
+        "nearest_neighbor_only": {
+          "mae": 0.7869824680523515,
+          "rmse": 2.648526163149508
+        }
+      }
+    }
+  ],
+  "diagnostic_script_sha256": "8a840adfca15448814ec14c7a9bc300a31c4b155d40abaef14e670fb54ca51d0",
+  "job_id": "controls_ETTh1_FEDformer_h96_s2026"
+}

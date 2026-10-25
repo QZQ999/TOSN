@@ -1,0 +1,723 @@
+[
+  {
+    "forecast_origin": 14032,
+    "train_first_index": 0,
+    "train_last_index": 0,
+    "last_label_exclusive": 14032,
+    "loss": 0.5247560739517212
+  },
+  {
+    "forecast_origin": 14064,
+    "train_first_index": 1,
+    "train_last_index": 32,
+    "last_label_exclusive": 14064,
+    "loss": 0.41497695446014404
+  },
+  {
+    "forecast_origin": 14096,
+    "train_first_index": 33,
+    "train_last_index": 64,
+    "last_label_exclusive": 14096,
+    "loss": 0.3439432680606842
+  },
+  {
+    "forecast_origin": 14128,
+    "train_first_index": 65,
+    "train_last_index": 96,
+    "last_label_exclusive": 14128,
+    "loss": 0.22306467592716217
+  },
+  {
+    "forecast_origin": 14160,
+    "train_first_index": 97,
+    "train_last_index": 128,
+    "last_label_exclusive": 14160,
+    "loss": 0.25312185287475586
+  },
+  {
+    "forecast_origin": 14192,
+    "train_first_index": 129,
+    "train_last_index": 160,
+    "last_label_exclusive": 14192,
+    "loss": 0.29913556575775146
+  },
+  {
+    "forecast_origin": 14224,
+    "train_first_index": 161,
+    "train_last_index": 192,
+    "last_label_exclusive": 14224,
+    "loss": 0.3243687152862549
+  },
+  {
+    "forecast_origin": 14256,
+    "train_first_index": 193,
+    "train_last_index": 224,
+    "last_label_exclusive": 14256,
+    "loss": 0.4593571424484253
+  },
+  {
+    "forecast_origin": 14288,
+    "train_first_index": 225,
+    "train_last_index": 256,
+    "last_label_exclusive": 14288,
+    "loss": 0.45443880558013916
+  },
+  {
+    "forecast_origin": 14320,
+    "train_first_index": 257,
+    "train_last_index": 288,
+    "last_label_exclusive": 14320,
+    "loss": 0.3410021960735321
+  },
+  {
+    "forecast_origin": 14352,
+    "train_first_index": 289,
+    "train_last_index": 320,
+    "last_label_exclusive": 14352,
+    "loss": 0.4053942859172821
+  },
+  {
+    "forecast_origin": 14384,
+    "train_first_index": 321,
+    "train_last_index": 352,
+    "last_label_exclusive": 14384,
+    "loss": 0.3830749988555908
+  },
+  {
+    "forecast_origin": 14416,
+    "train_first_index": 353,
+    "train_last_index": 384,
+    "last_label_exclusive": 14416,
+    "loss": 0.32335957884788513
+  },
+  {
+    "forecast_origin": 14448,
+    "train_first_index": 385,
+    "train_last_index": 416,
+    "last_label_exclusive": 14448,
+    "loss": 0.2583407461643219
+  },
+  {
+    "forecast_origin": 14480,
+    "train_first_index": 417,
+    "train_last_index": 448,
+    "last_label_exclusive": 14480,
+    "loss": 0.3389374017715454
+  },
+  {
+    "forecast_origin": 14512,
+    "train_first_index": 449,
+    "train_last_index": 480,
+    "last_label_exclusive": 14512,
+    "loss": 0.5462771654129028
+  },
+  {
+    "forecast_origin": 14544,
+    "train_first_index": 481,
+    "train_last_index": 512,
+    "last_label_exclusive": 14544,
+    "loss": 0.7008121013641357
+  },
+  {
+    "forecast_origin": 14576,
+    "train_first_index": 513,
+    "train_last_index": 544,
+    "last_label_exclusive": 14576,
+    "loss": 0.3765345811843872
+  },
+  {
+    "forecast_origin": 14608,
+    "train_first_index": 545,
+    "train_last_index": 576,
+    "last_label_exclusive": 14608,
+    "loss": 0.2980290353298187
+  },
+  {
+    "forecast_origin": 14640,
+    "train_first_index": 577,
+    "train_last_index": 608,
+    "last_label_exclusive": 14640,
+    "loss": 0.27258098125457764
+  },
+  {
+    "forecast_origin": 14672,
+    "train_first_index": 609,
+    "train_last_index": 640,
+    "last_label_exclusive": 14672,
+    "loss": 0.24735943973064423
+  },
+  {
+    "forecast_origin": 14704,
+    "train_first_index": 641,
+    "train_last_index": 672,
+    "last_label_exclusive": 14704,
+    "loss": 0.2345409393310547
+  },
+  {
+    "forecast_origin": 14736,
+    "train_first_index": 673,
+    "train_last_index": 704,
+    "last_label_exclusive": 14736,
+    "loss": 0.4064367115497589
+  },
+  {
+    "forecast_origin": 14768,
+    "train_first_index": 705,
+    "train_last_index": 736,
+    "last_label_exclusive": 14768,
+    "loss": 0.5703269243240356
+  },
+  {
+    "forecast_origin": 14800,
+    "train_first_index": 737,
+    "train_last_index": 768,
+    "last_label_exclusive": 14800,
+    "loss": 0.5861685872077942
+  },
+  {
+    "forecast_origin": 14832,
+    "train_first_index": 769,
+    "train_last_index": 800,
+    "last_label_exclusive": 14832,
+    "loss": 0.6027276515960693
+  },
+  {
+    "forecast_origin": 14864,
+    "train_first_index": 801,
+    "train_last_index": 832,
+    "last_label_exclusive": 14864,
+    "loss": 0.7603116631507874
+  },
+  {
+    "forecast_origin": 14896,
+    "train_first_index": 833,
+    "train_last_index": 864,
+    "last_label_exclusive": 14896,
+    "loss": 0.7351860404014587
+  },
+  {
+    "forecast_origin": 14928,
+    "train_first_index": 865,
+    "train_last_index": 896,
+    "last_label_exclusive": 14928,
+    "loss": 0.6332132816314697
+  },
+  {
+    "forecast_origin": 14960,
+    "train_first_index": 897,
+    "train_last_index": 928,
+    "last_label_exclusive": 14960,
+    "loss": 0.39595839381217957
+  },
+  {
+    "forecast_origin": 14992,
+    "train_first_index": 929,
+    "train_last_index": 960,
+    "last_label_exclusive": 14992,
+    "loss": 0.45208939909935
+  },
+  {
+    "forecast_origin": 15024,
+    "train_first_index": 961,
+    "train_last_index": 992,
+    "last_label_exclusive": 15024,
+    "loss": 0.5008261203765869
+  },
+  {
+    "forecast_origin": 15056,
+    "train_first_index": 993,
+    "train_last_index": 1024,
+    "last_label_exclusive": 15056,
+    "loss": 0.5647096037864685
+  },
+  {
+    "forecast_origin": 15088,
+    "train_first_index": 1025,
+    "train_last_index": 1056,
+    "last_label_exclusive": 15088,
+    "loss": 0.36872315406799316
+  },
+  {
+    "forecast_origin": 15120,
+    "train_first_index": 1057,
+    "train_last_index": 1088,
+    "last_label_exclusive": 15120,
+    "loss": 0.3137504458427429
+  },
+  {
+    "forecast_origin": 15152,
+    "train_first_index": 1089,
+    "train_last_index": 1120,
+    "last_label_exclusive": 15152,
+    "loss": 0.45704278349876404
+  },
+  {
+    "forecast_origin": 15184,
+    "train_first_index": 1121,
+    "train_last_index": 1152,
+    "last_label_exclusive": 15184,
+    "loss": 0.6481848955154419
+  },
+  {
+    "forecast_origin": 15216,
+    "train_first_index": 1153,
+    "train_last_index": 1184,
+    "last_label_exclusive": 15216,
+    "loss": 0.6022760272026062
+  },
+  {
+    "forecast_origin": 15248,
+    "train_first_index": 1185,
+    "train_last_index": 1216,
+    "last_label_exclusive": 15248,
+    "loss": 0.3575766980648041
+  },
+  {
+    "forecast_origin": 15280,
+    "train_first_index": 1217,
+    "train_last_index": 1248,
+    "last_label_exclusive": 15280,
+    "loss": 0.2570844888687134
+  },
+  {
+    "forecast_origin": 15312,
+    "train_first_index": 1249,
+    "train_last_index": 1280,
+    "last_label_exclusive": 15312,
+    "loss": 0.2541070580482483
+  },
+  {
+    "forecast_origin": 15344,
+    "train_first_index": 1281,
+    "train_last_index": 1312,
+    "last_label_exclusive": 15344,
+    "loss": 0.4968774914741516
+  },
+  {
+    "forecast_origin": 15376,
+    "train_first_index": 1313,
+    "train_last_index": 1344,
+    "last_label_exclusive": 15376,
+    "loss": 0.7154449820518494
+  },
+  {
+    "forecast_origin": 15408,
+    "train_first_index": 1345,
+    "train_last_index": 1376,
+    "last_label_exclusive": 15408,
+    "loss": 0.6422909498214722
+  },
+  {
+    "forecast_origin": 15440,
+    "train_first_index": 1377,
+    "train_last_index": 1408,
+    "last_label_exclusive": 15440,
+    "loss": 0.5138251781463623
+  },
+  {
+    "forecast_origin": 15472,
+    "train_first_index": 1409,
+    "train_last_index": 1440,
+    "last_label_exclusive": 15472,
+    "loss": 0.4980589747428894
+  },
+  {
+    "forecast_origin": 15504,
+    "train_first_index": 1441,
+    "train_last_index": 1472,
+    "last_label_exclusive": 15504,
+    "loss": 0.6310277581214905
+  },
+  {
+    "forecast_origin": 15536,
+    "train_first_index": 1473,
+    "train_last_index": 1504,
+    "last_label_exclusive": 15536,
+    "loss": 0.7465115785598755
+  },
+  {
+    "forecast_origin": 15568,
+    "train_first_index": 1505,
+    "train_last_index": 1536,
+    "last_label_exclusive": 15568,
+    "loss": 0.8770911693572998
+  },
+  {
+    "forecast_origin": 15600,
+    "train_first_index": 1537,
+    "train_last_index": 1568,
+    "last_label_exclusive": 15600,
+    "loss": 0.9065086841583252
+  },
+  {
+    "forecast_origin": 15632,
+    "train_first_index": 1569,
+    "train_last_index": 1600,
+    "last_label_exclusive": 15632,
+    "loss": 0.7503354549407959
+  },
+  {
+    "forecast_origin": 15664,
+    "train_first_index": 1601,
+    "train_last_index": 1632,
+    "last_label_exclusive": 15664,
+    "loss": 0.5938394665718079
+  },
+  {
+    "forecast_origin": 15696,
+    "train_first_index": 1633,
+    "train_last_index": 1664,
+    "last_label_exclusive": 15696,
+    "loss": 0.6445564031600952
+  },
+  {
+    "forecast_origin": 15728,
+    "train_first_index": 1665,
+    "train_last_index": 1696,
+    "last_label_exclusive": 15728,
+    "loss": 0.3736002743244171
+  },
+  {
+    "forecast_origin": 15760,
+    "train_first_index": 1697,
+    "train_last_index": 1728,
+    "last_label_exclusive": 15760,
+    "loss": 0.2940749228000641
+  },
+  {
+    "forecast_origin": 15792,
+    "train_first_index": 1729,
+    "train_last_index": 1760,
+    "last_label_exclusive": 15792,
+    "loss": 0.4211413264274597
+  },
+  {
+    "forecast_origin": 15824,
+    "train_first_index": 1761,
+    "train_last_index": 1792,
+    "last_label_exclusive": 15824,
+    "loss": 0.37250977754592896
+  },
+  {
+    "forecast_origin": 15856,
+    "train_first_index": 1793,
+    "train_last_index": 1824,
+    "last_label_exclusive": 15856,
+    "loss": 0.25071480870246887
+  },
+  {
+    "forecast_origin": 15888,
+    "train_first_index": 1825,
+    "train_last_index": 1856,
+    "last_label_exclusive": 15888,
+    "loss": 0.30220237374305725
+  },
+  {
+    "forecast_origin": 15920,
+    "train_first_index": 1857,
+    "train_last_index": 1888,
+    "last_label_exclusive": 15920,
+    "loss": 0.44172951579093933
+  },
+  {
+    "forecast_origin": 15952,
+    "train_first_index": 1889,
+    "train_last_index": 1920,
+    "last_label_exclusive": 15952,
+    "loss": 0.35280370712280273
+  },
+  {
+    "forecast_origin": 15984,
+    "train_first_index": 1921,
+    "train_last_index": 1952,
+    "last_label_exclusive": 15984,
+    "loss": 0.34913215041160583
+  },
+  {
+    "forecast_origin": 16016,
+    "train_first_index": 1953,
+    "train_last_index": 1984,
+    "last_label_exclusive": 16016,
+    "loss": 0.40196484327316284
+  },
+  {
+    "forecast_origin": 16048,
+    "train_first_index": 1985,
+    "train_last_index": 2016,
+    "last_label_exclusive": 16048,
+    "loss": 0.2977384328842163
+  },
+  {
+    "forecast_origin": 16080,
+    "train_first_index": 2017,
+    "train_last_index": 2048,
+    "last_label_exclusive": 16080,
+    "loss": 0.322285920381546
+  },
+  {
+    "forecast_origin": 16112,
+    "train_first_index": 2049,
+    "train_last_index": 2080,
+    "last_label_exclusive": 16112,
+    "loss": 0.3076638877391815
+  },
+  {
+    "forecast_origin": 16144,
+    "train_first_index": 2081,
+    "train_last_index": 2112,
+    "last_label_exclusive": 16144,
+    "loss": 0.30214622616767883
+  },
+  {
+    "forecast_origin": 16176,
+    "train_first_index": 2113,
+    "train_last_index": 2144,
+    "last_label_exclusive": 16176,
+    "loss": 0.29315611720085144
+  },
+  {
+    "forecast_origin": 16208,
+    "train_first_index": 2145,
+    "train_last_index": 2176,
+    "last_label_exclusive": 16208,
+    "loss": 0.34499436616897583
+  },
+  {
+    "forecast_origin": 16240,
+    "train_first_index": 2177,
+    "train_last_index": 2208,
+    "last_label_exclusive": 16240,
+    "loss": 0.4913116693496704
+  },
+  {
+    "forecast_origin": 16272,
+    "train_first_index": 2209,
+    "train_last_index": 2240,
+    "last_label_exclusive": 16272,
+    "loss": 0.7163251638412476
+  },
+  {
+    "forecast_origin": 16304,
+    "train_first_index": 2241,
+    "train_last_index": 2272,
+    "last_label_exclusive": 16304,
+    "loss": 0.8574016094207764
+  },
+  {
+    "forecast_origin": 16336,
+    "train_first_index": 2273,
+    "train_last_index": 2304,
+    "last_label_exclusive": 16336,
+    "loss": 1.0027928352355957
+  },
+  {
+    "forecast_origin": 16368,
+    "train_first_index": 2305,
+    "train_last_index": 2336,
+    "last_label_exclusive": 16368,
+    "loss": 0.7003656029701233
+  },
+  {
+    "forecast_origin": 16400,
+    "train_first_index": 2337,
+    "train_last_index": 2368,
+    "last_label_exclusive": 16400,
+    "loss": 0.5424150824546814
+  },
+  {
+    "forecast_origin": 16432,
+    "train_first_index": 2369,
+    "train_last_index": 2400,
+    "last_label_exclusive": 16432,
+    "loss": 0.33674630522727966
+  },
+  {
+    "forecast_origin": 16464,
+    "train_first_index": 2401,
+    "train_last_index": 2432,
+    "last_label_exclusive": 16464,
+    "loss": 0.40120115876197815
+  },
+  {
+    "forecast_origin": 16496,
+    "train_first_index": 2433,
+    "train_last_index": 2464,
+    "last_label_exclusive": 16496,
+    "loss": 0.3022861182689667
+  },
+  {
+    "forecast_origin": 16528,
+    "train_first_index": 2465,
+    "train_last_index": 2496,
+    "last_label_exclusive": 16528,
+    "loss": 0.3758269250392914
+  },
+  {
+    "forecast_origin": 16560,
+    "train_first_index": 2497,
+    "train_last_index": 2528,
+    "last_label_exclusive": 16560,
+    "loss": 0.560599684715271
+  },
+  {
+    "forecast_origin": 16592,
+    "train_first_index": 2529,
+    "train_last_index": 2560,
+    "last_label_exclusive": 16592,
+    "loss": 0.5204234719276428
+  },
+  {
+    "forecast_origin": 16624,
+    "train_first_index": 2561,
+    "train_last_index": 2592,
+    "last_label_exclusive": 16624,
+    "loss": 0.362093061208725
+  },
+  {
+    "forecast_origin": 16656,
+    "train_first_index": 2593,
+    "train_last_index": 2624,
+    "last_label_exclusive": 16656,
+    "loss": 0.3931834101676941
+  },
+  {
+    "forecast_origin": 16688,
+    "train_first_index": 2625,
+    "train_last_index": 2656,
+    "last_label_exclusive": 16688,
+    "loss": 0.5205010175704956
+  },
+  {
+    "forecast_origin": 16720,
+    "train_first_index": 2657,
+    "train_last_index": 2688,
+    "last_label_exclusive": 16720,
+    "loss": 0.2809327244758606
+  },
+  {
+    "forecast_origin": 16752,
+    "train_first_index": 2689,
+    "train_last_index": 2720,
+    "last_label_exclusive": 16752,
+    "loss": 0.2677640914916992
+  },
+  {
+    "forecast_origin": 16784,
+    "train_first_index": 2721,
+    "train_last_index": 2752,
+    "last_label_exclusive": 16784,
+    "loss": 0.23878170549869537
+  },
+  {
+    "forecast_origin": 16816,
+    "train_first_index": 2753,
+    "train_last_index": 2784,
+    "last_label_exclusive": 16816,
+    "loss": 0.4074563682079315
+  },
+  {
+    "forecast_origin": 16848,
+    "train_first_index": 2785,
+    "train_last_index": 2816,
+    "last_label_exclusive": 16848,
+    "loss": 0.4556407928466797
+  },
+  {
+    "forecast_origin": 16880,
+    "train_first_index": 2817,
+    "train_last_index": 2848,
+    "last_label_exclusive": 16880,
+    "loss": 0.46033087372779846
+  },
+  {
+    "forecast_origin": 16912,
+    "train_first_index": 2849,
+    "train_last_index": 2880,
+    "last_label_exclusive": 16912,
+    "loss": 0.434409499168396
+  },
+  {
+    "forecast_origin": 16944,
+    "train_first_index": 2881,
+    "train_last_index": 2912,
+    "last_label_exclusive": 16944,
+    "loss": 0.300060510635376
+  },
+  {
+    "forecast_origin": 16976,
+    "train_first_index": 2913,
+    "train_last_index": 2944,
+    "last_label_exclusive": 16976,
+    "loss": 0.3292904794216156
+  },
+  {
+    "forecast_origin": 17008,
+    "train_first_index": 2945,
+    "train_last_index": 2976,
+    "last_label_exclusive": 17008,
+    "loss": 0.21343907713890076
+  },
+  {
+    "forecast_origin": 17040,
+    "train_first_index": 2977,
+    "train_last_index": 3008,
+    "last_label_exclusive": 17040,
+    "loss": 0.2491292506456375
+  },
+  {
+    "forecast_origin": 17072,
+    "train_first_index": 3009,
+    "train_last_index": 3040,
+    "last_label_exclusive": 17072,
+    "loss": 0.284663587808609
+  },
+  {
+    "forecast_origin": 17104,
+    "train_first_index": 3041,
+    "train_last_index": 3072,
+    "last_label_exclusive": 17104,
+    "loss": 0.3351660370826721
+  },
+  {
+    "forecast_origin": 17136,
+    "train_first_index": 3073,
+    "train_last_index": 3104,
+    "last_label_exclusive": 17136,
+    "loss": 0.4101922810077667
+  },
+  {
+    "forecast_origin": 17168,
+    "train_first_index": 3105,
+    "train_last_index": 3136,
+    "last_label_exclusive": 17168,
+    "loss": 0.4140379726886749
+  },
+  {
+    "forecast_origin": 17200,
+    "train_first_index": 3137,
+    "train_last_index": 3168,
+    "last_label_exclusive": 17200,
+    "loss": 0.2825182378292084
+  },
+  {
+    "forecast_origin": 17232,
+    "train_first_index": 3169,
+    "train_last_index": 3200,
+    "last_label_exclusive": 17232,
+    "loss": 0.21337759494781494
+  },
+  {
+    "forecast_origin": 17264,
+    "train_first_index": 3201,
+    "train_last_index": 3232,
+    "last_label_exclusive": 17264,
+    "loss": 0.27135542035102844
+  },
+  {
+    "forecast_origin": 17296,
+    "train_first_index": 3233,
+    "train_last_index": 3264,
+    "last_label_exclusive": 17296,
+    "loss": 0.3148799240589142
+  }
+]

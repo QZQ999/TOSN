@@ -1,0 +1,50 @@
+{
+  "method": "TAFAS GCM, delayed-full-label matched harness",
+  "metrics": {
+    "tafas_delayed_full_labels": {
+      "mae": 0.4476534526838336,
+      "rmse": 0.6562575177369402
+    },
+    "frozen_backbone": {
+      "mae": 0.4548337542832951,
+      "rmse": 0.6659961509043495
+    },
+    "R0_offline": {
+      "mae": 0.45590009069595205,
+      "rmse": 0.666808233081586
+    },
+    "SMM_ReLU_offline": {
+      "mae": 0.457835847295056,
+      "rmse": 0.6690923630896121
+    }
+  },
+  "windows": 3389,
+  "updates": 103,
+  "official_file_sha256": "a7428df1d0efdf3800c58b4816673e84da11b22af4a4af7a0615def6dc76cc6f",
+  "source_repository": "BorealisAI/PETSA",
+  "source_commit": "87853d888e98311ac94e64be920d17b57143b20c",
+  "protocol_difference": "fixed batches32, only fully matured labels, no partial-label adaptation, no PAAS, no revision of already issued forecasts; shared original split/scaler/checkpoint; upstream GCM and MSE retained; torch clone-on-mutation autograd context for original in-place backbone normalization",
+  "information_difference": "TAFAS receives delayed deployment labels; R0 does not update at deployment. This difference must be reported with comparison.",
+  "smoke_only": false,
+  "job_id": "tafas_delayed_ETTh1_iTransformer_h96_s2027",
+  "identity": {
+    "dataset": "ETTh1",
+    "backbone": "iTransformer",
+    "horizon": 96,
+    "seed": 2027
+  },
+  "reviewers": [
+    "R1.8",
+    "R2.2"
+  ],
+  "inputs": {
+    "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_strict\\ETTh1\\iTransformer\\h96\\s2027\\run.json": "3ab2bc72d5afd078f5fd99100f391248d4e2c39ee61ad5732b069aba05d57f84",
+    "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_strict\\ETTh1\\iTransformer\\h96\\s2027\\checkpoint.pt": "c5af29f3d761fee2838326a467c4165a909c26b5da8916cc8ff1a95d6ee4d8f4",
+    "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_strict\\ETTh1\\iTransformer\\h96\\s2027\\predictions.npz": "cfd865c7efef827a46241fdb5589dd26cdbd29c776f4a366e5987c1237a93119",
+    "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_ablation_strict\\ETTh1\\iTransformer\\h96\\submitted_relu_head\\s2027\\run.json": "2dbd6241b233537f76797b4a14c6a97cdc6e652253fc75124d4c90e9c7d00387",
+    "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_ablation_strict\\ETTh1\\iTransformer\\h96\\submitted_relu_head\\s2027\\predictions.npz": "cb729c1ce2d8739a092a2560d2b468b13e804e0e0ae6d67817f92e6ca027c5fb"
+  },
+  "diagnostic_script_sha256": "61e27046dab1343f33f9613698214b59f2fab4d1709dd6e840e32947151274ed",
+  "source_sha256": "636807134ff574f308266a22cef002d41d90a1960a4522075ffbd941d8d96a45",
+  "elapsed_seconds": 3.6059234142303467
+}

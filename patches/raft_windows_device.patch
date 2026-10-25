@@ -1,0 +1,32 @@
+Official RAFT commit: bfe2320f5d719d1e2a024330de3410b370bbb2a9
+Reason: the official model moves `index` to CUDA and then uses it to index the
+CPU-resident `retrieval_dict`, which fails under PyTorch 2.5.1. Retrieval output
+is moved to the model device immediately afterward by the unchanged code.
+
+--- a/models/RAFT.py
++++ b/models/RAFT.py
+@@
+-        index = index.to(self.device)
++        # Compatibility fix: retrieval_dict is intentionally stored on CPU.
++        # PyTorch requires the advanced index to be on the same device.
++        index = index.cpu()
+
+Second compatibility/correctness fix for 70/10/20 custom splits: the official
+training loop evaluates both validation and test data through `mode='valid'`.
+This is hidden when validation and test have equal sizes, but otherwise indexes
+the validation retrieval tensor with test indices. The patch threads an explicit
+retrieval mode into `vali` and uses `test` for the test loader.
+
+--- a/exp/exp_long_term_forecasting.py
++++ b/exp/exp_long_term_forecasting.py
+@@
+-    def vali(self, vali_data, vali_loader, criterion):
++    def vali(self, vali_data, vali_loader, criterion, retrieval_mode='valid'):
+@@
+-                    outputs = self.model(batch_x, index, mode='valid')
++                    outputs = self.model(batch_x, index, mode=retrieval_mode)
+@@
+-            vali_loss = self.vali(vali_data, vali_loader, criterion)
+-            test_loss = self.vali(test_data, test_loader, criterion)
++            vali_loss = self.vali(vali_data, vali_loader, criterion, retrieval_mode='valid')
++            test_loss = self.vali(test_data, test_loader, criterion, retrieval_mode='test')

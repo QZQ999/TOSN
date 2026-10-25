@@ -1,0 +1,3597 @@
+{
+  "source_sha256": "636807134ff574f308266a22cef002d41d90a1960a4522075ffbd941d8d96a45",
+  "script_sha256": "8a840adfca15448814ec14c7a9bc300a31c4b155d40abaef14e670fb54ca51d0",
+  "jobs": [
+    {
+      "id": "sensitivity_summary",
+      "kind": "sensitivity"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\iTransformer\\h96\\s2026\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2026
+      },
+      "id": "latency_ETTh1_iTransformer_h96_s2026",
+      "kind": "latency"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\iTransformer\\h96\\s2026\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2026
+      },
+      "id": "controls_ETTh1_iTransformer_h96_s2026",
+      "kind": "controls"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\iTransformer\\h96\\s2026\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2026
+      },
+      "id": "shift_ETTh1_iTransformer_h96_s2026",
+      "kind": "shift"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\iTransformer\\h96\\s2026\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2026
+      },
+      "id": "fixed_initial_gates_ETTh1_iTransformer_h96_s2026",
+      "kind": "train",
+      "variant": "fixed_initial_gates",
+      "overrides": {}
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\iTransformer\\h96\\s2026\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2026
+      },
+      "id": "raft_ETTh1_iTransformer_h96_s2026",
+      "kind": "raft"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\iTransformer\\h96\\s2027\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2027
+      },
+      "id": "latency_ETTh1_iTransformer_h96_s2027",
+      "kind": "latency"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\iTransformer\\h96\\s2028\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2028
+      },
+      "id": "latency_ETTh1_iTransformer_h96_s2028",
+      "kind": "latency"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\iTransformer\\h96\\s2029\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2029
+      },
+      "id": "latency_ETTh1_iTransformer_h96_s2029",
+      "kind": "latency"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\iTransformer\\h96\\s2030\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2030
+      },
+      "id": "latency_ETTh1_iTransformer_h96_s2030",
+      "kind": "latency"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\FEDformer\\h96\\s2026\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2026
+      },
+      "id": "latency_ETTh1_FEDformer_h96_s2026",
+      "kind": "latency"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\FEDformer\\h96\\s2027\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2027
+      },
+      "id": "latency_ETTh1_FEDformer_h96_s2027",
+      "kind": "latency"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\FEDformer\\h96\\s2028\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2028
+      },
+      "id": "latency_ETTh1_FEDformer_h96_s2028",
+      "kind": "latency"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\FEDformer\\h96\\s2029\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2029
+      },
+      "id": "latency_ETTh1_FEDformer_h96_s2029",
+      "kind": "latency"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\FEDformer\\h96\\s2030\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2030
+      },
+      "id": "latency_ETTh1_FEDformer_h96_s2030",
+      "kind": "latency"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2026\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2026
+      },
+      "id": "latency_ETTm1_iTransformer_h96_s2026",
+      "kind": "latency"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2027\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2027
+      },
+      "id": "latency_ETTm1_iTransformer_h96_s2027",
+      "kind": "latency"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2028\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2028
+      },
+      "id": "latency_ETTm1_iTransformer_h96_s2028",
+      "kind": "latency"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2029\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2029
+      },
+      "id": "latency_ETTm1_iTransformer_h96_s2029",
+      "kind": "latency"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2030\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2030
+      },
+      "id": "latency_ETTm1_iTransformer_h96_s2030",
+      "kind": "latency"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\FEDformer\\h96\\s2026\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2026
+      },
+      "id": "latency_ETTm1_FEDformer_h96_s2026",
+      "kind": "latency"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\FEDformer\\h96\\s2027\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2027
+      },
+      "id": "latency_ETTm1_FEDformer_h96_s2027",
+      "kind": "latency"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\FEDformer\\h96\\s2028\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2028
+      },
+      "id": "latency_ETTm1_FEDformer_h96_s2028",
+      "kind": "latency"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\FEDformer\\h96\\s2029\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2029
+      },
+      "id": "latency_ETTm1_FEDformer_h96_s2029",
+      "kind": "latency"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\FEDformer\\h96\\s2030\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2030
+      },
+      "id": "latency_ETTm1_FEDformer_h96_s2030",
+      "kind": "latency"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\iTransformer\\h192\\s2026\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "iTransformer",
+        "horizon": 192,
+        "seed": 2026
+      },
+      "id": "latency_ETTh1_iTransformer_h192_s2026",
+      "kind": "latency"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\iTransformer\\h192\\s2027\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "iTransformer",
+        "horizon": 192,
+        "seed": 2027
+      },
+      "id": "latency_ETTh1_iTransformer_h192_s2027",
+      "kind": "latency"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\iTransformer\\h192\\s2028\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "iTransformer",
+        "horizon": 192,
+        "seed": 2028
+      },
+      "id": "latency_ETTh1_iTransformer_h192_s2028",
+      "kind": "latency"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\iTransformer\\h192\\s2029\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "iTransformer",
+        "horizon": 192,
+        "seed": 2029
+      },
+      "id": "latency_ETTh1_iTransformer_h192_s2029",
+      "kind": "latency"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\iTransformer\\h192\\s2030\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "iTransformer",
+        "horizon": 192,
+        "seed": 2030
+      },
+      "id": "latency_ETTh1_iTransformer_h192_s2030",
+      "kind": "latency"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\FEDformer\\h192\\s2026\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "FEDformer",
+        "horizon": 192,
+        "seed": 2026
+      },
+      "id": "latency_ETTh1_FEDformer_h192_s2026",
+      "kind": "latency"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\FEDformer\\h192\\s2027\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "FEDformer",
+        "horizon": 192,
+        "seed": 2027
+      },
+      "id": "latency_ETTh1_FEDformer_h192_s2027",
+      "kind": "latency"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\FEDformer\\h192\\s2028\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "FEDformer",
+        "horizon": 192,
+        "seed": 2028
+      },
+      "id": "latency_ETTh1_FEDformer_h192_s2028",
+      "kind": "latency"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\FEDformer\\h192\\s2029\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "FEDformer",
+        "horizon": 192,
+        "seed": 2029
+      },
+      "id": "latency_ETTh1_FEDformer_h192_s2029",
+      "kind": "latency"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\FEDformer\\h192\\s2030\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "FEDformer",
+        "horizon": 192,
+        "seed": 2030
+      },
+      "id": "latency_ETTh1_FEDformer_h192_s2030",
+      "kind": "latency"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\iTransformer\\h192\\s2026\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "iTransformer",
+        "horizon": 192,
+        "seed": 2026
+      },
+      "id": "latency_ETTm1_iTransformer_h192_s2026",
+      "kind": "latency"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\iTransformer\\h192\\s2027\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "iTransformer",
+        "horizon": 192,
+        "seed": 2027
+      },
+      "id": "latency_ETTm1_iTransformer_h192_s2027",
+      "kind": "latency"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\iTransformer\\h192\\s2028\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "iTransformer",
+        "horizon": 192,
+        "seed": 2028
+      },
+      "id": "latency_ETTm1_iTransformer_h192_s2028",
+      "kind": "latency"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\iTransformer\\h192\\s2029\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "iTransformer",
+        "horizon": 192,
+        "seed": 2029
+      },
+      "id": "latency_ETTm1_iTransformer_h192_s2029",
+      "kind": "latency"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\iTransformer\\h192\\s2030\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "iTransformer",
+        "horizon": 192,
+        "seed": 2030
+      },
+      "id": "latency_ETTm1_iTransformer_h192_s2030",
+      "kind": "latency"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\FEDformer\\h192\\s2026\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "FEDformer",
+        "horizon": 192,
+        "seed": 2026
+      },
+      "id": "latency_ETTm1_FEDformer_h192_s2026",
+      "kind": "latency"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\FEDformer\\h192\\s2027\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "FEDformer",
+        "horizon": 192,
+        "seed": 2027
+      },
+      "id": "latency_ETTm1_FEDformer_h192_s2027",
+      "kind": "latency"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\FEDformer\\h192\\s2028\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "FEDformer",
+        "horizon": 192,
+        "seed": 2028
+      },
+      "id": "latency_ETTm1_FEDformer_h192_s2028",
+      "kind": "latency"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\FEDformer\\h192\\s2029\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "FEDformer",
+        "horizon": 192,
+        "seed": 2029
+      },
+      "id": "latency_ETTm1_FEDformer_h192_s2029",
+      "kind": "latency"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\FEDformer\\h192\\s2030\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "FEDformer",
+        "horizon": 192,
+        "seed": 2030
+      },
+      "id": "latency_ETTm1_FEDformer_h192_s2030",
+      "kind": "latency"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\iTransformer\\h336\\s2026\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "iTransformer",
+        "horizon": 336,
+        "seed": 2026
+      },
+      "id": "latency_ETTh1_iTransformer_h336_s2026",
+      "kind": "latency"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\iTransformer\\h336\\s2027\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "iTransformer",
+        "horizon": 336,
+        "seed": 2027
+      },
+      "id": "latency_ETTh1_iTransformer_h336_s2027",
+      "kind": "latency"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\iTransformer\\h336\\s2028\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "iTransformer",
+        "horizon": 336,
+        "seed": 2028
+      },
+      "id": "latency_ETTh1_iTransformer_h336_s2028",
+      "kind": "latency"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\iTransformer\\h336\\s2029\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "iTransformer",
+        "horizon": 336,
+        "seed": 2029
+      },
+      "id": "latency_ETTh1_iTransformer_h336_s2029",
+      "kind": "latency"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\iTransformer\\h336\\s2030\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "iTransformer",
+        "horizon": 336,
+        "seed": 2030
+      },
+      "id": "latency_ETTh1_iTransformer_h336_s2030",
+      "kind": "latency"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\FEDformer\\h336\\s2026\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "FEDformer",
+        "horizon": 336,
+        "seed": 2026
+      },
+      "id": "latency_ETTh1_FEDformer_h336_s2026",
+      "kind": "latency"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\FEDformer\\h336\\s2027\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "FEDformer",
+        "horizon": 336,
+        "seed": 2027
+      },
+      "id": "latency_ETTh1_FEDformer_h336_s2027",
+      "kind": "latency"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\FEDformer\\h336\\s2028\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "FEDformer",
+        "horizon": 336,
+        "seed": 2028
+      },
+      "id": "latency_ETTh1_FEDformer_h336_s2028",
+      "kind": "latency"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\FEDformer\\h336\\s2029\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "FEDformer",
+        "horizon": 336,
+        "seed": 2029
+      },
+      "id": "latency_ETTh1_FEDformer_h336_s2029",
+      "kind": "latency"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\FEDformer\\h336\\s2030\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "FEDformer",
+        "horizon": 336,
+        "seed": 2030
+      },
+      "id": "latency_ETTh1_FEDformer_h336_s2030",
+      "kind": "latency"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\iTransformer\\h336\\s2026\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "iTransformer",
+        "horizon": 336,
+        "seed": 2026
+      },
+      "id": "latency_ETTm1_iTransformer_h336_s2026",
+      "kind": "latency"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\iTransformer\\h336\\s2027\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "iTransformer",
+        "horizon": 336,
+        "seed": 2027
+      },
+      "id": "latency_ETTm1_iTransformer_h336_s2027",
+      "kind": "latency"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\iTransformer\\h336\\s2028\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "iTransformer",
+        "horizon": 336,
+        "seed": 2028
+      },
+      "id": "latency_ETTm1_iTransformer_h336_s2028",
+      "kind": "latency"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\iTransformer\\h336\\s2029\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "iTransformer",
+        "horizon": 336,
+        "seed": 2029
+      },
+      "id": "latency_ETTm1_iTransformer_h336_s2029",
+      "kind": "latency"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\iTransformer\\h336\\s2030\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "iTransformer",
+        "horizon": 336,
+        "seed": 2030
+      },
+      "id": "latency_ETTm1_iTransformer_h336_s2030",
+      "kind": "latency"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\FEDformer\\h336\\s2026\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "FEDformer",
+        "horizon": 336,
+        "seed": 2026
+      },
+      "id": "latency_ETTm1_FEDformer_h336_s2026",
+      "kind": "latency"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\FEDformer\\h336\\s2027\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "FEDformer",
+        "horizon": 336,
+        "seed": 2027
+      },
+      "id": "latency_ETTm1_FEDformer_h336_s2027",
+      "kind": "latency"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\FEDformer\\h336\\s2028\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "FEDformer",
+        "horizon": 336,
+        "seed": 2028
+      },
+      "id": "latency_ETTm1_FEDformer_h336_s2028",
+      "kind": "latency"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\FEDformer\\h336\\s2029\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "FEDformer",
+        "horizon": 336,
+        "seed": 2029
+      },
+      "id": "latency_ETTm1_FEDformer_h336_s2029",
+      "kind": "latency"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\FEDformer\\h336\\s2030\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "FEDformer",
+        "horizon": 336,
+        "seed": 2030
+      },
+      "id": "latency_ETTm1_FEDformer_h336_s2030",
+      "kind": "latency"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\iTransformer\\h720\\s2026\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "iTransformer",
+        "horizon": 720,
+        "seed": 2026
+      },
+      "id": "latency_ETTh1_iTransformer_h720_s2026",
+      "kind": "latency"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\iTransformer\\h720\\s2027\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "iTransformer",
+        "horizon": 720,
+        "seed": 2027
+      },
+      "id": "latency_ETTh1_iTransformer_h720_s2027",
+      "kind": "latency"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\iTransformer\\h720\\s2028\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "iTransformer",
+        "horizon": 720,
+        "seed": 2028
+      },
+      "id": "latency_ETTh1_iTransformer_h720_s2028",
+      "kind": "latency"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\iTransformer\\h720\\s2029\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "iTransformer",
+        "horizon": 720,
+        "seed": 2029
+      },
+      "id": "latency_ETTh1_iTransformer_h720_s2029",
+      "kind": "latency"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\iTransformer\\h720\\s2030\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "iTransformer",
+        "horizon": 720,
+        "seed": 2030
+      },
+      "id": "latency_ETTh1_iTransformer_h720_s2030",
+      "kind": "latency"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\FEDformer\\h720\\s2026\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "FEDformer",
+        "horizon": 720,
+        "seed": 2026
+      },
+      "id": "latency_ETTh1_FEDformer_h720_s2026",
+      "kind": "latency"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\FEDformer\\h720\\s2027\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "FEDformer",
+        "horizon": 720,
+        "seed": 2027
+      },
+      "id": "latency_ETTh1_FEDformer_h720_s2027",
+      "kind": "latency"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\FEDformer\\h720\\s2028\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "FEDformer",
+        "horizon": 720,
+        "seed": 2028
+      },
+      "id": "latency_ETTh1_FEDformer_h720_s2028",
+      "kind": "latency"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\FEDformer\\h720\\s2029\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "FEDformer",
+        "horizon": 720,
+        "seed": 2029
+      },
+      "id": "latency_ETTh1_FEDformer_h720_s2029",
+      "kind": "latency"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\FEDformer\\h720\\s2030\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "FEDformer",
+        "horizon": 720,
+        "seed": 2030
+      },
+      "id": "latency_ETTh1_FEDformer_h720_s2030",
+      "kind": "latency"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\iTransformer\\h720\\s2026\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "iTransformer",
+        "horizon": 720,
+        "seed": 2026
+      },
+      "id": "latency_ETTm1_iTransformer_h720_s2026",
+      "kind": "latency"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\iTransformer\\h720\\s2027\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "iTransformer",
+        "horizon": 720,
+        "seed": 2027
+      },
+      "id": "latency_ETTm1_iTransformer_h720_s2027",
+      "kind": "latency"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\iTransformer\\h720\\s2028\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "iTransformer",
+        "horizon": 720,
+        "seed": 2028
+      },
+      "id": "latency_ETTm1_iTransformer_h720_s2028",
+      "kind": "latency"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\iTransformer\\h720\\s2029\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "iTransformer",
+        "horizon": 720,
+        "seed": 2029
+      },
+      "id": "latency_ETTm1_iTransformer_h720_s2029",
+      "kind": "latency"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\iTransformer\\h720\\s2030\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "iTransformer",
+        "horizon": 720,
+        "seed": 2030
+      },
+      "id": "latency_ETTm1_iTransformer_h720_s2030",
+      "kind": "latency"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\FEDformer\\h720\\s2026\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "FEDformer",
+        "horizon": 720,
+        "seed": 2026
+      },
+      "id": "latency_ETTm1_FEDformer_h720_s2026",
+      "kind": "latency"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\FEDformer\\h720\\s2027\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "FEDformer",
+        "horizon": 720,
+        "seed": 2027
+      },
+      "id": "latency_ETTm1_FEDformer_h720_s2027",
+      "kind": "latency"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\FEDformer\\h720\\s2028\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "FEDformer",
+        "horizon": 720,
+        "seed": 2028
+      },
+      "id": "latency_ETTm1_FEDformer_h720_s2028",
+      "kind": "latency"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\FEDformer\\h720\\s2029\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "FEDformer",
+        "horizon": 720,
+        "seed": 2029
+      },
+      "id": "latency_ETTm1_FEDformer_h720_s2029",
+      "kind": "latency"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\FEDformer\\h720\\s2030\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "FEDformer",
+        "horizon": 720,
+        "seed": 2030
+      },
+      "id": "latency_ETTm1_FEDformer_h720_s2030",
+      "kind": "latency"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\iTransformer\\h96\\s2027\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2027
+      },
+      "id": "controls_ETTh1_iTransformer_h96_s2027",
+      "kind": "controls"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\iTransformer\\h96\\s2028\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2028
+      },
+      "id": "controls_ETTh1_iTransformer_h96_s2028",
+      "kind": "controls"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\iTransformer\\h96\\s2029\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2029
+      },
+      "id": "controls_ETTh1_iTransformer_h96_s2029",
+      "kind": "controls"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\iTransformer\\h96\\s2030\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2030
+      },
+      "id": "controls_ETTh1_iTransformer_h96_s2030",
+      "kind": "controls"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\FEDformer\\h96\\s2026\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2026
+      },
+      "id": "controls_ETTh1_FEDformer_h96_s2026",
+      "kind": "controls"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\FEDformer\\h96\\s2027\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2027
+      },
+      "id": "controls_ETTh1_FEDformer_h96_s2027",
+      "kind": "controls"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\FEDformer\\h96\\s2028\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2028
+      },
+      "id": "controls_ETTh1_FEDformer_h96_s2028",
+      "kind": "controls"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\FEDformer\\h96\\s2029\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2029
+      },
+      "id": "controls_ETTh1_FEDformer_h96_s2029",
+      "kind": "controls"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\FEDformer\\h96\\s2030\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2030
+      },
+      "id": "controls_ETTh1_FEDformer_h96_s2030",
+      "kind": "controls"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2026\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2026
+      },
+      "id": "controls_ETTm1_iTransformer_h96_s2026",
+      "kind": "controls"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2027\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2027
+      },
+      "id": "controls_ETTm1_iTransformer_h96_s2027",
+      "kind": "controls"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2028\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2028
+      },
+      "id": "controls_ETTm1_iTransformer_h96_s2028",
+      "kind": "controls"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2029\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2029
+      },
+      "id": "controls_ETTm1_iTransformer_h96_s2029",
+      "kind": "controls"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2030\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2030
+      },
+      "id": "controls_ETTm1_iTransformer_h96_s2030",
+      "kind": "controls"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\FEDformer\\h96\\s2026\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2026
+      },
+      "id": "controls_ETTm1_FEDformer_h96_s2026",
+      "kind": "controls"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\FEDformer\\h96\\s2027\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2027
+      },
+      "id": "controls_ETTm1_FEDformer_h96_s2027",
+      "kind": "controls"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\FEDformer\\h96\\s2028\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2028
+      },
+      "id": "controls_ETTm1_FEDformer_h96_s2028",
+      "kind": "controls"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\FEDformer\\h96\\s2029\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2029
+      },
+      "id": "controls_ETTm1_FEDformer_h96_s2029",
+      "kind": "controls"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\FEDformer\\h96\\s2030\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2030
+      },
+      "id": "controls_ETTm1_FEDformer_h96_s2030",
+      "kind": "controls"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\iTransformer\\h96\\s2027\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2027
+      },
+      "id": "shift_ETTh1_iTransformer_h96_s2027",
+      "kind": "shift"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\iTransformer\\h96\\s2028\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2028
+      },
+      "id": "shift_ETTh1_iTransformer_h96_s2028",
+      "kind": "shift"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\iTransformer\\h96\\s2029\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2029
+      },
+      "id": "shift_ETTh1_iTransformer_h96_s2029",
+      "kind": "shift"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\iTransformer\\h96\\s2030\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2030
+      },
+      "id": "shift_ETTh1_iTransformer_h96_s2030",
+      "kind": "shift"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\FEDformer\\h96\\s2026\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2026
+      },
+      "id": "shift_ETTh1_FEDformer_h96_s2026",
+      "kind": "shift"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\FEDformer\\h96\\s2027\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2027
+      },
+      "id": "shift_ETTh1_FEDformer_h96_s2027",
+      "kind": "shift"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\FEDformer\\h96\\s2028\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2028
+      },
+      "id": "shift_ETTh1_FEDformer_h96_s2028",
+      "kind": "shift"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\FEDformer\\h96\\s2029\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2029
+      },
+      "id": "shift_ETTh1_FEDformer_h96_s2029",
+      "kind": "shift"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\FEDformer\\h96\\s2030\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2030
+      },
+      "id": "shift_ETTh1_FEDformer_h96_s2030",
+      "kind": "shift"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2026\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2026
+      },
+      "id": "shift_ETTm1_iTransformer_h96_s2026",
+      "kind": "shift"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2027\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2027
+      },
+      "id": "shift_ETTm1_iTransformer_h96_s2027",
+      "kind": "shift"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2028\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2028
+      },
+      "id": "shift_ETTm1_iTransformer_h96_s2028",
+      "kind": "shift"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2029\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2029
+      },
+      "id": "shift_ETTm1_iTransformer_h96_s2029",
+      "kind": "shift"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2030\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2030
+      },
+      "id": "shift_ETTm1_iTransformer_h96_s2030",
+      "kind": "shift"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\FEDformer\\h96\\s2026\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2026
+      },
+      "id": "shift_ETTm1_FEDformer_h96_s2026",
+      "kind": "shift"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\FEDformer\\h96\\s2027\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2027
+      },
+      "id": "shift_ETTm1_FEDformer_h96_s2027",
+      "kind": "shift"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\FEDformer\\h96\\s2028\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2028
+      },
+      "id": "shift_ETTm1_FEDformer_h96_s2028",
+      "kind": "shift"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\FEDformer\\h96\\s2029\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2029
+      },
+      "id": "shift_ETTm1_FEDformer_h96_s2029",
+      "kind": "shift"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\FEDformer\\h96\\s2030\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2030
+      },
+      "id": "shift_ETTm1_FEDformer_h96_s2030",
+      "kind": "shift"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\iTransformer\\h96\\s2027\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2027
+      },
+      "id": "raft_ETTh1_iTransformer_h96_s2027",
+      "kind": "raft"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\iTransformer\\h96\\s2028\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2028
+      },
+      "id": "raft_ETTh1_iTransformer_h96_s2028",
+      "kind": "raft"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\iTransformer\\h96\\s2029\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2029
+      },
+      "id": "raft_ETTh1_iTransformer_h96_s2029",
+      "kind": "raft"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\iTransformer\\h96\\s2030\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2030
+      },
+      "id": "raft_ETTh1_iTransformer_h96_s2030",
+      "kind": "raft"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2026\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2026
+      },
+      "id": "raft_ETTm1_iTransformer_h96_s2026",
+      "kind": "raft"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2027\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2027
+      },
+      "id": "raft_ETTm1_iTransformer_h96_s2027",
+      "kind": "raft"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2028\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2028
+      },
+      "id": "raft_ETTm1_iTransformer_h96_s2028",
+      "kind": "raft"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2029\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2029
+      },
+      "id": "raft_ETTm1_iTransformer_h96_s2029",
+      "kind": "raft"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2030\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2030
+      },
+      "id": "raft_ETTm1_iTransformer_h96_s2030",
+      "kind": "raft"
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\iTransformer\\h96\\s2026\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2026
+      },
+      "id": "learned_constant_gate_ETTh1_iTransformer_h96_s2026",
+      "kind": "train",
+      "variant": "learned_constant_gate",
+      "overrides": {}
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\iTransformer\\h96\\s2027\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2027
+      },
+      "id": "fixed_initial_gates_ETTh1_iTransformer_h96_s2027",
+      "kind": "train",
+      "variant": "fixed_initial_gates",
+      "overrides": {}
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\iTransformer\\h96\\s2027\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2027
+      },
+      "id": "learned_constant_gate_ETTh1_iTransformer_h96_s2027",
+      "kind": "train",
+      "variant": "learned_constant_gate",
+      "overrides": {}
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\iTransformer\\h96\\s2028\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2028
+      },
+      "id": "fixed_initial_gates_ETTh1_iTransformer_h96_s2028",
+      "kind": "train",
+      "variant": "fixed_initial_gates",
+      "overrides": {}
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\iTransformer\\h96\\s2028\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2028
+      },
+      "id": "learned_constant_gate_ETTh1_iTransformer_h96_s2028",
+      "kind": "train",
+      "variant": "learned_constant_gate",
+      "overrides": {}
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\iTransformer\\h96\\s2029\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2029
+      },
+      "id": "fixed_initial_gates_ETTh1_iTransformer_h96_s2029",
+      "kind": "train",
+      "variant": "fixed_initial_gates",
+      "overrides": {}
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\iTransformer\\h96\\s2029\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2029
+      },
+      "id": "learned_constant_gate_ETTh1_iTransformer_h96_s2029",
+      "kind": "train",
+      "variant": "learned_constant_gate",
+      "overrides": {}
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\iTransformer\\h96\\s2030\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2030
+      },
+      "id": "fixed_initial_gates_ETTh1_iTransformer_h96_s2030",
+      "kind": "train",
+      "variant": "fixed_initial_gates",
+      "overrides": {}
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\iTransformer\\h96\\s2030\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2030
+      },
+      "id": "learned_constant_gate_ETTh1_iTransformer_h96_s2030",
+      "kind": "train",
+      "variant": "learned_constant_gate",
+      "overrides": {}
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\FEDformer\\h96\\s2026\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2026
+      },
+      "id": "fixed_initial_gates_ETTh1_FEDformer_h96_s2026",
+      "kind": "train",
+      "variant": "fixed_initial_gates",
+      "overrides": {}
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\FEDformer\\h96\\s2026\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2026
+      },
+      "id": "learned_constant_gate_ETTh1_FEDformer_h96_s2026",
+      "kind": "train",
+      "variant": "learned_constant_gate",
+      "overrides": {}
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\FEDformer\\h96\\s2026\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2026
+      },
+      "id": "submitted_relu_ETTh1_FEDformer_h96_s2026",
+      "kind": "train",
+      "variant": "submitted_relu",
+      "overrides": {
+        "risk_monitor_mode": "manuscript_mlp",
+        "use_risk_gate": true,
+        "risk_loss_weight": 1.0
+      }
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\FEDformer\\h96\\s2026\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2026
+      },
+      "id": "softplus_risk_ETTh1_FEDformer_h96_s2026",
+      "kind": "train",
+      "variant": "softplus_risk",
+      "overrides": {
+        "risk_monitor_mode": "softplus_mlp",
+        "use_risk_gate": true,
+        "risk_loss_weight": 1.0
+      }
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\FEDformer\\h96\\s2026\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2026
+      },
+      "id": "no_dfm_ETTh1_FEDformer_h96_s2026",
+      "kind": "train",
+      "variant": "no_dfm",
+      "overrides": {
+        "use_dfm": false
+      }
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\FEDformer\\h96\\s2026\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2026
+      },
+      "id": "no_hcb_ETTh1_FEDformer_h96_s2026",
+      "kind": "train",
+      "variant": "no_hcb",
+      "overrides": {
+        "use_hcb": false
+      }
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\FEDformer\\h96\\s2026\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2026
+      },
+      "id": "raw_cosine_ETTh1_FEDformer_h96_s2026",
+      "kind": "train",
+      "variant": "raw_cosine",
+      "overrides": {
+        "retrieval_encoder": "raw_cosine"
+      }
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\FEDformer\\h96\\s2026\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2026
+      },
+      "id": "same_sensor_ETTh1_FEDformer_h96_s2026",
+      "kind": "train",
+      "variant": "same_sensor",
+      "overrides": {
+        "retrieval_scope": "same_sensor"
+      }
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\FEDformer\\h96\\s2026\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2026
+      },
+      "id": "cross_sensor_ETTh1_FEDformer_h96_s2026",
+      "kind": "train",
+      "variant": "cross_sensor",
+      "overrides": {
+        "retrieval_scope": "cross_sensor"
+      }
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\FEDformer\\h96\\s2027\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2027
+      },
+      "id": "fixed_initial_gates_ETTh1_FEDformer_h96_s2027",
+      "kind": "train",
+      "variant": "fixed_initial_gates",
+      "overrides": {}
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\FEDformer\\h96\\s2027\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2027
+      },
+      "id": "learned_constant_gate_ETTh1_FEDformer_h96_s2027",
+      "kind": "train",
+      "variant": "learned_constant_gate",
+      "overrides": {}
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\FEDformer\\h96\\s2027\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2027
+      },
+      "id": "submitted_relu_ETTh1_FEDformer_h96_s2027",
+      "kind": "train",
+      "variant": "submitted_relu",
+      "overrides": {
+        "risk_monitor_mode": "manuscript_mlp",
+        "use_risk_gate": true,
+        "risk_loss_weight": 1.0
+      }
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\FEDformer\\h96\\s2027\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2027
+      },
+      "id": "softplus_risk_ETTh1_FEDformer_h96_s2027",
+      "kind": "train",
+      "variant": "softplus_risk",
+      "overrides": {
+        "risk_monitor_mode": "softplus_mlp",
+        "use_risk_gate": true,
+        "risk_loss_weight": 1.0
+      }
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\FEDformer\\h96\\s2027\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2027
+      },
+      "id": "no_dfm_ETTh1_FEDformer_h96_s2027",
+      "kind": "train",
+      "variant": "no_dfm",
+      "overrides": {
+        "use_dfm": false
+      }
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\FEDformer\\h96\\s2027\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2027
+      },
+      "id": "no_hcb_ETTh1_FEDformer_h96_s2027",
+      "kind": "train",
+      "variant": "no_hcb",
+      "overrides": {
+        "use_hcb": false
+      }
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\FEDformer\\h96\\s2027\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2027
+      },
+      "id": "raw_cosine_ETTh1_FEDformer_h96_s2027",
+      "kind": "train",
+      "variant": "raw_cosine",
+      "overrides": {
+        "retrieval_encoder": "raw_cosine"
+      }
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\FEDformer\\h96\\s2027\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2027
+      },
+      "id": "same_sensor_ETTh1_FEDformer_h96_s2027",
+      "kind": "train",
+      "variant": "same_sensor",
+      "overrides": {
+        "retrieval_scope": "same_sensor"
+      }
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\FEDformer\\h96\\s2027\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2027
+      },
+      "id": "cross_sensor_ETTh1_FEDformer_h96_s2027",
+      "kind": "train",
+      "variant": "cross_sensor",
+      "overrides": {
+        "retrieval_scope": "cross_sensor"
+      }
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\FEDformer\\h96\\s2028\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2028
+      },
+      "id": "fixed_initial_gates_ETTh1_FEDformer_h96_s2028",
+      "kind": "train",
+      "variant": "fixed_initial_gates",
+      "overrides": {}
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\FEDformer\\h96\\s2028\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2028
+      },
+      "id": "learned_constant_gate_ETTh1_FEDformer_h96_s2028",
+      "kind": "train",
+      "variant": "learned_constant_gate",
+      "overrides": {}
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\FEDformer\\h96\\s2028\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2028
+      },
+      "id": "submitted_relu_ETTh1_FEDformer_h96_s2028",
+      "kind": "train",
+      "variant": "submitted_relu",
+      "overrides": {
+        "risk_monitor_mode": "manuscript_mlp",
+        "use_risk_gate": true,
+        "risk_loss_weight": 1.0
+      }
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\FEDformer\\h96\\s2028\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2028
+      },
+      "id": "softplus_risk_ETTh1_FEDformer_h96_s2028",
+      "kind": "train",
+      "variant": "softplus_risk",
+      "overrides": {
+        "risk_monitor_mode": "softplus_mlp",
+        "use_risk_gate": true,
+        "risk_loss_weight": 1.0
+      }
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\FEDformer\\h96\\s2028\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2028
+      },
+      "id": "no_dfm_ETTh1_FEDformer_h96_s2028",
+      "kind": "train",
+      "variant": "no_dfm",
+      "overrides": {
+        "use_dfm": false
+      }
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\FEDformer\\h96\\s2028\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2028
+      },
+      "id": "no_hcb_ETTh1_FEDformer_h96_s2028",
+      "kind": "train",
+      "variant": "no_hcb",
+      "overrides": {
+        "use_hcb": false
+      }
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\FEDformer\\h96\\s2028\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2028
+      },
+      "id": "raw_cosine_ETTh1_FEDformer_h96_s2028",
+      "kind": "train",
+      "variant": "raw_cosine",
+      "overrides": {
+        "retrieval_encoder": "raw_cosine"
+      }
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\FEDformer\\h96\\s2028\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2028
+      },
+      "id": "same_sensor_ETTh1_FEDformer_h96_s2028",
+      "kind": "train",
+      "variant": "same_sensor",
+      "overrides": {
+        "retrieval_scope": "same_sensor"
+      }
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\FEDformer\\h96\\s2028\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2028
+      },
+      "id": "cross_sensor_ETTh1_FEDformer_h96_s2028",
+      "kind": "train",
+      "variant": "cross_sensor",
+      "overrides": {
+        "retrieval_scope": "cross_sensor"
+      }
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\FEDformer\\h96\\s2029\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2029
+      },
+      "id": "fixed_initial_gates_ETTh1_FEDformer_h96_s2029",
+      "kind": "train",
+      "variant": "fixed_initial_gates",
+      "overrides": {}
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\FEDformer\\h96\\s2029\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2029
+      },
+      "id": "learned_constant_gate_ETTh1_FEDformer_h96_s2029",
+      "kind": "train",
+      "variant": "learned_constant_gate",
+      "overrides": {}
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\FEDformer\\h96\\s2029\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2029
+      },
+      "id": "submitted_relu_ETTh1_FEDformer_h96_s2029",
+      "kind": "train",
+      "variant": "submitted_relu",
+      "overrides": {
+        "risk_monitor_mode": "manuscript_mlp",
+        "use_risk_gate": true,
+        "risk_loss_weight": 1.0
+      }
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\FEDformer\\h96\\s2029\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2029
+      },
+      "id": "softplus_risk_ETTh1_FEDformer_h96_s2029",
+      "kind": "train",
+      "variant": "softplus_risk",
+      "overrides": {
+        "risk_monitor_mode": "softplus_mlp",
+        "use_risk_gate": true,
+        "risk_loss_weight": 1.0
+      }
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\FEDformer\\h96\\s2029\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2029
+      },
+      "id": "no_dfm_ETTh1_FEDformer_h96_s2029",
+      "kind": "train",
+      "variant": "no_dfm",
+      "overrides": {
+        "use_dfm": false
+      }
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\FEDformer\\h96\\s2029\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2029
+      },
+      "id": "no_hcb_ETTh1_FEDformer_h96_s2029",
+      "kind": "train",
+      "variant": "no_hcb",
+      "overrides": {
+        "use_hcb": false
+      }
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\FEDformer\\h96\\s2029\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2029
+      },
+      "id": "raw_cosine_ETTh1_FEDformer_h96_s2029",
+      "kind": "train",
+      "variant": "raw_cosine",
+      "overrides": {
+        "retrieval_encoder": "raw_cosine"
+      }
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\FEDformer\\h96\\s2029\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2029
+      },
+      "id": "same_sensor_ETTh1_FEDformer_h96_s2029",
+      "kind": "train",
+      "variant": "same_sensor",
+      "overrides": {
+        "retrieval_scope": "same_sensor"
+      }
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\FEDformer\\h96\\s2029\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2029
+      },
+      "id": "cross_sensor_ETTh1_FEDformer_h96_s2029",
+      "kind": "train",
+      "variant": "cross_sensor",
+      "overrides": {
+        "retrieval_scope": "cross_sensor"
+      }
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\FEDformer\\h96\\s2030\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2030
+      },
+      "id": "fixed_initial_gates_ETTh1_FEDformer_h96_s2030",
+      "kind": "train",
+      "variant": "fixed_initial_gates",
+      "overrides": {}
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\FEDformer\\h96\\s2030\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2030
+      },
+      "id": "learned_constant_gate_ETTh1_FEDformer_h96_s2030",
+      "kind": "train",
+      "variant": "learned_constant_gate",
+      "overrides": {}
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\FEDformer\\h96\\s2030\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2030
+      },
+      "id": "submitted_relu_ETTh1_FEDformer_h96_s2030",
+      "kind": "train",
+      "variant": "submitted_relu",
+      "overrides": {
+        "risk_monitor_mode": "manuscript_mlp",
+        "use_risk_gate": true,
+        "risk_loss_weight": 1.0
+      }
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\FEDformer\\h96\\s2030\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2030
+      },
+      "id": "softplus_risk_ETTh1_FEDformer_h96_s2030",
+      "kind": "train",
+      "variant": "softplus_risk",
+      "overrides": {
+        "risk_monitor_mode": "softplus_mlp",
+        "use_risk_gate": true,
+        "risk_loss_weight": 1.0
+      }
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\FEDformer\\h96\\s2030\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2030
+      },
+      "id": "no_dfm_ETTh1_FEDformer_h96_s2030",
+      "kind": "train",
+      "variant": "no_dfm",
+      "overrides": {
+        "use_dfm": false
+      }
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\FEDformer\\h96\\s2030\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2030
+      },
+      "id": "no_hcb_ETTh1_FEDformer_h96_s2030",
+      "kind": "train",
+      "variant": "no_hcb",
+      "overrides": {
+        "use_hcb": false
+      }
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\FEDformer\\h96\\s2030\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2030
+      },
+      "id": "raw_cosine_ETTh1_FEDformer_h96_s2030",
+      "kind": "train",
+      "variant": "raw_cosine",
+      "overrides": {
+        "retrieval_encoder": "raw_cosine"
+      }
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\FEDformer\\h96\\s2030\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2030
+      },
+      "id": "same_sensor_ETTh1_FEDformer_h96_s2030",
+      "kind": "train",
+      "variant": "same_sensor",
+      "overrides": {
+        "retrieval_scope": "same_sensor"
+      }
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTh1\\FEDformer\\h96\\s2030\\run.json",
+      "identity": {
+        "dataset": "ETTh1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2030
+      },
+      "id": "cross_sensor_ETTh1_FEDformer_h96_s2030",
+      "kind": "train",
+      "variant": "cross_sensor",
+      "overrides": {
+        "retrieval_scope": "cross_sensor"
+      }
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2026\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2026
+      },
+      "id": "fixed_initial_gates_ETTm1_iTransformer_h96_s2026",
+      "kind": "train",
+      "variant": "fixed_initial_gates",
+      "overrides": {}
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2026\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2026
+      },
+      "id": "learned_constant_gate_ETTm1_iTransformer_h96_s2026",
+      "kind": "train",
+      "variant": "learned_constant_gate",
+      "overrides": {}
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2026\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2026
+      },
+      "id": "submitted_relu_ETTm1_iTransformer_h96_s2026",
+      "kind": "train",
+      "variant": "submitted_relu",
+      "overrides": {
+        "risk_monitor_mode": "manuscript_mlp",
+        "use_risk_gate": true,
+        "risk_loss_weight": 1.0
+      }
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2026\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2026
+      },
+      "id": "softplus_risk_ETTm1_iTransformer_h96_s2026",
+      "kind": "train",
+      "variant": "softplus_risk",
+      "overrides": {
+        "risk_monitor_mode": "softplus_mlp",
+        "use_risk_gate": true,
+        "risk_loss_weight": 1.0
+      }
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2026\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2026
+      },
+      "id": "no_dfm_ETTm1_iTransformer_h96_s2026",
+      "kind": "train",
+      "variant": "no_dfm",
+      "overrides": {
+        "use_dfm": false
+      }
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2026\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2026
+      },
+      "id": "no_hcb_ETTm1_iTransformer_h96_s2026",
+      "kind": "train",
+      "variant": "no_hcb",
+      "overrides": {
+        "use_hcb": false
+      }
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2026\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2026
+      },
+      "id": "raw_cosine_ETTm1_iTransformer_h96_s2026",
+      "kind": "train",
+      "variant": "raw_cosine",
+      "overrides": {
+        "retrieval_encoder": "raw_cosine"
+      }
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2026\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2026
+      },
+      "id": "same_sensor_ETTm1_iTransformer_h96_s2026",
+      "kind": "train",
+      "variant": "same_sensor",
+      "overrides": {
+        "retrieval_scope": "same_sensor"
+      }
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2026\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2026
+      },
+      "id": "cross_sensor_ETTm1_iTransformer_h96_s2026",
+      "kind": "train",
+      "variant": "cross_sensor",
+      "overrides": {
+        "retrieval_scope": "cross_sensor"
+      }
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2027\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2027
+      },
+      "id": "fixed_initial_gates_ETTm1_iTransformer_h96_s2027",
+      "kind": "train",
+      "variant": "fixed_initial_gates",
+      "overrides": {}
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2027\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2027
+      },
+      "id": "learned_constant_gate_ETTm1_iTransformer_h96_s2027",
+      "kind": "train",
+      "variant": "learned_constant_gate",
+      "overrides": {}
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2027\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2027
+      },
+      "id": "submitted_relu_ETTm1_iTransformer_h96_s2027",
+      "kind": "train",
+      "variant": "submitted_relu",
+      "overrides": {
+        "risk_monitor_mode": "manuscript_mlp",
+        "use_risk_gate": true,
+        "risk_loss_weight": 1.0
+      }
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2027\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2027
+      },
+      "id": "softplus_risk_ETTm1_iTransformer_h96_s2027",
+      "kind": "train",
+      "variant": "softplus_risk",
+      "overrides": {
+        "risk_monitor_mode": "softplus_mlp",
+        "use_risk_gate": true,
+        "risk_loss_weight": 1.0
+      }
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2027\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2027
+      },
+      "id": "no_dfm_ETTm1_iTransformer_h96_s2027",
+      "kind": "train",
+      "variant": "no_dfm",
+      "overrides": {
+        "use_dfm": false
+      }
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2027\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2027
+      },
+      "id": "no_hcb_ETTm1_iTransformer_h96_s2027",
+      "kind": "train",
+      "variant": "no_hcb",
+      "overrides": {
+        "use_hcb": false
+      }
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2027\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2027
+      },
+      "id": "raw_cosine_ETTm1_iTransformer_h96_s2027",
+      "kind": "train",
+      "variant": "raw_cosine",
+      "overrides": {
+        "retrieval_encoder": "raw_cosine"
+      }
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2027\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2027
+      },
+      "id": "same_sensor_ETTm1_iTransformer_h96_s2027",
+      "kind": "train",
+      "variant": "same_sensor",
+      "overrides": {
+        "retrieval_scope": "same_sensor"
+      }
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2027\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2027
+      },
+      "id": "cross_sensor_ETTm1_iTransformer_h96_s2027",
+      "kind": "train",
+      "variant": "cross_sensor",
+      "overrides": {
+        "retrieval_scope": "cross_sensor"
+      }
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2028\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2028
+      },
+      "id": "fixed_initial_gates_ETTm1_iTransformer_h96_s2028",
+      "kind": "train",
+      "variant": "fixed_initial_gates",
+      "overrides": {}
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2028\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2028
+      },
+      "id": "learned_constant_gate_ETTm1_iTransformer_h96_s2028",
+      "kind": "train",
+      "variant": "learned_constant_gate",
+      "overrides": {}
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2028\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2028
+      },
+      "id": "submitted_relu_ETTm1_iTransformer_h96_s2028",
+      "kind": "train",
+      "variant": "submitted_relu",
+      "overrides": {
+        "risk_monitor_mode": "manuscript_mlp",
+        "use_risk_gate": true,
+        "risk_loss_weight": 1.0
+      }
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2028\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2028
+      },
+      "id": "softplus_risk_ETTm1_iTransformer_h96_s2028",
+      "kind": "train",
+      "variant": "softplus_risk",
+      "overrides": {
+        "risk_monitor_mode": "softplus_mlp",
+        "use_risk_gate": true,
+        "risk_loss_weight": 1.0
+      }
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2028\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2028
+      },
+      "id": "no_dfm_ETTm1_iTransformer_h96_s2028",
+      "kind": "train",
+      "variant": "no_dfm",
+      "overrides": {
+        "use_dfm": false
+      }
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2028\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2028
+      },
+      "id": "no_hcb_ETTm1_iTransformer_h96_s2028",
+      "kind": "train",
+      "variant": "no_hcb",
+      "overrides": {
+        "use_hcb": false
+      }
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2028\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2028
+      },
+      "id": "raw_cosine_ETTm1_iTransformer_h96_s2028",
+      "kind": "train",
+      "variant": "raw_cosine",
+      "overrides": {
+        "retrieval_encoder": "raw_cosine"
+      }
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2028\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2028
+      },
+      "id": "same_sensor_ETTm1_iTransformer_h96_s2028",
+      "kind": "train",
+      "variant": "same_sensor",
+      "overrides": {
+        "retrieval_scope": "same_sensor"
+      }
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2028\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2028
+      },
+      "id": "cross_sensor_ETTm1_iTransformer_h96_s2028",
+      "kind": "train",
+      "variant": "cross_sensor",
+      "overrides": {
+        "retrieval_scope": "cross_sensor"
+      }
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2029\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2029
+      },
+      "id": "fixed_initial_gates_ETTm1_iTransformer_h96_s2029",
+      "kind": "train",
+      "variant": "fixed_initial_gates",
+      "overrides": {}
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2029\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2029
+      },
+      "id": "learned_constant_gate_ETTm1_iTransformer_h96_s2029",
+      "kind": "train",
+      "variant": "learned_constant_gate",
+      "overrides": {}
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2029\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2029
+      },
+      "id": "submitted_relu_ETTm1_iTransformer_h96_s2029",
+      "kind": "train",
+      "variant": "submitted_relu",
+      "overrides": {
+        "risk_monitor_mode": "manuscript_mlp",
+        "use_risk_gate": true,
+        "risk_loss_weight": 1.0
+      }
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2029\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2029
+      },
+      "id": "softplus_risk_ETTm1_iTransformer_h96_s2029",
+      "kind": "train",
+      "variant": "softplus_risk",
+      "overrides": {
+        "risk_monitor_mode": "softplus_mlp",
+        "use_risk_gate": true,
+        "risk_loss_weight": 1.0
+      }
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2029\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2029
+      },
+      "id": "no_dfm_ETTm1_iTransformer_h96_s2029",
+      "kind": "train",
+      "variant": "no_dfm",
+      "overrides": {
+        "use_dfm": false
+      }
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2029\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2029
+      },
+      "id": "no_hcb_ETTm1_iTransformer_h96_s2029",
+      "kind": "train",
+      "variant": "no_hcb",
+      "overrides": {
+        "use_hcb": false
+      }
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2029\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2029
+      },
+      "id": "raw_cosine_ETTm1_iTransformer_h96_s2029",
+      "kind": "train",
+      "variant": "raw_cosine",
+      "overrides": {
+        "retrieval_encoder": "raw_cosine"
+      }
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2029\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2029
+      },
+      "id": "same_sensor_ETTm1_iTransformer_h96_s2029",
+      "kind": "train",
+      "variant": "same_sensor",
+      "overrides": {
+        "retrieval_scope": "same_sensor"
+      }
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2029\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2029
+      },
+      "id": "cross_sensor_ETTm1_iTransformer_h96_s2029",
+      "kind": "train",
+      "variant": "cross_sensor",
+      "overrides": {
+        "retrieval_scope": "cross_sensor"
+      }
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2030\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2030
+      },
+      "id": "fixed_initial_gates_ETTm1_iTransformer_h96_s2030",
+      "kind": "train",
+      "variant": "fixed_initial_gates",
+      "overrides": {}
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2030\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2030
+      },
+      "id": "learned_constant_gate_ETTm1_iTransformer_h96_s2030",
+      "kind": "train",
+      "variant": "learned_constant_gate",
+      "overrides": {}
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2030\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2030
+      },
+      "id": "submitted_relu_ETTm1_iTransformer_h96_s2030",
+      "kind": "train",
+      "variant": "submitted_relu",
+      "overrides": {
+        "risk_monitor_mode": "manuscript_mlp",
+        "use_risk_gate": true,
+        "risk_loss_weight": 1.0
+      }
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2030\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2030
+      },
+      "id": "softplus_risk_ETTm1_iTransformer_h96_s2030",
+      "kind": "train",
+      "variant": "softplus_risk",
+      "overrides": {
+        "risk_monitor_mode": "softplus_mlp",
+        "use_risk_gate": true,
+        "risk_loss_weight": 1.0
+      }
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2030\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2030
+      },
+      "id": "no_dfm_ETTm1_iTransformer_h96_s2030",
+      "kind": "train",
+      "variant": "no_dfm",
+      "overrides": {
+        "use_dfm": false
+      }
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2030\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2030
+      },
+      "id": "no_hcb_ETTm1_iTransformer_h96_s2030",
+      "kind": "train",
+      "variant": "no_hcb",
+      "overrides": {
+        "use_hcb": false
+      }
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2030\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2030
+      },
+      "id": "raw_cosine_ETTm1_iTransformer_h96_s2030",
+      "kind": "train",
+      "variant": "raw_cosine",
+      "overrides": {
+        "retrieval_encoder": "raw_cosine"
+      }
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2030\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2030
+      },
+      "id": "same_sensor_ETTm1_iTransformer_h96_s2030",
+      "kind": "train",
+      "variant": "same_sensor",
+      "overrides": {
+        "retrieval_scope": "same_sensor"
+      }
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2030\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2030
+      },
+      "id": "cross_sensor_ETTm1_iTransformer_h96_s2030",
+      "kind": "train",
+      "variant": "cross_sensor",
+      "overrides": {
+        "retrieval_scope": "cross_sensor"
+      }
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\FEDformer\\h96\\s2026\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2026
+      },
+      "id": "fixed_initial_gates_ETTm1_FEDformer_h96_s2026",
+      "kind": "train",
+      "variant": "fixed_initial_gates",
+      "overrides": {}
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\FEDformer\\h96\\s2026\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2026
+      },
+      "id": "learned_constant_gate_ETTm1_FEDformer_h96_s2026",
+      "kind": "train",
+      "variant": "learned_constant_gate",
+      "overrides": {}
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\FEDformer\\h96\\s2026\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2026
+      },
+      "id": "submitted_relu_ETTm1_FEDformer_h96_s2026",
+      "kind": "train",
+      "variant": "submitted_relu",
+      "overrides": {
+        "risk_monitor_mode": "manuscript_mlp",
+        "use_risk_gate": true,
+        "risk_loss_weight": 1.0
+      }
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\FEDformer\\h96\\s2026\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2026
+      },
+      "id": "softplus_risk_ETTm1_FEDformer_h96_s2026",
+      "kind": "train",
+      "variant": "softplus_risk",
+      "overrides": {
+        "risk_monitor_mode": "softplus_mlp",
+        "use_risk_gate": true,
+        "risk_loss_weight": 1.0
+      }
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\FEDformer\\h96\\s2026\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2026
+      },
+      "id": "no_dfm_ETTm1_FEDformer_h96_s2026",
+      "kind": "train",
+      "variant": "no_dfm",
+      "overrides": {
+        "use_dfm": false
+      }
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\FEDformer\\h96\\s2026\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2026
+      },
+      "id": "no_hcb_ETTm1_FEDformer_h96_s2026",
+      "kind": "train",
+      "variant": "no_hcb",
+      "overrides": {
+        "use_hcb": false
+      }
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\FEDformer\\h96\\s2026\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2026
+      },
+      "id": "raw_cosine_ETTm1_FEDformer_h96_s2026",
+      "kind": "train",
+      "variant": "raw_cosine",
+      "overrides": {
+        "retrieval_encoder": "raw_cosine"
+      }
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\FEDformer\\h96\\s2026\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2026
+      },
+      "id": "same_sensor_ETTm1_FEDformer_h96_s2026",
+      "kind": "train",
+      "variant": "same_sensor",
+      "overrides": {
+        "retrieval_scope": "same_sensor"
+      }
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\FEDformer\\h96\\s2026\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2026
+      },
+      "id": "cross_sensor_ETTm1_FEDformer_h96_s2026",
+      "kind": "train",
+      "variant": "cross_sensor",
+      "overrides": {
+        "retrieval_scope": "cross_sensor"
+      }
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\FEDformer\\h96\\s2027\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2027
+      },
+      "id": "fixed_initial_gates_ETTm1_FEDformer_h96_s2027",
+      "kind": "train",
+      "variant": "fixed_initial_gates",
+      "overrides": {}
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\FEDformer\\h96\\s2027\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2027
+      },
+      "id": "learned_constant_gate_ETTm1_FEDformer_h96_s2027",
+      "kind": "train",
+      "variant": "learned_constant_gate",
+      "overrides": {}
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\FEDformer\\h96\\s2027\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2027
+      },
+      "id": "submitted_relu_ETTm1_FEDformer_h96_s2027",
+      "kind": "train",
+      "variant": "submitted_relu",
+      "overrides": {
+        "risk_monitor_mode": "manuscript_mlp",
+        "use_risk_gate": true,
+        "risk_loss_weight": 1.0
+      }
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\FEDformer\\h96\\s2027\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2027
+      },
+      "id": "softplus_risk_ETTm1_FEDformer_h96_s2027",
+      "kind": "train",
+      "variant": "softplus_risk",
+      "overrides": {
+        "risk_monitor_mode": "softplus_mlp",
+        "use_risk_gate": true,
+        "risk_loss_weight": 1.0
+      }
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\FEDformer\\h96\\s2027\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2027
+      },
+      "id": "no_dfm_ETTm1_FEDformer_h96_s2027",
+      "kind": "train",
+      "variant": "no_dfm",
+      "overrides": {
+        "use_dfm": false
+      }
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\FEDformer\\h96\\s2027\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2027
+      },
+      "id": "no_hcb_ETTm1_FEDformer_h96_s2027",
+      "kind": "train",
+      "variant": "no_hcb",
+      "overrides": {
+        "use_hcb": false
+      }
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\FEDformer\\h96\\s2027\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2027
+      },
+      "id": "raw_cosine_ETTm1_FEDformer_h96_s2027",
+      "kind": "train",
+      "variant": "raw_cosine",
+      "overrides": {
+        "retrieval_encoder": "raw_cosine"
+      }
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\FEDformer\\h96\\s2027\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2027
+      },
+      "id": "same_sensor_ETTm1_FEDformer_h96_s2027",
+      "kind": "train",
+      "variant": "same_sensor",
+      "overrides": {
+        "retrieval_scope": "same_sensor"
+      }
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\FEDformer\\h96\\s2027\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2027
+      },
+      "id": "cross_sensor_ETTm1_FEDformer_h96_s2027",
+      "kind": "train",
+      "variant": "cross_sensor",
+      "overrides": {
+        "retrieval_scope": "cross_sensor"
+      }
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\FEDformer\\h96\\s2028\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2028
+      },
+      "id": "fixed_initial_gates_ETTm1_FEDformer_h96_s2028",
+      "kind": "train",
+      "variant": "fixed_initial_gates",
+      "overrides": {}
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\FEDformer\\h96\\s2028\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2028
+      },
+      "id": "learned_constant_gate_ETTm1_FEDformer_h96_s2028",
+      "kind": "train",
+      "variant": "learned_constant_gate",
+      "overrides": {}
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\FEDformer\\h96\\s2028\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2028
+      },
+      "id": "submitted_relu_ETTm1_FEDformer_h96_s2028",
+      "kind": "train",
+      "variant": "submitted_relu",
+      "overrides": {
+        "risk_monitor_mode": "manuscript_mlp",
+        "use_risk_gate": true,
+        "risk_loss_weight": 1.0
+      }
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\FEDformer\\h96\\s2028\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2028
+      },
+      "id": "softplus_risk_ETTm1_FEDformer_h96_s2028",
+      "kind": "train",
+      "variant": "softplus_risk",
+      "overrides": {
+        "risk_monitor_mode": "softplus_mlp",
+        "use_risk_gate": true,
+        "risk_loss_weight": 1.0
+      }
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\FEDformer\\h96\\s2028\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2028
+      },
+      "id": "no_dfm_ETTm1_FEDformer_h96_s2028",
+      "kind": "train",
+      "variant": "no_dfm",
+      "overrides": {
+        "use_dfm": false
+      }
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\FEDformer\\h96\\s2028\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2028
+      },
+      "id": "no_hcb_ETTm1_FEDformer_h96_s2028",
+      "kind": "train",
+      "variant": "no_hcb",
+      "overrides": {
+        "use_hcb": false
+      }
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\FEDformer\\h96\\s2028\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2028
+      },
+      "id": "raw_cosine_ETTm1_FEDformer_h96_s2028",
+      "kind": "train",
+      "variant": "raw_cosine",
+      "overrides": {
+        "retrieval_encoder": "raw_cosine"
+      }
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\FEDformer\\h96\\s2028\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2028
+      },
+      "id": "same_sensor_ETTm1_FEDformer_h96_s2028",
+      "kind": "train",
+      "variant": "same_sensor",
+      "overrides": {
+        "retrieval_scope": "same_sensor"
+      }
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\FEDformer\\h96\\s2028\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2028
+      },
+      "id": "cross_sensor_ETTm1_FEDformer_h96_s2028",
+      "kind": "train",
+      "variant": "cross_sensor",
+      "overrides": {
+        "retrieval_scope": "cross_sensor"
+      }
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\FEDformer\\h96\\s2029\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2029
+      },
+      "id": "fixed_initial_gates_ETTm1_FEDformer_h96_s2029",
+      "kind": "train",
+      "variant": "fixed_initial_gates",
+      "overrides": {}
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\FEDformer\\h96\\s2029\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2029
+      },
+      "id": "learned_constant_gate_ETTm1_FEDformer_h96_s2029",
+      "kind": "train",
+      "variant": "learned_constant_gate",
+      "overrides": {}
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\FEDformer\\h96\\s2029\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2029
+      },
+      "id": "submitted_relu_ETTm1_FEDformer_h96_s2029",
+      "kind": "train",
+      "variant": "submitted_relu",
+      "overrides": {
+        "risk_monitor_mode": "manuscript_mlp",
+        "use_risk_gate": true,
+        "risk_loss_weight": 1.0
+      }
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\FEDformer\\h96\\s2029\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2029
+      },
+      "id": "softplus_risk_ETTm1_FEDformer_h96_s2029",
+      "kind": "train",
+      "variant": "softplus_risk",
+      "overrides": {
+        "risk_monitor_mode": "softplus_mlp",
+        "use_risk_gate": true,
+        "risk_loss_weight": 1.0
+      }
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\FEDformer\\h96\\s2029\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2029
+      },
+      "id": "no_dfm_ETTm1_FEDformer_h96_s2029",
+      "kind": "train",
+      "variant": "no_dfm",
+      "overrides": {
+        "use_dfm": false
+      }
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\FEDformer\\h96\\s2029\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2029
+      },
+      "id": "no_hcb_ETTm1_FEDformer_h96_s2029",
+      "kind": "train",
+      "variant": "no_hcb",
+      "overrides": {
+        "use_hcb": false
+      }
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\FEDformer\\h96\\s2029\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2029
+      },
+      "id": "raw_cosine_ETTm1_FEDformer_h96_s2029",
+      "kind": "train",
+      "variant": "raw_cosine",
+      "overrides": {
+        "retrieval_encoder": "raw_cosine"
+      }
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\FEDformer\\h96\\s2029\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2029
+      },
+      "id": "same_sensor_ETTm1_FEDformer_h96_s2029",
+      "kind": "train",
+      "variant": "same_sensor",
+      "overrides": {
+        "retrieval_scope": "same_sensor"
+      }
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\FEDformer\\h96\\s2029\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2029
+      },
+      "id": "cross_sensor_ETTm1_FEDformer_h96_s2029",
+      "kind": "train",
+      "variant": "cross_sensor",
+      "overrides": {
+        "retrieval_scope": "cross_sensor"
+      }
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\FEDformer\\h96\\s2030\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2030
+      },
+      "id": "fixed_initial_gates_ETTm1_FEDformer_h96_s2030",
+      "kind": "train",
+      "variant": "fixed_initial_gates",
+      "overrides": {}
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\FEDformer\\h96\\s2030\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2030
+      },
+      "id": "learned_constant_gate_ETTm1_FEDformer_h96_s2030",
+      "kind": "train",
+      "variant": "learned_constant_gate",
+      "overrides": {}
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\FEDformer\\h96\\s2030\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2030
+      },
+      "id": "submitted_relu_ETTm1_FEDformer_h96_s2030",
+      "kind": "train",
+      "variant": "submitted_relu",
+      "overrides": {
+        "risk_monitor_mode": "manuscript_mlp",
+        "use_risk_gate": true,
+        "risk_loss_weight": 1.0
+      }
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\FEDformer\\h96\\s2030\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2030
+      },
+      "id": "softplus_risk_ETTm1_FEDformer_h96_s2030",
+      "kind": "train",
+      "variant": "softplus_risk",
+      "overrides": {
+        "risk_monitor_mode": "softplus_mlp",
+        "use_risk_gate": true,
+        "risk_loss_weight": 1.0
+      }
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\FEDformer\\h96\\s2030\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2030
+      },
+      "id": "no_dfm_ETTm1_FEDformer_h96_s2030",
+      "kind": "train",
+      "variant": "no_dfm",
+      "overrides": {
+        "use_dfm": false
+      }
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\FEDformer\\h96\\s2030\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2030
+      },
+      "id": "no_hcb_ETTm1_FEDformer_h96_s2030",
+      "kind": "train",
+      "variant": "no_hcb",
+      "overrides": {
+        "use_hcb": false
+      }
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\FEDformer\\h96\\s2030\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2030
+      },
+      "id": "raw_cosine_ETTm1_FEDformer_h96_s2030",
+      "kind": "train",
+      "variant": "raw_cosine",
+      "overrides": {
+        "retrieval_encoder": "raw_cosine"
+      }
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\FEDformer\\h96\\s2030\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2030
+      },
+      "id": "same_sensor_ETTm1_FEDformer_h96_s2030",
+      "kind": "train",
+      "variant": "same_sensor",
+      "overrides": {
+        "retrieval_scope": "same_sensor"
+      }
+    },
+    {
+      "source_run": "results\\runs\\public_strict\\ETTm1\\FEDformer\\h96\\s2030\\run.json",
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2030
+      },
+      "id": "cross_sensor_ETTm1_FEDformer_h96_s2030",
+      "kind": "train",
+      "variant": "cross_sensor",
+      "overrides": {
+        "retrieval_scope": "cross_sensor"
+      }
+    }
+  ],
+  "topology_status": "held: paper graph input and reproduction provenance need author clarification",
+  "scope": "all new results are reconstruction diagnostics; no manuscript renaming decision"
+}

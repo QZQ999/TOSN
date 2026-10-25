@@ -1,0 +1,13 @@
+Official DynaTTA commit: 03c3cd9568ee9affa5617efa3c8dbc0224bf9a06
+
+The repository contains only `DynaTTA/DynaTTA.py` and `DynaTTA/main.py`, while
+both import a surrounding TAFAS project (`models`, `datasets`, `utils`, and
+`config`) that is absent from that repository.  The pinned PETSA repository
+contains the same TAFAS host interfaces and its official iTransformer
+checkpoint was already used for PETSA/TAFAS comparisons.
+
+`scripts/run_dynatta_official.py` loads the official adapter file unchanged via
+importlib after adding the pinned PETSA root to `sys.path`.  It saves the
+adapter's already-computed per-window MAE/MSE and a source SHA.  No DynaTTA
+algorithm line is copied or edited.  A local `plots/` directory is created
+because the official adapter unconditionally writes its learning-rate plot.

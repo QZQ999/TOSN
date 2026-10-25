@@ -1,0 +1,67 @@
+{
+  "purpose": "Public source example for new runs; original industrial-table file selection remains unconfirmed.",
+  "source_archive": "UTSD-full-npy.zip",
+  "source_member": "UTSD-full-npy/IoT/baian/0.npy",
+  "source_sha256": "8af624b260fa4f4b6044ea08073b1023458e33127ed04591c3d8ad6cb8e73ee6",
+  "source_shape": [
+    180140,
+    18
+  ],
+  "source_dtype": "float64",
+  "output_file": "iot_0.csv",
+  "output_sha256": "d3b6d24c4436940752107ba705c0c3dd486493c7b81ba650af985c240dd92eaa",
+  "columns": [
+    "v01",
+    "v02",
+    "v03",
+    "v04",
+    "v05",
+    "v06",
+    "v07",
+    "v08",
+    "v09",
+    "v10",
+    "v11",
+    "v12",
+    "v13",
+    "v14",
+    "v15",
+    "v16",
+    "v17",
+    "v18"
+  ],
+  "column_meaning": "Ordinal identifiers preserving the supplied column order.",
+  "source_rows_zero_based_half_open": [
+    0,
+    180140
+  ],
+  "missing_values": 0,
+  "imputation": "None; source values are finite.",
+  "resampling": "None; supplied row order is preserved.",
+  "split_rows_zero_based_half_open": {
+    "train": [
+      0,
+      126097
+    ],
+    "validation": [
+      126097,
+      144111
+    ],
+    "test": [
+      144111,
+      180140
+    ]
+  },
+  "standardization": "The training runner fits per-column mean and population standard deviation on training rows. A standard deviation below 1e-6 is replaced by 1.",
+  "windows": {
+    "history": 96,
+    "target_lengths": [
+      96,
+      192,
+      336,
+      720
+    ],
+    "assignment": "Each target lies wholly within its partition; preceding history may cross the boundary."
+  },
+  "training_started": false
+}

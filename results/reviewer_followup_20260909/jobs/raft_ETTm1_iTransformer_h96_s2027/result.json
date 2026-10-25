@@ -1,0 +1,147 @@
+{
+  "identity": {
+    "dataset": "ETTm1",
+    "backbone": "iTransformer",
+    "horizon": 96,
+    "seed": 2027
+  },
+  "method": "RAFT official architecture, matched harness",
+  "official_commit": "bfe2320f5d719d1e2a024330de3410b370bbb2a9",
+  "model_file_sha256": "2e9d56402dd478f6f212db2a2bee9e14a6d0633152fc297a0df9f41814d50554",
+  "retrieval_file_sha256": "d2c5e0b68f31b6d88296eefa4bdf378a73284425d6dc2c9153bf3d7ef5670007",
+  "diagnostic_script_sha256": "8a840adfca15448814ec14c7a9bc300a31c4b155d40abaef14e670fb54ca51d0",
+  "source_run_for_targets": "results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2027\\run.json",
+  "metrics": {
+    "mae": 0.42183426372893484,
+    "rmse": 0.6254849291080441
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "train_mse": 0.2577113277549985,
+      "val_mse": 0.266818744271196
+    },
+    {
+      "epoch": 2,
+      "train_mse": 0.25100966324663415,
+      "val_mse": 0.2650363244696059
+    },
+    {
+      "epoch": 3,
+      "train_mse": 0.250432352249522,
+      "val_mse": 0.26330942798805407
+    },
+    {
+      "epoch": 4,
+      "train_mse": 0.24988268627432916,
+      "val_mse": 0.26969155273281037
+    },
+    {
+      "epoch": 5,
+      "train_mse": 0.24970521100376863,
+      "val_mse": 0.26071705124756533
+    },
+    {
+      "epoch": 6,
+      "train_mse": 0.24942327958388966,
+      "val_mse": 0.26195632230902405
+    },
+    {
+      "epoch": 7,
+      "train_mse": 0.24927115816938494,
+      "val_mse": 0.2648563672434213
+    },
+    {
+      "epoch": 8,
+      "train_mse": 0.24896824257424355,
+      "val_mse": 0.26834431067108594
+    },
+    {
+      "epoch": 9,
+      "train_mse": 0.24884083682253882,
+      "val_mse": 0.2694038680572826
+    },
+    {
+      "epoch": 10,
+      "train_mse": 0.24875083968320894,
+      "val_mse": 0.267201148926715
+    },
+    {
+      "epoch": 11,
+      "train_mse": 0.24883346029750797,
+      "val_mse": 0.2643716971281036
+    },
+    {
+      "epoch": 12,
+      "train_mse": 0.24867750690670873,
+      "val_mse": 0.2594193815644012
+    },
+    {
+      "epoch": 13,
+      "train_mse": 0.24861595456683858,
+      "val_mse": 0.27717471461208765
+    },
+    {
+      "epoch": 14,
+      "train_mse": 0.24848889684596154,
+      "val_mse": 0.26250256648491194
+    },
+    {
+      "epoch": 15,
+      "train_mse": 0.24861162335548526,
+      "val_mse": 0.2661207015316827
+    },
+    {
+      "epoch": 16,
+      "train_mse": 0.24836118517834008,
+      "val_mse": 0.2646294558837757
+    },
+    {
+      "epoch": 17,
+      "train_mse": 0.24853188179980043,
+      "val_mse": 0.26025779082774736
+    },
+    {
+      "epoch": 18,
+      "train_mse": 0.24840442540776378,
+      "val_mse": 0.2613878524133377
+    },
+    {
+      "epoch": 19,
+      "train_mse": 0.2483663906448231,
+      "val_mse": 0.26214375912543947
+    },
+    {
+      "epoch": 20,
+      "train_mse": 0.2484453526328495,
+      "val_mse": 0.2633865340693131
+    },
+    {
+      "epoch": 21,
+      "train_mse": 0.24843904730701222,
+      "val_mse": 0.266103689651715
+    },
+    {
+      "epoch": 22,
+      "train_mse": 0.24839483394082515,
+      "val_mse": 0.26108741528992857
+    }
+  ],
+  "bank_seconds": 104.44253669999944,
+  "total_seconds": 192.02731829999993,
+  "training": {
+    "max_epochs": 30,
+    "patience": 10,
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "batch": 32,
+    "selection": "validation MSE only; test evaluated once"
+  },
+  "protocol_notes": [
+    "same train-only outer standardizer, windows, and 70/10/20 split",
+    "official RAFT architecture and multigranularity retrieval; model is not a frozen-backbone plug-in",
+    "CPU retrieval-index compatibility fix; precomputation batch 256 and workers 0",
+    "official train-window mask retained; no claim identical candidate pool to reconstructed HCB"
+  ],
+  "job_id": "raft_ETTm1_iTransformer_h96_s2027"
+}

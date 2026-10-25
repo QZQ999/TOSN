@@ -1,0 +1,123 @@
+{
+  "identity": {
+    "dataset": "ETTm1",
+    "backbone": "iTransformer",
+    "horizon": 96,
+    "seed": 2027
+  },
+  "variant": "softplus_risk",
+  "source_run": "results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2027\\run.json",
+  "run_path": "C:\\codex-runs\\UGMA_R1\\results\\reviewer_followup_20260909\\jobs\\softplus_risk_ETTm1_iTransformer_h96_s2027\\training\\run.json",
+  "base_source_sha256": "636807134ff574f308266a22cef002d41d90a1960a4522075ffbd941d8d96a45",
+  "diagnostic_script_sha256": "8a840adfca15448814ec14c7a9bc300a31c4b155d40abaef14e670fb54ca51d0",
+  "metrics": {
+    "backbone": {
+      "mae": 0.4123982787132263,
+      "rmse": 0.6315383911132812,
+      "count": 9301152
+    },
+    "enhanced": {
+      "mae": 0.4153755009174347,
+      "rmse": 0.6332474946975708,
+      "count": 9301152
+    },
+    "improvement_percent": {
+      "mae": -0.7219288629181394,
+      "rmse": -0.2706254454739843
+    },
+    "risk_validation": {
+      "applicable": true,
+      "pearson_r": 0.6986879706382751,
+      "pearson_p": 0.0,
+      "spearman_rho": 0.06118743045715932,
+      "spearman_p": 5.102520035517403e-81,
+      "calibration": {
+        "predicted": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          0.09933469444513321
+        ],
+        "observed": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1.0018972158432007
+        ],
+        "counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          96887
+        ],
+        "ece": 0.9025625213980675
+      },
+      "risk_coverage": {
+        "coverage": [
+          0.05,
+          0.1,
+          0.15,
+          0.2,
+          0.25,
+          0.3,
+          0.35,
+          0.39999999999999997,
+          0.44999999999999996,
+          0.49999999999999994,
+          0.5499999999999999,
+          0.6,
+          0.65,
+          0.7,
+          0.75,
+          0.7999999999999999,
+          0.85,
+          0.9,
+          0.95,
+          1.0
+        ],
+        "selective_mae": [
+          0.7370571494102478,
+          0.8135577440261841,
+          0.8447345495223999,
+          0.8730533123016357,
+          0.9295844435691833,
+          0.9087358713150024,
+          0.8991081714630127,
+          0.878179132938385,
+          0.9619531631469727,
+          0.9384707808494568,
+          0.9126319289207458,
+          0.9020850658416748,
+          0.8879016637802124,
+          0.8954474925994873,
+          0.8885511755943298,
+          0.8894931674003601,
+          0.9158681035041809,
+          0.9068290591239929,
+          0.8911632299423218,
+          1.0018972158432007
+        ],
+        "aurc": 0.8503412619233132
+      }
+    }
+  },
+  "job_id": "softplus_risk_ETTm1_iTransformer_h96_s2027"
+}

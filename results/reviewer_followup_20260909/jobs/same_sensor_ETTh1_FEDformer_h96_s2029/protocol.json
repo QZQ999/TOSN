@@ -1,0 +1,11 @@
+{
+  "variant": "same_sensor",
+  "base_source_sha256": "636807134ff574f308266a22cef002d41d90a1960a4522075ffbd941d8d96a45",
+  "diagnostic_script_sha256": "8a840adfca15448814ec14c7a9bc300a31c4b155d40abaef14e670fb54ca51d0",
+  "overrides": {
+    "retrieval_scope": "same_sensor"
+  },
+  "runtime_override": null,
+  "warning": "base source hash alone does not identify runtime gate controls",
+  "interpretation": "reconstructed model control, not original author implementation"
+}

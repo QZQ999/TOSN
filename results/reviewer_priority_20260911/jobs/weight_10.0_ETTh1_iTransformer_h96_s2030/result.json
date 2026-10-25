@@ -1,0 +1,349 @@
+{
+  "identity": {
+    "dataset": "ETTh1",
+    "backbone": "iTransformer",
+    "horizon": 96,
+    "seed": 2030
+  },
+  "variant": "submitted_relu_weight",
+  "source_run": "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_ablation_strict\\ETTh1\\iTransformer\\h96\\submitted_relu_head\\s2030\\run.json",
+  "run_path": "C:\\codex-runs\\UGMA_R1\\results\\reviewer_priority_20260911\\jobs\\weight_10.0_ETTh1_iTransformer_h96_s2030\\fit_1789108035447864900\\training\\run.json",
+  "base_source_sha256": "636807134ff574f308266a22cef002d41d90a1960a4522075ffbd941d8d96a45",
+  "diagnostic_script_sha256": "61e27046dab1343f33f9613698214b59f2fab4d1709dd6e840e32947151274ed",
+  "metrics": {
+    "backbone": {
+      "mae": 0.45434069633483887,
+      "rmse": 0.6691281795501709,
+      "count": 2277408
+    },
+    "enhanced": {
+      "mae": 0.4562280476093292,
+      "rmse": 0.670514702796936,
+      "count": 2277408
+    },
+    "improvement_percent": {
+      "mae": -0.41540440680652146,
+      "rmse": -0.2072133993366178
+    },
+    "risk_validation": {
+      "applicable": true,
+      "pearson_r": 0.06237431615591049,
+      "pearson_p": 6.849081220359016e-22,
+      "spearman_rho": 0.0657351117600269,
+      "spearman_p": 3.8585922315054845e-24,
+      "calibration": {
+        "predicted": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          0.06680656969547272
+        ],
+        "observed": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          0.7637667059898376
+        ],
+        "counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          23723
+        ],
+        "ece": 0.6969601362943649
+      },
+      "risk_coverage": {
+        "coverage": [
+          0.05,
+          0.1,
+          0.15,
+          0.2,
+          0.25,
+          0.3,
+          0.35,
+          0.39999999999999997,
+          0.44999999999999996,
+          0.49999999999999994,
+          0.5499999999999999,
+          0.6,
+          0.65,
+          0.7,
+          0.75,
+          0.7999999999999999,
+          0.85,
+          0.9,
+          0.95,
+          1.0
+        ],
+        "selective_mae": [
+          0.723716139793396,
+          0.7269144654273987,
+          0.7687903642654419,
+          0.8020333051681519,
+          0.8663642406463623,
+          0.8704755306243896,
+          0.8573818802833557,
+          0.8369180560112,
+          0.8347909450531006,
+          0.821255624294281,
+          0.7997005581855774,
+          0.7904889583587646,
+          0.7755849361419678,
+          0.7861366868019104,
+          0.7874051332473755,
+          0.7853168249130249,
+          0.7822253704071045,
+          0.7718232274055481,
+          0.7670278549194336,
+          0.7637667059898376
+        ],
+        "aurc": 0.7587187692523001
+      }
+    }
+  },
+  "lambda1_reference": {
+    "path": "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_ablation_strict\\ETTh1\\iTransformer\\h96\\submitted_relu_head\\s2030\\run.json",
+    "metrics": {
+      "backbone": {
+        "mae": 0.45434069633483887,
+        "rmse": 0.6691281795501709,
+        "count": 2277408
+      },
+      "enhanced": {
+        "mae": 0.4562395215034485,
+        "rmse": 0.6705243587493896,
+        "count": 2277408
+      },
+      "improvement_percent": {
+        "mae": -0.41792980112224587,
+        "rmse": -0.2086564640211906
+      },
+      "risk_validation": {
+        "applicable": true,
+        "pearson_r": 0.06328778713941574,
+        "pearson_p": 1.7214359852842082e-22,
+        "spearman_rho": 0.06636285869886151,
+        "spearman_p": 1.423534371231106e-24,
+        "calibration": {
+          "predicted": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            0.06676038354635239
+          ],
+          "observed": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            0.7637667059898376
+          ],
+          "counts": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            23723
+          ],
+          "ece": 0.6970063224434853
+        },
+        "risk_coverage": {
+          "coverage": [
+            0.05,
+            0.1,
+            0.15,
+            0.2,
+            0.25,
+            0.3,
+            0.35,
+            0.39999999999999997,
+            0.44999999999999996,
+            0.49999999999999994,
+            0.5499999999999999,
+            0.6,
+            0.65,
+            0.7,
+            0.75,
+            0.7999999999999999,
+            0.85,
+            0.9,
+            0.95,
+            1.0
+          ],
+          "selective_mae": [
+            0.7232638001441956,
+            0.7268336415290833,
+            0.768753707408905,
+            0.8019058108329773,
+            0.8660159707069397,
+            0.8702593445777893,
+            0.8571915626525879,
+            0.8367767930030823,
+            0.8346311450004578,
+            0.821111798286438,
+            0.7995697855949402,
+            0.7903690934181213,
+            0.7754742503166199,
+            0.7861101031303406,
+            0.7873625755310059,
+            0.7852644920349121,
+            0.7822132110595703,
+            0.7717816233634949,
+            0.7670243382453918,
+            0.7637666463851929
+          ],
+          "aurc": 0.7586082234978676
+        }
+      },
+      "gate_diagnostics": {
+        "alpha_mean": 0.007682999595999718,
+        "beta_mean": 0.004520465154200792,
+        "risk_alpha_spearman": 0.9999999999999998,
+        "risk_beta_spearman": -0.1354894304207401,
+        "retrieval_confidence_mean": 0.9993223547935486,
+        "fallback_fraction_below_0_5": 0.0,
+        "retrieval_similarity_mean": 0.6610463857650757,
+        "safety_factor_mean": 1.0,
+        "safety_fallback_fraction_below_0_5": 0.0,
+        "shift_score_mean": 0.8253876566886902
+      },
+      "paired_statistics": {
+        "mean_mae_reduction": -0.0018988465890288353,
+        "ci95_low": -0.002327451016753912,
+        "ci95_high": -0.0014872112078592181,
+        "paired_cohens_d": -0.45401427149772644,
+        "wilcoxon_statistic": 1403484.0,
+        "wilcoxon_p_one_sided": 1.0,
+        "bootstrap": "circular_moving_block",
+        "block_length": 15
+      },
+      "efficiency": {
+        "batch_size": 16,
+        "latency_ms_mean": 4.379161608219147,
+        "latency_ms_std": 1.1270532861086735,
+        "latency_ms_per_sample": 0.2736976005136967,
+        "peak_gpu_bytes": 69310976,
+        "parameters_total": 660901,
+        "parameters_trainable": 341701
+      },
+      "latency_by_batch": {
+        "1": {
+          "batch_size": 1,
+          "latency_ms_mean": 3.799060785770416,
+          "latency_ms_std": 1.0886737575704948,
+          "latency_ms_per_sample": 3.799060785770416,
+          "peak_gpu_bytes": 26814976,
+          "parameters_total": 660901,
+          "parameters_trainable": 341701
+        },
+        "16": {
+          "batch_size": 16,
+          "latency_ms_mean": 4.138976001739502,
+          "latency_ms_std": 0.9075121559616443,
+          "latency_ms_per_sample": 0.2586860001087189,
+          "peak_gpu_bytes": 69310976,
+          "parameters_total": 660901,
+          "parameters_trainable": 341701
+        },
+        "32": {
+          "batch_size": 32,
+          "latency_ms_mean": 5.397732758522034,
+          "latency_ms_std": 0.8870114106692186,
+          "latency_ms_per_sample": 0.16867914870381356,
+          "peak_gpu_bytes": 113001472,
+          "parameters_total": 660901,
+          "parameters_trainable": 341701
+        }
+      },
+      "bank": {
+        "entries": 512,
+        "bytes": 663552,
+        "build_seconds": 2.554300699994201,
+        "latest_target_start": 12040,
+        "entries_per_node_min": 73,
+        "entries_per_node_max": 74,
+        "temporal_exclusion_span": 192
+      },
+      "risk_calibrator": {
+        "method": "identity",
+        "fit_partition": null,
+        "samples": 0,
+        "slope": 1.0,
+        "intercept": 0.0,
+        "reason": "The diagnostic monitor is jointly trained and has no post-hoc calibration."
+      },
+      "safety_fallback": {
+        "validation_quantile": 1.0,
+        "threshold": null,
+        "temperature": 0.05,
+        "monitor": "risk",
+        "shift_monitor_fit": {
+          "monitor": "train_fitted_diagonal_mahalanobis",
+          "validation_quantile": null,
+          "threshold": null
+        }
+      },
+      "training_seconds_by_stage": {
+        "backbone": 35.50627469996107,
+        "enhancement": 73.30913680003141,
+        "predictive_encoder": 0.5883910999982618
+      },
+      "training_peak_gpu_bytes_by_stage": {
+        "backbone": null,
+        "predictive_encoder": 24961024,
+        "condition_bank": 23463936,
+        "enhancement": 408074240
+      }
+    }
+  },
+  "backbone_cache": {
+    "key": "59c88700521b64c97fb2ab9db61ef6dfca08e49132b5d9fa3d2bdcbd83002761",
+    "hit": true,
+    "path": "artifacts/cache/backbones/59c88700521b64c97fb2ab9db61ef6dfca08e49132b5d9fa3d2bdcbd83002761.pt"
+  },
+  "job_id": "weight_10.0_ETTh1_iTransformer_h96_s2030",
+  "reviewers": [
+    "R2.9"
+  ],
+  "inputs": {
+    "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_ablation_strict\\ETTh1\\iTransformer\\h96\\submitted_relu_head\\s2030\\run.json": "daf78bb7a8ec05531a997da8750336e5e97c1b7a617941c9164683859b3e3f8d",
+    "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_ablation_strict\\ETTh1\\iTransformer\\h96\\submitted_relu_head\\s2030\\checkpoint.pt": "ac1455ebfa1572c6772099a0c911151471c361bf0ff9fdf48fabf34c0c61f5eb",
+    "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_ablation_strict\\ETTh1\\iTransformer\\h96\\submitted_relu_head\\s2030\\predictions.npz": "7c86ecb089a4ac6b3e4eeadc644c721e80a3c643fbd509681568c61b3d1b3513"
+  },
+  "source_sha256": "636807134ff574f308266a22cef002d41d90a1960a4522075ffbd941d8d96a45",
+  "elapsed_seconds": 83.73389267921448
+}

@@ -1,0 +1,226 @@
+{
+  "script_sha256": "843fd366b64bcad9c511c7c2b0470424be31f4541abcbc87a83cf133ef32c371",
+  "source_sha256": "636807134ff574f308266a22cef002d41d90a1960a4522075ffbd941d8d96a45",
+  "dependency_hashes": {
+    "C:\\codex-runs\\UGMA_R1\\scripts\\reviewer_followup.py": "8a840adfca15448814ec14c7a9bc300a31c4b155d40abaef14e670fb54ca51d0",
+    "C:\\codex-runs\\UGMA_R1\\scripts\\run_remote_unattended.py": "661a64eaeff96966faccf435e0197ef8aeb893789fa98c095db9dc120dcf2caa",
+    "C:\\codex-runs\\UGMA_R1\\external\\reviewer_priority\\tafas.py": "a7428df1d0efdf3800c58b4816673e84da11b22af4a4af7a0615def6dc76cc6f",
+    "C:\\codex-runs\\UGMA_R1\\scripts\\reviewer_priority_20260911.py": "61e27046dab1343f33f9613698214b59f2fab4d1709dd6e840e32947151274ed"
+  },
+  "old_manifest_sha256": "2d4599532f3730b8cc67434466a0c20effd45e1ae96d835e9f9d6e85d1413350",
+  "jobs": [
+    {
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2026
+      },
+      "source_run": "results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2026\\run.json",
+      "id": "fixed_batch_stable_ETTm1_iTransformer_h96_s2026",
+      "kind": "shift",
+      "reviewers": [
+        "R2.6",
+        "R2.8"
+      ],
+      "inputs": {
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2026\\run.json": "8606bd47240afe9bd7e25164077127c29a510325680e2e237526c05abd7c9304",
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2026\\checkpoint.pt": "141063427ab5ac324e3b75325356344bfb75901602d0bd32cf86ab683a80d1fe",
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2026\\predictions.npz": "c56a06a38d0f99f809b2d370eb8984c580e6ee2d798068f54a4503bfdb0f3d6b"
+      },
+      "parent_job_id": "stable_ETTm1_iTransformer_h96_s2026"
+    },
+    {
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2027
+      },
+      "source_run": "results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2027\\run.json",
+      "id": "fixed_batch_stable_ETTm1_iTransformer_h96_s2027",
+      "kind": "shift",
+      "reviewers": [
+        "R2.6",
+        "R2.8"
+      ],
+      "inputs": {
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2027\\run.json": "dda93b16cd35e688f1bc7835ec42749413071a9a3b1b185356d65067d9cbd19f",
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2027\\checkpoint.pt": "aac525fb122c48699dff59cda506714a1dec676af9f266dec92850d93ab7dec6",
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2027\\predictions.npz": "e8515ff1335c4efeddc6a3fec3e22c444a4f5036fc3085ba0f2337143fd8faf9"
+      },
+      "parent_job_id": "stable_ETTm1_iTransformer_h96_s2027"
+    },
+    {
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2028
+      },
+      "source_run": "results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2028\\run.json",
+      "id": "fixed_batch_stable_ETTm1_iTransformer_h96_s2028",
+      "kind": "shift",
+      "reviewers": [
+        "R2.6",
+        "R2.8"
+      ],
+      "inputs": {
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2028\\run.json": "bd148ff40d0d9db087d05bc36d9d24a90c058220af1c55ef5d180fbaff9b092d",
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2028\\checkpoint.pt": "cd8a8ff7924183c30fae2b46ca21be26babb6545f8264b4954387731b73a25d5",
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2028\\predictions.npz": "baf4688ecdd1fc6089af2b7818e37174c045367acd0607e8483f61e02f27e939"
+      },
+      "parent_job_id": "stable_ETTm1_iTransformer_h96_s2028"
+    },
+    {
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2029
+      },
+      "source_run": "results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2029\\run.json",
+      "id": "fixed_batch_stable_ETTm1_iTransformer_h96_s2029",
+      "kind": "shift",
+      "reviewers": [
+        "R2.6",
+        "R2.8"
+      ],
+      "inputs": {
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2029\\run.json": "0f23fe1bd09878f8011cdc3ea4fff54f22b4bdda2be2ce145ca0a6ed21e91f04",
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2029\\checkpoint.pt": "4cd0784f5b21c5bc97542b307ba1cc590aea66dd23cfda5075032031caab55c2",
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2029\\predictions.npz": "c8b563effb98c5e298ff01cf6a0c438cd8496c74edeb5a17cebb20cd1f6d9de8"
+      },
+      "parent_job_id": "stable_ETTm1_iTransformer_h96_s2029"
+    },
+    {
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "iTransformer",
+        "horizon": 96,
+        "seed": 2030
+      },
+      "source_run": "results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2030\\run.json",
+      "id": "fixed_batch_stable_ETTm1_iTransformer_h96_s2030",
+      "kind": "shift",
+      "reviewers": [
+        "R2.6",
+        "R2.8"
+      ],
+      "inputs": {
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2030\\run.json": "eea97c51d3390b2bc47cd782df799cf6f66fb5fbbab2695253c69b5d07369d4b",
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2030\\checkpoint.pt": "85fff272f2bfc573621b083e195960633609a01f02c57587600cb649de667ced",
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2030\\predictions.npz": "261798f660a7bdd2387e244a101f7900688f9a962f6417de56b0f26bb55a73c0"
+      },
+      "parent_job_id": "stable_ETTm1_iTransformer_h96_s2030"
+    },
+    {
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2026
+      },
+      "source_run": "results\\runs\\public_strict\\ETTm1\\FEDformer\\h96\\s2026\\run.json",
+      "id": "fixed_batch_stable_ETTm1_FEDformer_h96_s2026",
+      "kind": "shift",
+      "reviewers": [
+        "R2.6",
+        "R2.8"
+      ],
+      "inputs": {
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_strict\\ETTm1\\FEDformer\\h96\\s2026\\run.json": "601b12fe72bf594ba2e972c3c178aadc1ed8a88aecb29789591319143ac0c46e",
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_strict\\ETTm1\\FEDformer\\h96\\s2026\\checkpoint.pt": "7e974bf4b077d6fc9e2f5d571e36bdc42486d15d1c59e360cf2d1626b44eb46d",
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_strict\\ETTm1\\FEDformer\\h96\\s2026\\predictions.npz": "7dcdfd9adbadbf088aca621b390d56dd3bc6334ec3b0b870f00009dbde9a828f"
+      },
+      "parent_job_id": "stable_ETTm1_FEDformer_h96_s2026"
+    },
+    {
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2027
+      },
+      "source_run": "results\\runs\\public_strict\\ETTm1\\FEDformer\\h96\\s2027\\run.json",
+      "id": "fixed_batch_stable_ETTm1_FEDformer_h96_s2027",
+      "kind": "shift",
+      "reviewers": [
+        "R2.6",
+        "R2.8"
+      ],
+      "inputs": {
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_strict\\ETTm1\\FEDformer\\h96\\s2027\\run.json": "c808b41dd9000b1476c50e6771a15dc0237aede7f15fcdee97fc5dbc5f3559f2",
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_strict\\ETTm1\\FEDformer\\h96\\s2027\\checkpoint.pt": "4815b830eef469b6cd2f135efdcfb7267208d7c61d474151e66025463378833d",
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_strict\\ETTm1\\FEDformer\\h96\\s2027\\predictions.npz": "0db5e1ac97ee645ebf83257435b141b54e01fb1f862456f43217e93855f9785f"
+      },
+      "parent_job_id": "stable_ETTm1_FEDformer_h96_s2027"
+    },
+    {
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2028
+      },
+      "source_run": "results\\runs\\public_strict\\ETTm1\\FEDformer\\h96\\s2028\\run.json",
+      "id": "fixed_batch_stable_ETTm1_FEDformer_h96_s2028",
+      "kind": "shift",
+      "reviewers": [
+        "R2.6",
+        "R2.8"
+      ],
+      "inputs": {
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_strict\\ETTm1\\FEDformer\\h96\\s2028\\run.json": "728f5011fee9ff4b94e54fc0d17d05618d0e529f1d30cc22877d245d9f3e0b97",
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_strict\\ETTm1\\FEDformer\\h96\\s2028\\checkpoint.pt": "b6b4f9d4fd83adf0ae2a44d138f6ce4b0aa34b53384e5d8f6f208b082612c2ee",
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_strict\\ETTm1\\FEDformer\\h96\\s2028\\predictions.npz": "e208fb75f8f192ea2d55243cdd2ab106910480f075db8757d86ae6cd92bdf13e"
+      },
+      "parent_job_id": "stable_ETTm1_FEDformer_h96_s2028"
+    },
+    {
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2029
+      },
+      "source_run": "results\\runs\\public_strict\\ETTm1\\FEDformer\\h96\\s2029\\run.json",
+      "id": "fixed_batch_stable_ETTm1_FEDformer_h96_s2029",
+      "kind": "shift",
+      "reviewers": [
+        "R2.6",
+        "R2.8"
+      ],
+      "inputs": {
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_strict\\ETTm1\\FEDformer\\h96\\s2029\\run.json": "2064033c8908e7f08b6386ca4db88e88b2f22b493a6f244d39d721e3cb4694fb",
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_strict\\ETTm1\\FEDformer\\h96\\s2029\\checkpoint.pt": "652e268b2c464dd22fdbf8eddf6075e0829a20534e3159fcfdb4f37473633adc",
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_strict\\ETTm1\\FEDformer\\h96\\s2029\\predictions.npz": "1e0b2a5df30e2c69c5cc7b3ed58540fe2fc6ddde77190b47ad8831751de19da9"
+      },
+      "parent_job_id": "stable_ETTm1_FEDformer_h96_s2029"
+    },
+    {
+      "identity": {
+        "dataset": "ETTm1",
+        "backbone": "FEDformer",
+        "horizon": 96,
+        "seed": 2030
+      },
+      "source_run": "results\\runs\\public_strict\\ETTm1\\FEDformer\\h96\\s2030\\run.json",
+      "id": "fixed_batch_stable_ETTm1_FEDformer_h96_s2030",
+      "kind": "shift",
+      "reviewers": [
+        "R2.6",
+        "R2.8"
+      ],
+      "inputs": {
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_strict\\ETTm1\\FEDformer\\h96\\s2030\\run.json": "d4eeb3deed787c427428ce1d090b2b98e96b5fb3a7f8c61e16a6b089bcc1c0cf",
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_strict\\ETTm1\\FEDformer\\h96\\s2030\\checkpoint.pt": "56af622364df5ad78292ea3cea56dbf7c45196a2360682e60693ade3d697f4c6",
+        "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_strict\\ETTm1\\FEDformer\\h96\\s2030\\predictions.npz": "8387516eb4b1f167a9391a204e608a2e7e546bb837704e1e3c6edbe9ed9651c3"
+      },
+      "parent_job_id": "stable_ETTm1_FEDformer_h96_s2030"
+    }
+  ],
+  "parent_manifest_sha256": "a56765c8577e4e6ea2d82e61529ed4f6e9ee403340a3109115311c750342ddfe",
+  "policy": "Fixed physical CUDA batch32, repeat-last padding discarded; logical partition16 versus32 checked; float64 query encoder/dot product and stable retrieval ties; original weights. Not arbitrary physical-batch invariance.",
+  "created_unix": 1789108516.7890255
+}

@@ -1,0 +1,36 @@
+{
+  "sha256_values": "8fec12c3e12d38424e0b03cdff21909ef67b92609ba3d76b64f3937ac481e93a",
+  "shape": [
+    17420,
+    7
+  ],
+  "channels": [
+    "HUFL",
+    "HULL",
+    "MUFL",
+    "MULL",
+    "LUFL",
+    "LULL",
+    "OT"
+  ],
+  "split_bounds": {
+    "train_end": 12194,
+    "val_end": 13936,
+    "total": 17420
+  },
+  "window": {
+    "seq_len": 96,
+    "pred_len": 720
+  },
+  "metadata": {
+    "kind": "csv",
+    "path": "C:\\codex-runs\\UGMA_R1\\external\\ett\\ETT-small\\ETTh1.csv",
+    "topology": "three statistical relation layers derived from training data only"
+  },
+  "shift_prevalence": {
+    "overall": 0.0,
+    "train": 0.0,
+    "validation": 0.0,
+    "test": 0.0
+  }
+}

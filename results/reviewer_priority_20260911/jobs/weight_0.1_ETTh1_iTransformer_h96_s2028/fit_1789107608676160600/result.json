@@ -1,0 +1,122 @@
+{
+  "identity": {
+    "dataset": "ETTh1",
+    "backbone": "iTransformer",
+    "horizon": 96,
+    "seed": 2028
+  },
+  "variant": "submitted_relu_weight",
+  "source_run": "C:\\codex-runs\\UGMA_R1\\results\\runs\\public_ablation_strict\\ETTh1\\iTransformer\\h96\\submitted_relu_head\\s2028\\run.json",
+  "run_path": "C:\\codex-runs\\UGMA_R1\\results\\reviewer_priority_20260911\\jobs\\weight_0.1_ETTh1_iTransformer_h96_s2028\\fit_1789107608676160600\\training\\run.json",
+  "base_source_sha256": "636807134ff574f308266a22cef002d41d90a1960a4522075ffbd941d8d96a45",
+  "diagnostic_script_sha256": "8a840adfca15448814ec14c7a9bc300a31c4b155d40abaef14e670fb54ca51d0",
+  "metrics": {
+    "backbone": {
+      "mae": 0.45084238052368164,
+      "rmse": 0.6627922058105469,
+      "count": 2277408
+    },
+    "enhanced": {
+      "mae": 0.44975727796554565,
+      "rmse": 0.6615625619888306,
+      "count": 2277408
+    },
+    "improvement_percent": {
+      "mae": 0.24068335298814894,
+      "rmse": 0.18552478603947117
+    },
+    "risk_validation": {
+      "applicable": true,
+      "pearson_r": 0.041957490146160126,
+      "pearson_p": 1.0135620120976796e-10,
+      "spearman_rho": 0.08154460828616021,
+      "spearman_p": 2.719797061166829e-36,
+      "calibration": {
+        "predicted": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          0.13921710848808289
+        ],
+        "observed": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          0.7579012513160706
+        ],
+        "counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          23723
+        ],
+        "ece": 0.6186841428279877
+      },
+      "risk_coverage": {
+        "coverage": [
+          0.05,
+          0.1,
+          0.15,
+          0.2,
+          0.25,
+          0.3,
+          0.35,
+          0.39999999999999997,
+          0.44999999999999996,
+          0.49999999999999994,
+          0.5499999999999999,
+          0.6,
+          0.65,
+          0.7,
+          0.75,
+          0.7999999999999999,
+          0.85,
+          0.9,
+          0.95,
+          1.0
+        ],
+        "selective_mae": [
+          0.7162147164344788,
+          0.7250417470932007,
+          0.766762375831604,
+          0.7953647375106812,
+          0.8550493121147156,
+          0.8548650145530701,
+          0.8445298671722412,
+          0.8242177963256836,
+          0.8251869678497314,
+          0.8131643533706665,
+          0.7921657562255859,
+          0.7829247117042542,
+          0.7691949605941772,
+          0.7811314463615417,
+          0.7805806398391724,
+          0.7778457999229431,
+          0.7737064361572266,
+          0.7640157341957092,
+          0.7595258951187134,
+          0.7579012513160706
+        ],
+        "aurc": 0.7511165767908097
+      }
+    }
+  }
+}

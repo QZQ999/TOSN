@@ -1,0 +1,123 @@
+{
+  "identity": {
+    "dataset": "ETTm1",
+    "backbone": "iTransformer",
+    "horizon": 96,
+    "seed": 2027
+  },
+  "variant": "submitted_relu",
+  "source_run": "results\\runs\\public_strict\\ETTm1\\iTransformer\\h96\\s2027\\run.json",
+  "run_path": "C:\\codex-runs\\UGMA_R1\\results\\reviewer_followup_20260909\\jobs\\submitted_relu_ETTm1_iTransformer_h96_s2027\\training\\run.json",
+  "base_source_sha256": "636807134ff574f308266a22cef002d41d90a1960a4522075ffbd941d8d96a45",
+  "diagnostic_script_sha256": "8a840adfca15448814ec14c7a9bc300a31c4b155d40abaef14e670fb54ca51d0",
+  "metrics": {
+    "backbone": {
+      "mae": 0.4123982787132263,
+      "rmse": 0.6315383911132812,
+      "count": 9301152
+    },
+    "enhanced": {
+      "mae": 0.41457298398017883,
+      "rmse": 0.6321009397506714,
+      "count": 9301152
+    },
+    "improvement_percent": {
+      "mae": -0.5273313151883358,
+      "rmse": -0.08907592084757843
+    },
+    "risk_validation": {
+      "applicable": true,
+      "pearson_r": 0.6913024187088013,
+      "pearson_p": 0.0,
+      "spearman_rho": 0.055055076255653056,
+      "spearman_p": 6.328508626131191e-66,
+      "calibration": {
+        "predicted": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          0.05972205847501755
+        ],
+        "observed": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1.0018972158432007
+        ],
+        "counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          96887
+        ],
+        "ece": 0.9421751573681831
+      },
+      "risk_coverage": {
+        "coverage": [
+          0.05,
+          0.1,
+          0.15,
+          0.2,
+          0.25,
+          0.3,
+          0.35,
+          0.39999999999999997,
+          0.44999999999999996,
+          0.49999999999999994,
+          0.5499999999999999,
+          0.6,
+          0.65,
+          0.7,
+          0.75,
+          0.7999999999999999,
+          0.85,
+          0.9,
+          0.95,
+          1.0
+        ],
+        "selective_mae": [
+          0.7372654676437378,
+          0.8136619329452515,
+          0.844804048538208,
+          0.8731054663658142,
+          0.9297704100608826,
+          0.9089440107345581,
+          0.8992841839790344,
+          0.8783330321311951,
+          0.9687618017196655,
+          0.9445987343788147,
+          0.918202817440033,
+          0.9071915745735168,
+          0.8926154375076294,
+          0.8998880386352539,
+          0.8927271366119385,
+          0.8934164047241211,
+          0.921495795249939,
+          0.9120193719863892,
+          0.896177351474762,
+          1.0018972158432007
+        ],
+        "aurc": 0.8532289445400237
+      }
+    }
+  },
+  "job_id": "submitted_relu_ETTm1_iTransformer_h96_s2027"
+}
