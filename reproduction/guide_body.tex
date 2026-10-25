@@ -1,5 +1,5 @@
 \subsection*{Purpose and scope}
-The experiments use publicly released time series. The industrial datasets contain recorded equipment measurements, while the robustness study applies specified numerical changes to observed ETT series. This section identifies the source files and explains how they become forecasting inputs. The released code provides the configurations for training and the saved results used to calculate the repeated-run summaries.
+The experiments use publicly released time series. The industrial datasets contain recorded equipment measurements, while the robustness study applies specified numerical changes to observed ETT series. This section identifies the inputs and explains the reproduction procedure. This repository supplies the reconstructed code and recorded results.
 
 R0 disables the estimated-error input. The ReLU and Softplus configurations enable it, with the historical reference transformation fixed at the identity setting. These configurations are identified separately from the original four-dataset results. The scope of each comparison follows the Experimental Setup in the manuscript.
 
@@ -18,7 +18,7 @@ Use all 86,400 rows and all 30 measurement columns in their supplied order. Pres
 \begin{lstlisting}
 python reproduction/prepare_boiler_input.py --file xinan_completed_data.csv
 \end{lstlisting}
-If the downloaded CSV also contains a separate timestamp or exported row identifier, name that metadata field with \texttt{--metadata-column}. The helper still requires 30 measurement columns and records their actual headings. It creates \path{external/boiler_reconstruction/boiler_completed.csv}, together with an input record and a training configuration. The zero-based intervals are $[0,60479)$ for training and $[60479,69119)$ for validation, followed by $[69119,86400)$ for testing. Each upper endpoint is excluded. These integers follow the Python calculation described below.
+Use \texttt{--metadata-column} to identify a separate timestamp or row identifier in the CSV. All 30 measurement columns are preserved. The output file is \path{external/boiler_reconstruction/boiler_completed.csv}, accompanied by a source record and training configuration. Training uses rows $[0,60479)$ and validation uses $[60479,69119)$, followed by testing on $[69119,86400)$. These zero-based intervals exclude the upper endpoint and follow the partition calculation described below.
 
 UTSD is available at \url{https://huggingface.co/datasets/thuml/UTSD}. Its authors also provide a NumPy release through \url{https://cloud.tsinghua.edu.cn/f/93868e3a9fb144fe9719/}. Both links appear in the official project at \url{https://github.com/thuml/Large-Time-Series-Model}. The archive \path{UTSD-full-npy.zip} contains the IoT observations under \path{UTSD-full-npy/IoT/baian/}. These observations originate from the machine-log collection described by UTSD.
 
@@ -26,7 +26,7 @@ The selected file, \path{IoT/baian/0.npy}, contains 180,140 observations of 18 v
 \begin{lstlisting}
 python reproduction/reproduce.py inspect-iot --file UTSD-full-npy/IoT/baian/0.npy
 \end{lstlisting}
-For the released reconstruction, select this complete file. Keep every row and all 18 variables in the stored order. The selection fixes the evaluated interval directly. The source contains finite measurements, so the preparation preserves the supplied values and sampling interval.
+The released reconstruction uses every row and all 18 variables in their stored order, preserving the supplied values and sampling interval.
 
 Prepare this input with the supplied helper:
 \begin{lstlisting}
@@ -34,12 +34,12 @@ python reproduction/prepare_iot_example.py --file UTSD-full-npy/IoT/baian/0.npy
 \end{lstlisting}
 The resulting \path{external/industrial_examples/iot_0.csv} is accompanied by \path{input_record.json}, which identifies the source file and the prepared input. Training uses rows $[0,126097)$ and validation uses $[126097,144111)$, followed by testing on $[144111,180140)$. The CSV headings \texttt{v01} through \texttt{v18} preserve the source column positions. An added \texttt{row\_index} supplies ordering information and is excluded from the model inputs. At prediction length 96, the prepared input produces 125,906 training windows and 17,919 validation windows, followed by 35,934 test windows.
 
-Each industrial helper also creates a runnable 96-step iTransformer configuration. It copies the model and training settings from the recorded ReLU configuration \path{relu_ETTh1_iTransformer_h96_s2026}, which enables the estimated-error input. It changes the input path and ordering-column setting, then records the actual length and number of measurement variables. The output directory identifies a fresh industrial run. After installing the dependencies described below and preparing the corresponding source file, run the appropriate command from the repository root:
+Each helper creates a 96-step iTransformer configuration using the model and training settings of \path{relu_ETTh1_iTransformer_h96_s2026}, with its estimated-error input enabled. The input location and dimensions follow the selected industrial file. After preparing that input and installing the dependencies below, run the corresponding command from the repository root:
 \begin{lstlisting}
 python -m ugma.cli run --config external/industrial_examples/iot_relu_iTransformer_h96_s2026.json
 python -m ugma.cli run --config external/boiler_reconstruction/boiler_relu_iTransformer_h96_s2026.json
 \end{lstlisting}
-The generated paths refer to the machine used for preparation. Regenerate the input and configuration after moving the release to another machine. Full details appear in \path{reproduction/DATA_USE.md}.
+Regenerate the configuration after moving the release to another machine so that its file locations remain valid. Further input specifications appear in \path{reproduction/DATA_USE.md}.
 
 These source choices define fresh runs of the released reconstruction. The original records identifying which industrial observations were used are unavailable, along with the corresponding trained models. The named inputs therefore specify a reproducible protocol for new runs, with their results distinguished from the original industrial table entries.
 
@@ -58,7 +58,7 @@ The initial forecasting models are loaded from the official Time-Series-Library 
 git clone https://github.com/thuml/Time-Series-Library.git external/tslib
 git -C external/tslib checkout 4e938a1767106324dd753b2a44832bf870a0252e
 \end{lstlisting}
-The public comparisons use iTransformer and FEDformer. Their saved configurations specify the model settings and training schedule. The reconstructed correction uses measured sequences and historical matches. Its configuration sets \texttt{topology\_mode} to \texttt{none}. The data loader can calculate statistical relationships, while this setting excludes those relationships from the evaluated correction. The original four-dataset hardware description remains the one reported in the manuscript; individual run records preserve the environment of each additional study.
+The public-data configurations use iTransformer and FEDformer with \texttt{topology\_mode=none}. The correction operates on sequence representations and retrieved histories. Saved configurations specify the model settings and training schedule, and each run records its hardware environment.
 
 \subsection*{Preparing and running the recorded configurations}
 The catalogue in \path{reproduction/run_catalog.json} identifies 80 R0 runs. They cover both ETT datasets and both forecasting models at four prediction lengths, with five random initializations per setting. The seeds run from 2026 through 2030. A further 20 ReLU configurations and 20 Softplus configurations evaluate the estimated-error input at $Q=96$. Each catalogue entry links an experimental configuration to its saved results.
@@ -69,7 +69,7 @@ python reproduction/reproduce.py configs --group r0
 python reproduction/reproduce.py configs --group relu
 python reproduction/reproduce.py configs --group softplus
 \end{lstlisting}
-The exporter copies each configuration from its saved run record. It changes the input-file location and the output directory to match the current machine. The training settings remain identical. Configurations are written under \path{reproduction_outputs/configs/}, and new results are directed to \path{reproduction_outputs/runs/}. For example, the following command reruns one R0 configuration:
+The exporter preserves the saved training settings and updates file locations for the current machine. Configurations are written under \path{reproduction_outputs/configs/}, with new results under \path{reproduction_outputs/runs/}. For example, rerun one R0 configuration as follows:
 \begin{lstlisting}
 cd reproduction_outputs/configs/r0
 python -m ugma.cli run --config r0_ETTh1_iTransformer_h96_s2026.json
@@ -77,7 +77,7 @@ cd ../../..
 \end{lstlisting}
 The runner trains the initial forecasting model using the training partition and selects its parameters using validation error. It then trains the historical encoder and constructs a reference collection from training windows. The final training stage fits the correction while keeping the initial forecasting model fixed. ReLU and Softplus runs also train the estimated-error module in that final stage. The saved configuration supplies the stopping rule and every loss weight.
 
-The output includes \path{run.json} with configuration details and numerical results. The file \path{checkpoint.pt} stores model parameters, while \path{predictions.npz} stores the evaluated targets and predictions. Retain these files together with \path{data_manifest.json}. The runner can reuse a cached initial model for a matching configuration. Cache keys include the training and validation input values, which keeps paired correction comparisons tied to the same initial forecast. A fresh training run may differ numerically across hardware or library versions; record its environment alongside the new result.
+The output \path{run.json} records the configuration and results. Model parameters are stored in \path{checkpoint.pt}, and evaluated predictions in \path{predictions.npz}. Retain these with \path{data_manifest.json}. Paired comparisons can reuse an initial model matched to the training and validation inputs. Each fresh run records its environment because numerical results can vary across hardware or library versions.
 
 \subsection*{Rebuilding the reported summaries}
 The reported repeated-run summaries can be calculated directly from the supplied results:
@@ -93,5 +93,3 @@ The analysis scripts under \path{scripts/} provide the procedures for the additi
 
 For the controlled-shift study, the training and validation values stay unchanged. Transformations start at the test boundary. Let $\mu_j$ and $\sigma_j$ denote training statistics for variable $j$, and let $d_j$ alternate between $+1$ and $-1$ across variables. A level change adds $a\sigma_jd_j$ to the test values. An amplitude change uses $\mu_j+(1+a)(x_j-\mu_j)$. A ramp gradually increases the additive change from zero to $a\sigma_jd_j$ over the test interval. The evaluated values of $a$ are 0.5 and 1.0. The transformed test series supplies both prediction histories and targets according to their time indices. These are specified artificial changes applied to observed ETT data. The industrial tables evaluate chronological prediction on recorded equipment observations.
 
-\subsection*{Availability of the supporting material}
-This repository supplies the reconstructed code and recorded results. The repository includes the data-use instructions and preparation scripts. Obtain the source measurements through the data providers' links above. Save each prepared input's source record with the training configuration and results so that a subsequent run can use the same data and settings.
